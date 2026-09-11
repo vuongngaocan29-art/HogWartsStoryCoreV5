@@ -1,0 +1,41 @@
+name: Build HogwartsStoryCore 0.5.0 Simple Quests
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: HSC-0.5.0-SIMPLE-QUESTS
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Java 21
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+          cache-dependency-path: HSC-0.5.0-SIMPLE-QUESTS/pom.xml
+
+      - name: Build
+        run: mvn -B clean package
+
+      - name: Verify JAR
+        run: |
+          ls -lah target/
+          test -f target/HogwartsStoryCore-0.5.0.jar
+
+      - name: Upload JAR
+        uses: actions/upload-artifact@v4
+        with:
+          name: HogwartsStoryCore-0.5.0
+          path: HSC-0.5.0-SIMPLE-QUESTS/target/HogwartsStoryCore-0.5.0.jar
+          if-no-files-found: error
