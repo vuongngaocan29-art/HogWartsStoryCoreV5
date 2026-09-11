@@ -1,0 +1,347 @@
+conditions:
+  year_1_or_higher: numbercompare %ph.hogwarts_year_number% >= 1
+  current_year_1: numbercompare %ph.hogwarts_year_number% = 1
+  year_2_or_higher: numbercompare %ph.hogwarts_year_number% >= 2
+  current_year_2: numbercompare %ph.hogwarts_year_number% = 2
+  year_3_or_higher: numbercompare %ph.hogwarts_year_number% >= 3
+  current_year_3: numbercompare %ph.hogwarts_year_number% = 3
+  year_4_or_higher: numbercompare %ph.hogwarts_year_number% >= 4
+  current_year_4: numbercompare %ph.hogwarts_year_number% = 4
+  year_5_or_higher: numbercompare %ph.hogwarts_year_number% >= 5
+  current_year_5: numbercompare %ph.hogwarts_year_number% = 5
+  year_6_or_higher: numbercompare %ph.hogwarts_year_number% >= 6
+  current_year_6: numbercompare %ph.hogwarts_year_number% = 6
+  year_7_or_higher: numbercompare %ph.hogwarts_year_number% >= 7
+  current_year_7: numbercompare %ph.hogwarts_year_number% = 7
+  level_lumos: numbercompare %ph.hogwarts_level% >= 1
+  started_lumos: tag lesson_lumos_started
+  done_lumos: tag lesson_lumos_done
+  practiced_lumos: point practice_lumos 3
+  core_knows_lumos: variable %ph.hogwarts_has_spell_lumos% true
+  can_start_lumos: and year_1_or_higher,level_lumos,!done_lumos,!started_lumos,mission_charms_y1_done
+  in_progress_lumos: and started_lumos,!practiced_lumos,!done_lumos
+  ready_lumos: and started_lumos,practiced_lumos,!done_lumos
+  level_nox: numbercompare %ph.hogwarts_level% >= 1
+  started_nox: tag lesson_nox_started
+  done_nox: tag lesson_nox_done
+  practiced_nox: point practice_nox 3
+  core_knows_nox: variable %ph.hogwarts_has_spell_nox% true
+  can_start_nox: and year_1_or_higher,level_nox,!done_nox,!started_nox,done_lumos,mission_charms_y1_done
+  in_progress_nox: and started_nox,!practiced_nox,!done_nox
+  ready_nox: and started_nox,practiced_nox,!done_nox
+  level_wingardium_leviosa: numbercompare %ph.hogwarts_level% >= 2
+  started_wingardium_leviosa: tag lesson_wingardium_leviosa_started
+  done_wingardium_leviosa: tag lesson_wingardium_leviosa_done
+  practiced_wingardium_leviosa: point practice_wingardium_leviosa 3
+  core_knows_wingardium_leviosa: variable %ph.hogwarts_has_spell_wingardium_leviosa% true
+  can_start_wingardium_leviosa: and year_1_or_higher,level_wingardium_leviosa,!done_wingardium_leviosa,!started_wingardium_leviosa,done_nox,mission_charms_y1_done
+  in_progress_wingardium_leviosa: and started_wingardium_leviosa,!practiced_wingardium_leviosa,!done_wingardium_leviosa
+  ready_wingardium_leviosa: and started_wingardium_leviosa,practiced_wingardium_leviosa,!done_wingardium_leviosa
+  level_alohomora: numbercompare %ph.hogwarts_level% >= 2
+  started_alohomora: tag lesson_alohomora_started
+  done_alohomora: tag lesson_alohomora_done
+  practiced_alohomora: point practice_alohomora 3
+  core_knows_alohomora: variable %ph.hogwarts_has_spell_alohomora% true
+  can_start_alohomora: and year_1_or_higher,level_alohomora,!done_alohomora,!started_alohomora,done_wingardium_leviosa,mission_charms_y1_done
+  in_progress_alohomora: and started_alohomora,!practiced_alohomora,!done_alohomora
+  ready_alohomora: and started_alohomora,practiced_alohomora,!done_alohomora
+  level_incendio: numbercompare %ph.hogwarts_level% >= 3
+  started_incendio: tag lesson_incendio_started
+  done_incendio: tag lesson_incendio_done
+  practiced_incendio: point practice_incendio 3
+  core_knows_incendio: variable %ph.hogwarts_has_spell_incendio% true
+  can_start_incendio: and year_1_or_higher,level_incendio,!done_incendio,!started_incendio,done_alohomora,mission_charms_y1_done
+  in_progress_incendio: and started_incendio,!practiced_incendio,!done_incendio
+  ready_incendio: and started_incendio,practiced_incendio,!done_incendio
+  level_petrificus_totalus: numbercompare %ph.hogwarts_level% >= 3
+  started_petrificus_totalus: tag lesson_petrificus_totalus_started
+  done_petrificus_totalus: tag lesson_petrificus_totalus_done
+  practiced_petrificus_totalus: point practice_petrificus_totalus 3
+  core_knows_petrificus_totalus: variable %ph.hogwarts_has_spell_petrificus_totalus% true
+  can_start_petrificus_totalus: and year_1_or_higher,level_petrificus_totalus,!done_petrificus_totalus,!started_petrificus_totalus,mission_dada_y1_done
+  in_progress_petrificus_totalus: and started_petrificus_totalus,!practiced_petrificus_totalus,!done_petrificus_totalus
+  ready_petrificus_totalus: and started_petrificus_totalus,practiced_petrificus_totalus,!done_petrificus_totalus
+  level_locomotor_mortis: numbercompare %ph.hogwarts_level% >= 4
+  started_locomotor_mortis: tag lesson_locomotor_mortis_started
+  done_locomotor_mortis: tag lesson_locomotor_mortis_done
+  practiced_locomotor_mortis: point practice_locomotor_mortis 3
+  core_knows_locomotor_mortis: variable %ph.hogwarts_has_spell_locomotor_mortis% true
+  can_start_locomotor_mortis: and year_1_or_higher,level_locomotor_mortis,!done_locomotor_mortis,!started_locomotor_mortis,done_petrificus_totalus,mission_dada_y1_done
+  in_progress_locomotor_mortis: and started_locomotor_mortis,!practiced_locomotor_mortis,!done_locomotor_mortis
+  ready_locomotor_mortis: and started_locomotor_mortis,practiced_locomotor_mortis,!done_locomotor_mortis
+  level_reparo: numbercompare %ph.hogwarts_level% >= 6
+  started_reparo: tag lesson_reparo_started
+  done_reparo: tag lesson_reparo_done
+  practiced_reparo: point practice_reparo 3
+  core_knows_reparo: variable %ph.hogwarts_has_spell_reparo% true
+  can_start_reparo: and year_2_or_higher,level_reparo,!done_reparo,!started_reparo,mission_charms_y2_done
+  in_progress_reparo: and started_reparo,!practiced_reparo,!done_reparo
+  ready_reparo: and started_reparo,practiced_reparo,!done_reparo
+  level_immobulus: numbercompare %ph.hogwarts_level% >= 7
+  started_immobulus: tag lesson_immobulus_started
+  done_immobulus: tag lesson_immobulus_done
+  practiced_immobulus: point practice_immobulus 3
+  core_knows_immobulus: variable %ph.hogwarts_has_spell_immobulus% true
+  can_start_immobulus: and year_2_or_higher,level_immobulus,!done_immobulus,!started_immobulus,done_reparo,mission_charms_y2_done
+  in_progress_immobulus: and started_immobulus,!practiced_immobulus,!done_immobulus
+  ready_immobulus: and started_immobulus,practiced_immobulus,!done_immobulus
+  level_finite_incantatem: numbercompare %ph.hogwarts_level% >= 7
+  started_finite_incantatem: tag lesson_finite_incantatem_started
+  done_finite_incantatem: tag lesson_finite_incantatem_done
+  practiced_finite_incantatem: point practice_finite_incantatem 3
+  core_knows_finite_incantatem: variable %ph.hogwarts_has_spell_finite_incantatem% true
+  can_start_finite_incantatem: and year_2_or_higher,level_finite_incantatem,!done_finite_incantatem,!started_finite_incantatem,done_immobulus,mission_charms_y2_done
+  in_progress_finite_incantatem: and started_finite_incantatem,!practiced_finite_incantatem,!done_finite_incantatem
+  ready_finite_incantatem: and started_finite_incantatem,practiced_finite_incantatem,!done_finite_incantatem
+  level_expelliarmus: numbercompare %ph.hogwarts_level% >= 5
+  started_expelliarmus: tag lesson_expelliarmus_started
+  done_expelliarmus: tag lesson_expelliarmus_done
+  practiced_expelliarmus: point practice_expelliarmus 3
+  core_knows_expelliarmus: variable %ph.hogwarts_has_spell_expelliarmus% true
+  can_start_expelliarmus: and year_2_or_higher,level_expelliarmus,!done_expelliarmus,!started_expelliarmus,mission_dada_y2_done
+  in_progress_expelliarmus: and started_expelliarmus,!practiced_expelliarmus,!done_expelliarmus
+  ready_expelliarmus: and started_expelliarmus,practiced_expelliarmus,!done_expelliarmus
+  level_rictusempra: numbercompare %ph.hogwarts_level% >= 5
+  started_rictusempra: tag lesson_rictusempra_started
+  done_rictusempra: tag lesson_rictusempra_done
+  practiced_rictusempra: point practice_rictusempra 3
+  core_knows_rictusempra: variable %ph.hogwarts_has_spell_rictusempra% true
+  can_start_rictusempra: and year_2_or_higher,level_rictusempra,!done_rictusempra,!started_rictusempra,done_expelliarmus,mission_dada_y2_done
+  in_progress_rictusempra: and started_rictusempra,!practiced_rictusempra,!done_rictusempra
+  ready_rictusempra: and started_rictusempra,practiced_rictusempra,!done_rictusempra
+  level_serpensortia: numbercompare %ph.hogwarts_level% >= 6
+  started_serpensortia: tag lesson_serpensortia_started
+  done_serpensortia: tag lesson_serpensortia_done
+  practiced_serpensortia: point practice_serpensortia 3
+  core_knows_serpensortia: variable %ph.hogwarts_has_spell_serpensortia% true
+  can_start_serpensortia: and year_2_or_higher,level_serpensortia,!done_serpensortia,!started_serpensortia,done_rictusempra,mission_dada_y2_done
+  in_progress_serpensortia: and started_serpensortia,!practiced_serpensortia,!done_serpensortia
+  ready_serpensortia: and started_serpensortia,practiced_serpensortia,!done_serpensortia
+  level_lumos_maxima: numbercompare %ph.hogwarts_level% >= 9
+  started_lumos_maxima: tag lesson_lumos_maxima_started
+  done_lumos_maxima: tag lesson_lumos_maxima_done
+  practiced_lumos_maxima: point practice_lumos_maxima 3
+  core_knows_lumos_maxima: variable %ph.hogwarts_has_spell_lumos_maxima% true
+  can_start_lumos_maxima: and year_3_or_higher,level_lumos_maxima,!done_lumos_maxima,!started_lumos_maxima,mission_charms_y3_done
+  in_progress_lumos_maxima: and started_lumos_maxima,!practiced_lumos_maxima,!done_lumos_maxima
+  ready_lumos_maxima: and started_lumos_maxima,practiced_lumos_maxima,!done_lumos_maxima
+  level_impervius: numbercompare %ph.hogwarts_level% >= 9
+  started_impervius: tag lesson_impervius_started
+  done_impervius: tag lesson_impervius_done
+  practiced_impervius: point practice_impervius 3
+  core_knows_impervius: variable %ph.hogwarts_has_spell_impervius% true
+  can_start_impervius: and year_3_or_higher,level_impervius,!done_impervius,!started_impervius,done_lumos_maxima,mission_charms_y3_done
+  in_progress_impervius: and started_impervius,!practiced_impervius,!done_impervius
+  ready_impervius: and started_impervius,practiced_impervius,!done_impervius
+  level_ferula: numbercompare %ph.hogwarts_level% >= 10
+  started_ferula: tag lesson_ferula_started
+  done_ferula: tag lesson_ferula_done
+  practiced_ferula: point practice_ferula 3
+  core_knows_ferula: variable %ph.hogwarts_has_spell_ferula% true
+  can_start_ferula: and year_3_or_higher,level_ferula,!done_ferula,!started_ferula,done_impervius,mission_charms_y3_done
+  in_progress_ferula: and started_ferula,!practiced_ferula,!done_ferula
+  ready_ferula: and started_ferula,practiced_ferula,!done_ferula
+  level_riddikulus: numbercompare %ph.hogwarts_level% >= 8
+  started_riddikulus: tag lesson_riddikulus_started
+  done_riddikulus: tag lesson_riddikulus_done
+  practiced_riddikulus: point practice_riddikulus 3
+  core_knows_riddikulus: variable %ph.hogwarts_has_spell_riddikulus% true
+  can_start_riddikulus: and year_3_or_higher,level_riddikulus,!done_riddikulus,!started_riddikulus,mission_dada_y3_done
+  in_progress_riddikulus: and started_riddikulus,!practiced_riddikulus,!done_riddikulus
+  ready_riddikulus: and started_riddikulus,practiced_riddikulus,!done_riddikulus
+  level_expecto_patronum: numbercompare %ph.hogwarts_level% >= 8
+  started_expecto_patronum: tag lesson_expecto_patronum_started
+  done_expecto_patronum: tag lesson_expecto_patronum_done
+  practiced_expecto_patronum: point practice_expecto_patronum 3
+  core_knows_expecto_patronum: variable %ph.hogwarts_has_spell_expecto_patronum% true
+  can_start_expecto_patronum: and year_3_or_higher,level_expecto_patronum,!done_expecto_patronum,!started_expecto_patronum,done_riddikulus,mission_dada_y3_done
+  in_progress_expecto_patronum: and started_expecto_patronum,!practiced_expecto_patronum,!done_expecto_patronum
+  ready_expecto_patronum: and started_expecto_patronum,practiced_expecto_patronum,!done_expecto_patronum
+  level_accio: numbercompare %ph.hogwarts_level% >= 11
+  started_accio: tag lesson_accio_started
+  done_accio: tag lesson_accio_done
+  practiced_accio: point practice_accio 3
+  core_knows_accio: variable %ph.hogwarts_has_spell_accio% true
+  can_start_accio: and year_4_or_higher,level_accio,!done_accio,!started_accio,mission_charms_y4_done
+  in_progress_accio: and started_accio,!practiced_accio,!done_accio
+  ready_accio: and started_accio,practiced_accio,!done_accio
+  level_point_me: numbercompare %ph.hogwarts_level% >= 13
+  started_point_me: tag lesson_point_me_started
+  done_point_me: tag lesson_point_me_done
+  practiced_point_me: point practice_point_me 3
+  core_knows_point_me: variable %ph.hogwarts_has_spell_point_me% true
+  can_start_point_me: and year_4_or_higher,level_point_me,!done_point_me,!started_point_me,done_accio,mission_charms_y4_done
+  in_progress_point_me: and started_point_me,!practiced_point_me,!done_point_me
+  ready_point_me: and started_point_me,practiced_point_me,!done_point_me
+  level_stupefy: numbercompare %ph.hogwarts_level% >= 11
+  started_stupefy: tag lesson_stupefy_started
+  done_stupefy: tag lesson_stupefy_done
+  practiced_stupefy: point practice_stupefy 3
+  core_knows_stupefy: variable %ph.hogwarts_has_spell_stupefy% true
+  can_start_stupefy: and year_4_or_higher,level_stupefy,!done_stupefy,!started_stupefy,mission_dada_y4_done
+  in_progress_stupefy: and started_stupefy,!practiced_stupefy,!done_stupefy
+  ready_stupefy: and started_stupefy,practiced_stupefy,!done_stupefy
+  level_impedimenta: numbercompare %ph.hogwarts_level% >= 12
+  started_impedimenta: tag lesson_impedimenta_started
+  done_impedimenta: tag lesson_impedimenta_done
+  practiced_impedimenta: point practice_impedimenta 3
+  core_knows_impedimenta: variable %ph.hogwarts_has_spell_impedimenta% true
+  can_start_impedimenta: and year_4_or_higher,level_impedimenta,!done_impedimenta,!started_impedimenta,done_stupefy,mission_dada_y4_done
+  in_progress_impedimenta: and started_impedimenta,!practiced_impedimenta,!done_impedimenta
+  ready_impedimenta: and started_impedimenta,practiced_impedimenta,!done_impedimenta
+  level_reducto: numbercompare %ph.hogwarts_level% >= 12
+  started_reducto: tag lesson_reducto_started
+  done_reducto: tag lesson_reducto_done
+  practiced_reducto: point practice_reducto 3
+  core_knows_reducto: variable %ph.hogwarts_has_spell_reducto% true
+  can_start_reducto: and year_4_or_higher,level_reducto,!done_reducto,!started_reducto,done_impedimenta,mission_dada_y4_done
+  in_progress_reducto: and started_reducto,!practiced_reducto,!done_reducto
+  ready_reducto: and started_reducto,practiced_reducto,!done_reducto
+  level_densaugeo: numbercompare %ph.hogwarts_level% >= 13
+  started_densaugeo: tag lesson_densaugeo_started
+  done_densaugeo: tag lesson_densaugeo_done
+  practiced_densaugeo: point practice_densaugeo 3
+  core_knows_densaugeo: variable %ph.hogwarts_has_spell_densaugeo% true
+  can_start_densaugeo: and year_4_or_higher,level_densaugeo,!done_densaugeo,!started_densaugeo,done_reducto,mission_dada_y4_done
+  in_progress_densaugeo: and started_densaugeo,!practiced_densaugeo,!done_densaugeo
+  ready_densaugeo: and started_densaugeo,practiced_densaugeo,!done_densaugeo
+  level_silencio: numbercompare %ph.hogwarts_level% >= 14
+  started_silencio: tag lesson_silencio_started
+  done_silencio: tag lesson_silencio_done
+  practiced_silencio: point practice_silencio 3
+  core_knows_silencio: variable %ph.hogwarts_has_spell_silencio% true
+  can_start_silencio: and year_5_or_higher,level_silencio,!done_silencio,!started_silencio,mission_charms_y5_done
+  in_progress_silencio: and started_silencio,!practiced_silencio,!done_silencio
+  ready_silencio: and started_silencio,practiced_silencio,!done_silencio
+  level_episkey: numbercompare %ph.hogwarts_level% >= 16
+  started_episkey: tag lesson_episkey_started
+  done_episkey: tag lesson_episkey_done
+  practiced_episkey: point practice_episkey 3
+  core_knows_episkey: variable %ph.hogwarts_has_spell_episkey% true
+  can_start_episkey: and year_5_or_higher,level_episkey,!done_episkey,!started_episkey,done_silencio,mission_charms_y5_done
+  in_progress_episkey: and started_episkey,!practiced_episkey,!done_episkey
+  ready_episkey: and started_episkey,practiced_episkey,!done_episkey
+  level_protego: numbercompare %ph.hogwarts_level% >= 14
+  started_protego: tag lesson_protego_started
+  done_protego: tag lesson_protego_done
+  practiced_protego: point practice_protego 3
+  core_knows_protego: variable %ph.hogwarts_has_spell_protego% true
+  can_start_protego: and year_5_or_higher,level_protego,!done_protego,!started_protego,mission_dada_y5_done
+  in_progress_protego: and started_protego,!practiced_protego,!done_protego
+  ready_protego: and started_protego,practiced_protego,!done_protego
+  level_levicorpus: numbercompare %ph.hogwarts_level% >= 15
+  started_levicorpus: tag lesson_levicorpus_started
+  done_levicorpus: tag lesson_levicorpus_done
+  practiced_levicorpus: point practice_levicorpus 3
+  core_knows_levicorpus: variable %ph.hogwarts_has_spell_levicorpus% true
+  can_start_levicorpus: and year_5_or_higher,level_levicorpus,!done_levicorpus,!started_levicorpus,done_protego,mission_dada_y5_done
+  in_progress_levicorpus: and started_levicorpus,!practiced_levicorpus,!done_levicorpus
+  ready_levicorpus: and started_levicorpus,practiced_levicorpus,!done_levicorpus
+  level_liberacorpus: numbercompare %ph.hogwarts_level% >= 15
+  started_liberacorpus: tag lesson_liberacorpus_started
+  done_liberacorpus: tag lesson_liberacorpus_done
+  practiced_liberacorpus: point practice_liberacorpus 3
+  core_knows_liberacorpus: variable %ph.hogwarts_has_spell_liberacorpus% true
+  can_start_liberacorpus: and year_5_or_higher,level_liberacorpus,!done_liberacorpus,!started_liberacorpus,done_levicorpus,mission_dada_y5_done
+  in_progress_liberacorpus: and started_liberacorpus,!practiced_liberacorpus,!done_liberacorpus
+  ready_liberacorpus: and started_liberacorpus,practiced_liberacorpus,!done_liberacorpus
+  level_aguamenti: numbercompare %ph.hogwarts_level% >= 17
+  started_aguamenti: tag lesson_aguamenti_started
+  done_aguamenti: tag lesson_aguamenti_done
+  practiced_aguamenti: point practice_aguamenti 3
+  core_knows_aguamenti: variable %ph.hogwarts_has_spell_aguamenti% true
+  can_start_aguamenti: and year_6_or_higher,level_aguamenti,!done_aguamenti,!started_aguamenti,mission_charms_y6_done
+  in_progress_aguamenti: and started_aguamenti,!practiced_aguamenti,!done_aguamenti
+  ready_aguamenti: and started_aguamenti,practiced_aguamenti,!done_aguamenti
+  level_muffliato: numbercompare %ph.hogwarts_level% >= 17
+  started_muffliato: tag lesson_muffliato_started
+  done_muffliato: tag lesson_muffliato_done
+  practiced_muffliato: point practice_muffliato 3
+  core_knows_muffliato: variable %ph.hogwarts_has_spell_muffliato% true
+  can_start_muffliato: and year_6_or_higher,level_muffliato,!done_muffliato,!started_muffliato,done_aguamenti,mission_charms_y6_done
+  in_progress_muffliato: and started_muffliato,!practiced_muffliato,!done_muffliato
+  ready_muffliato: and started_muffliato,practiced_muffliato,!done_muffliato
+  level_confringo: numbercompare %ph.hogwarts_level% >= 18
+  started_confringo: tag lesson_confringo_started
+  done_confringo: tag lesson_confringo_done
+  practiced_confringo: point practice_confringo 3
+  core_knows_confringo: variable %ph.hogwarts_has_spell_confringo% true
+  can_start_confringo: and year_6_or_higher,level_confringo,!done_confringo,!started_confringo,mission_potions_y6_done
+  in_progress_confringo: and started_confringo,!practiced_confringo,!done_confringo
+  ready_confringo: and started_confringo,practiced_confringo,!done_confringo
+  level_sectumsempra: numbercompare %ph.hogwarts_level% >= 18
+  started_sectumsempra: tag lesson_sectumsempra_started
+  done_sectumsempra: tag lesson_sectumsempra_done
+  practiced_sectumsempra: point practice_sectumsempra 3
+  core_knows_sectumsempra: variable %ph.hogwarts_has_spell_sectumsempra% true
+  can_start_sectumsempra: and year_6_or_higher,level_sectumsempra,!done_sectumsempra,!started_sectumsempra,done_confringo,mission_potions_y6_done
+  in_progress_sectumsempra: and started_sectumsempra,!practiced_sectumsempra,!done_sectumsempra
+  ready_sectumsempra: and started_sectumsempra,practiced_sectumsempra,!done_sectumsempra
+  level_langlock: numbercompare %ph.hogwarts_level% >= 19
+  started_langlock: tag lesson_langlock_started
+  done_langlock: tag lesson_langlock_done
+  practiced_langlock: point practice_langlock 3
+  core_knows_langlock: variable %ph.hogwarts_has_spell_langlock% true
+  can_start_langlock: and year_6_or_higher,level_langlock,!done_langlock,!started_langlock,done_sectumsempra,mission_potions_y6_done
+  in_progress_langlock: and started_langlock,!practiced_langlock,!done_langlock
+  ready_langlock: and started_langlock,practiced_langlock,!done_langlock
+  level_protego_totalum: numbercompare %ph.hogwarts_level% >= 20
+  started_protego_totalum: tag lesson_protego_totalum_started
+  done_protego_totalum: tag lesson_protego_totalum_done
+  practiced_protego_totalum: point practice_protego_totalum 3
+  core_knows_protego_totalum: variable %ph.hogwarts_has_spell_protego_totalum% true
+  can_start_protego_totalum: and year_7_or_higher,level_protego_totalum,!done_protego_totalum,!started_protego_totalum,mission_transfiguration_y7_done
+  in_progress_protego_totalum: and started_protego_totalum,!practiced_protego_totalum,!done_protego_totalum
+  ready_protego_totalum: and started_protego_totalum,practiced_protego_totalum,!done_protego_totalum
+  level_salvio_hexia: numbercompare %ph.hogwarts_level% >= 20
+  started_salvio_hexia: tag lesson_salvio_hexia_started
+  done_salvio_hexia: tag lesson_salvio_hexia_done
+  practiced_salvio_hexia: point practice_salvio_hexia 3
+  core_knows_salvio_hexia: variable %ph.hogwarts_has_spell_salvio_hexia% true
+  can_start_salvio_hexia: and year_7_or_higher,level_salvio_hexia,!done_salvio_hexia,!started_salvio_hexia,done_protego_totalum,mission_transfiguration_y7_done
+  in_progress_salvio_hexia: and started_salvio_hexia,!practiced_salvio_hexia,!done_salvio_hexia
+  ready_salvio_hexia: and started_salvio_hexia,practiced_salvio_hexia,!done_salvio_hexia
+  level_cave_inimicum: numbercompare %ph.hogwarts_level% >= 21
+  started_cave_inimicum: tag lesson_cave_inimicum_started
+  done_cave_inimicum: tag lesson_cave_inimicum_done
+  practiced_cave_inimicum: point practice_cave_inimicum 3
+  core_knows_cave_inimicum: variable %ph.hogwarts_has_spell_cave_inimicum% true
+  can_start_cave_inimicum: and year_7_or_higher,level_cave_inimicum,!done_cave_inimicum,!started_cave_inimicum,done_salvio_hexia,mission_transfiguration_y7_done
+  in_progress_cave_inimicum: and started_cave_inimicum,!practiced_cave_inimicum,!done_cave_inimicum
+  ready_cave_inimicum: and started_cave_inimicum,practiced_cave_inimicum,!done_cave_inimicum
+  level_fiendfyre: numbercompare %ph.hogwarts_level% >= 21
+  started_fiendfyre: tag lesson_fiendfyre_started
+  done_fiendfyre: tag lesson_fiendfyre_done
+  practiced_fiendfyre: point practice_fiendfyre 3
+  core_knows_fiendfyre: variable %ph.hogwarts_has_spell_fiendfyre% true
+  can_start_fiendfyre: and year_7_or_higher,level_fiendfyre,!done_fiendfyre,!started_fiendfyre,done_cave_inimicum,mission_transfiguration_y7_done
+  in_progress_fiendfyre: and started_fiendfyre,!practiced_fiendfyre,!done_fiendfyre
+  ready_fiendfyre: and started_fiendfyre,practiced_fiendfyre,!done_fiendfyre
+  level_expelliarmus_maxima: numbercompare %ph.hogwarts_level% >= 22
+  started_expelliarmus_maxima: tag lesson_expelliarmus_maxima_started
+  done_expelliarmus_maxima: tag lesson_expelliarmus_maxima_done
+  practiced_expelliarmus_maxima: point practice_expelliarmus_maxima 3
+  core_knows_expelliarmus_maxima: variable %ph.hogwarts_has_spell_expelliarmus_maxima% true
+  can_start_expelliarmus_maxima: and year_7_or_higher,level_expelliarmus_maxima,!done_expelliarmus_maxima,!started_expelliarmus_maxima,done_fiendfyre,mission_transfiguration_y7_done
+  in_progress_expelliarmus_maxima: and started_expelliarmus_maxima,!practiced_expelliarmus_maxima,!done_expelliarmus_maxima
+  ready_expelliarmus_maxima: and started_expelliarmus_maxima,practiced_expelliarmus_maxima,!done_expelliarmus_maxima
+  year_1_all_spells: and done_lumos,done_nox,done_wingardium_leviosa,done_alohomora,done_incendio,done_petrificus_totalus,done_locomotor_mortis
+  year_1_curriculum_complete: and year_1_all_spells,mission_charms_y1_done,mission_dada_y1_done,transfiguration_done,potions_done,flying_done,herbology_done
+  year_2_all_spells: and done_expelliarmus,done_rictusempra,done_serpensortia,done_reparo,done_immobulus,done_finite_incantatem
+  year_3_all_spells: and done_riddikulus,done_expecto_patronum,done_lumos_maxima,done_impervius,done_ferula
+  year_4_all_spells: and done_accio,done_stupefy,done_impedimenta,done_reducto,done_densaugeo,done_point_me
+  year_5_all_spells: and done_protego,done_silencio,done_levicorpus,done_liberacorpus,done_episkey
+  year_6_all_spells: and done_aguamenti,done_muffliato,done_confringo,done_sectumsempra,done_langlock
+  year_7_all_spells: and done_protego_totalum,done_salvio_hexia,done_cave_inimicum,done_fiendfyre,done_expelliarmus_maxima
+  flying_done: tag support_flying_done
+  herbology_done: tag support_herbology_done
+  transfiguration_done: tag support_transfiguration_done
+  potions_started: tag support_potions_started
+  potions_done: tag support_potions_done
+  has_potion_ingredients: item nether_wart:3,spider_eye:1
+  year_2_curriculum_complete: and year_2_all_spells,mission_charms_y2_done,mission_dada_y2_done
+  year_3_curriculum_complete: and year_3_all_spells,mission_charms_y3_done,mission_dada_y3_done,mission_herbology_y3_done
+  year_4_curriculum_complete: and year_4_all_spells,mission_charms_y4_done,mission_dada_y4_done,mission_flying_y4_done
+  year_5_curriculum_complete: and year_5_all_spells,mission_charms_y5_done,mission_dada_y5_done
+  year_6_curriculum_complete: and year_6_all_spells,mission_charms_y6_done,mission_potions_y6_done
+  year_7_curriculum_complete: and year_7_all_spells,mission_transfiguration_y7_done

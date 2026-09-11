@@ -1,0 +1,506 @@
+conversations:
+  flitwick:
+    quester: '&b&lGiáo sư Filius Flitwick&r'
+    first: mission_turnin_charms_y1,mission_remind_charms_y1,mission_offer_charms_y1,mission_turnin_charms_y2,mission_remind_charms_y2,mission_offer_charms_y2,mission_turnin_charms_y3,mission_remind_charms_y3,mission_offer_charms_y3,mission_turnin_charms_y4,mission_remind_charms_y4,mission_offer_charms_y4,mission_turnin_charms_y5,mission_remind_charms_y5,mission_offer_charms_y5,mission_turnin_charms_y6,mission_remind_charms_y6,mission_offer_charms_y6,complete_lumos,remind_lumos,offer_lumos,complete_nox,remind_nox,offer_nox,complete_wingardium_leviosa,remind_wingardium_leviosa,offer_wingardium_leviosa,complete_alohomora,remind_alohomora,offer_alohomora,complete_incendio,remind_incendio,offer_incendio,complete_reparo,remind_reparo,offer_reparo,complete_immobulus,remind_immobulus,offer_immobulus,complete_finite_incantatem,remind_finite_incantatem,offer_finite_incantatem,complete_lumos_maxima,remind_lumos_maxima,offer_lumos_maxima,complete_impervius,remind_impervius,offer_impervius,complete_ferula,remind_ferula,offer_ferula,complete_accio,remind_accio,offer_accio,complete_point_me,remind_point_me,offer_point_me,complete_silencio,remind_silencio,offer_silencio,complete_episkey,remind_episkey,offer_episkey,complete_aguamenti,remind_aguamenti,offer_aguamenti,complete_muffliato,remind_muffliato,offer_muffliato,locked,all_done
+    stop: 'true'
+    NPC_options:
+      mission_offer_charms_y1:
+        text: '&eNhiệm vụ Năm I: &fĐộ chính xác của cổ tay&7. Tới khu luyện Bùa chú và click trái hoặc phải vào một &fBia Phép Thuật (TARGET)&7. Em nhận bài chứ?'
+        conditions: can_start_mission_charms_y1
+        pointers: mission_accept_charms_y1,mission_decline
+      mission_start_charms_y1:
+        text: '&aTốt.&7 Hãy tới khu luyện và click trái hoặc phải vào &fTARGET&7. Khi thành công, em sẽ thấy thông báo màu xanh. Sau đó quay lại gặp ta.'
+        actions: start_mission_charms_y1
+        pointers: mission_go
+      mission_remind_charms_y1:
+        text: '&eNhiệm vụ vẫn đang tiếp tục.&7 Hãy click trái hoặc phải vào một &fBia Phép Thuật (TARGET)&7. Khi chat báo &aĐã hoàn thành mục tiêu&7 thì quay lại đây.'
+        conditions: in_progress_mission_charms_y1
+        pointers: mission_go
+      mission_turnin_charms_y1:
+        text: '&aTa đã kiểm tra kết quả.&7 Em hoàn thành &fĐộ chính xác của cổ tay&7. Từ giờ các bài phép tương ứng của môn này đã mở cho em.'
+        conditions: can_turnin_mission_charms_y1
+        actions: finish_mission_charms_y1
+        pointers: mission_thanks
+      mission_offer_charms_y2:
+        text: '&eNhiệm vụ môn học — Năm 2: &fNhịp điệu của bùa chú&7. Tại lớp Bùa chú, tương tác với Chuông Luyện Phép (BELL) để hoàn thành bài nhịp chú. Em nhận bài chứ?'
+        conditions: can_start_mission_charms_y2
+        pointers: mission_accept_charms_y2,mission_decline
+      mission_start_charms_y2:
+        text: '&aTốt.&7 Ta đã ghi nhiệm vụ &fNhịp điệu của bùa chú&7 vào Sổ Nhiệm Vụ. Hoàn thành mục tiêu và hệ thống sẽ tự chấm khi hoàn thành.'
+        actions: start_mission_charms_y2
+        pointers: mission_go
+      mission_remind_charms_y2:
+        text: '&eBài &fNhịp điệu của bùa chú&e vẫn chưa xong.&7 Tại lớp Bùa chú, tương tác với Chuông Luyện Phép (BELL) để hoàn thành bài nhịp chú.'
+        conditions: in_progress_mission_charms_y2
+        pointers: mission_go
+      mission_turnin_charms_y2:
+        text: '&aTa đã kiểm tra kết quả.&7 Em hoàn thành &fNhịp điệu của bùa chú&7. Từ giờ các bài phép tương ứng của môn này đã mở cho em.'
+        conditions: can_turnin_mission_charms_y2
+        actions: finish_mission_charms_y2
+        pointers: mission_thanks
+      mission_offer_charms_y3:
+        text: '&eNhiệm vụ môn học — Năm 3: &fKiểm soát chú ngữ&7. Đọc giáo trình ở Bục Giảng (LECTERN) trong lớp Bùa chú rồi quay lại báo cáo. Em nhận bài chứ?'
+        conditions: can_start_mission_charms_y3
+        pointers: mission_accept_charms_y3,mission_decline
+      mission_start_charms_y3:
+        text: '&aTốt.&7 Ta đã ghi nhiệm vụ &fKiểm soát chú ngữ&7 vào Sổ Nhiệm Vụ. Hoàn thành mục tiêu và hệ thống sẽ tự chấm khi hoàn thành.'
+        actions: start_mission_charms_y3
+        pointers: mission_go
+      mission_remind_charms_y3:
+        text: '&eBài &fKiểm soát chú ngữ&e vẫn chưa xong.&7 Đọc giáo trình ở Bục Giảng (LECTERN) trong lớp Bùa chú rồi quay lại báo cáo.'
+        conditions: in_progress_mission_charms_y3
+        pointers: mission_go
+      mission_turnin_charms_y3:
+        text: '&aTa đã kiểm tra kết quả.&7 Em hoàn thành &fKiểm soát chú ngữ&7. Từ giờ các bài phép tương ứng của môn này đã mở cho em.'
+        conditions: can_turnin_mission_charms_y3
+        actions: finish_mission_charms_y3
+        pointers: mission_thanks
+      mission_offer_charms_y4:
+        text: '&eNhiệm vụ môn học — Năm 4: &fTriệu tập có kiểm soát&7. Tới Rương Thực Hành (CHEST) trong lớp Bùa chú và kiểm tra mục tiêu triệu tập. Em nhận bài chứ?'
+        conditions: can_start_mission_charms_y4
+        pointers: mission_accept_charms_y4,mission_decline
+      mission_start_charms_y4:
+        text: '&aTốt.&7 Ta đã ghi nhiệm vụ &fTriệu tập có kiểm soát&7 vào Sổ Nhiệm Vụ. Hoàn thành mục tiêu và hệ thống sẽ tự chấm khi hoàn thành.'
+        actions: start_mission_charms_y4
+        pointers: mission_go
+      mission_remind_charms_y4:
+        text: '&eBài &fTriệu tập có kiểm soát&e vẫn chưa xong.&7 Tới Rương Thực Hành (CHEST) trong lớp Bùa chú và kiểm tra mục tiêu triệu tập.'
+        conditions: in_progress_mission_charms_y4
+        pointers: mission_go
+      mission_turnin_charms_y4:
+        text: '&aTa đã kiểm tra kết quả.&7 Em hoàn thành &fTriệu tập có kiểm soát&7. Từ giờ các bài phép tương ứng của môn này đã mở cho em.'
+        conditions: can_turnin_mission_charms_y4
+        actions: finish_mission_charms_y4
+        pointers: mission_thanks
+      mission_offer_charms_y5:
+        text: '&eNhiệm vụ môn học — Năm 5: &fKiểm soát âm thanh&7. Tương tác với Khối Nốt Nhạc (NOTE_BLOCK) trong phòng luyện để kiểm tra độ chính xác. Em nhận bài chứ?'
+        conditions: can_start_mission_charms_y5
+        pointers: mission_accept_charms_y5,mission_decline
+      mission_start_charms_y5:
+        text: '&aTốt.&7 Ta đã ghi nhiệm vụ &fKiểm soát âm thanh&7 vào Sổ Nhiệm Vụ. Hoàn thành mục tiêu và hệ thống sẽ tự chấm khi hoàn thành.'
+        actions: start_mission_charms_y5
+        pointers: mission_go
+      mission_remind_charms_y5:
+        text: '&eBài &fKiểm soát âm thanh&e vẫn chưa xong.&7 Tương tác với Khối Nốt Nhạc (NOTE_BLOCK) trong phòng luyện để kiểm tra độ chính xác.'
+        conditions: in_progress_mission_charms_y5
+        pointers: mission_go
+      mission_turnin_charms_y5:
+        text: '&aTa đã kiểm tra kết quả.&7 Em hoàn thành &fKiểm soát âm thanh&7. Từ giờ các bài phép tương ứng của môn này đã mở cho em.'
+        conditions: can_turnin_mission_charms_y5
+        actions: finish_mission_charms_y5
+        pointers: mission_thanks
+      mission_offer_charms_y6:
+        text: '&eNhiệm vụ môn học — Năm 6: &fBùa chú nâng cao&7. Hoàn thành bài hiệu chỉnh cuối tại Bia Phép Thuật (TARGET) của lớp Bùa chú. Em nhận bài chứ?'
+        conditions: can_start_mission_charms_y6
+        pointers: mission_accept_charms_y6,mission_decline
+      mission_start_charms_y6:
+        text: '&aTốt.&7 Ta đã ghi nhiệm vụ &fBùa chú nâng cao&7 vào Sổ Nhiệm Vụ. Hoàn thành mục tiêu và hệ thống sẽ tự chấm khi hoàn thành.'
+        actions: start_mission_charms_y6
+        pointers: mission_go
+      mission_remind_charms_y6:
+        text: '&eBài &fBùa chú nâng cao&e vẫn chưa xong.&7 Hoàn thành bài hiệu chỉnh cuối tại Bia Phép Thuật (TARGET) của lớp Bùa chú.'
+        conditions: in_progress_mission_charms_y6
+        pointers: mission_go
+      mission_turnin_charms_y6:
+        text: '&aTa đã kiểm tra kết quả.&7 Em hoàn thành &fBùa chú nâng cao&7. Từ giờ các bài phép tương ứng của môn này đã mở cho em.'
+        conditions: can_turnin_mission_charms_y6
+        actions: finish_mission_charms_y6
+        pointers: mission_thanks
+      mission_continue_exit:
+        text: '&eNhiệm vụ vẫn đang tiếp tục.&7 Hoàn thành mục tiêu rồi quay lại. Ta sẽ không tính là xong trước khi em nộp bài.'
+      mission_return_exit:
+        text: '&7Được. Khi sẵn sàng hãy quay lại nhận nhiệm vụ.'
+      mission_complete_exit:
+        text: '&aTốt.&7 Nhiệm vụ môn học đã được ghi nhận hoàn thành.'
+      offer_lumos:
+        text: 'Chào em. Bùa chú đòi hỏi phát âm chính xác, cổ tay ổn định và một chút kiên nhẫn. Bài tiếp theo là &fLumos&7 — Bùa Phát Sáng. Yêu cầu: Năm 1, Cấp phép 1. Em có muốn bắt đầu không?'
+        conditions: can_start_lumos
+        pointers: accept_lumos,decline
+      start_msg_lumos:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Lumos. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_lumos
+        pointers: leave
+      remind_lumos:
+        text: Bài Lumos chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_lumos
+        pointers: leave
+      complete_lumos:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Lumos; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_lumos
+        actions: complete_lumos
+        pointers: thanks
+      offer_nox:
+        text: 'Chào em. Bùa chú đòi hỏi phát âm chính xác, cổ tay ổn định và một chút kiên nhẫn. Bài tiếp theo là &fNox&7 — Bùa Tắt Sáng. Yêu cầu: Năm 1, Cấp phép 1. Em có muốn bắt đầu không?'
+        conditions: can_start_nox
+        pointers: accept_nox,decline
+      start_msg_nox:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Nox. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_nox
+        pointers: leave
+      remind_nox:
+        text: Bài Nox chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_nox
+        pointers: leave
+      complete_nox:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Nox; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_nox
+        actions: complete_nox
+        pointers: thanks
+      offer_wingardium_leviosa:
+        text: 'Chào em. Bùa chú đòi hỏi phát âm chính xác, cổ tay ổn định và một chút kiên nhẫn. Bài tiếp theo là &fWingardium Leviosa&7 — Bùa Bay Bổng. Yêu cầu: Năm 1, Cấp phép 2. Em có muốn bắt đầu không?'
+        conditions: can_start_wingardium_leviosa
+        pointers: accept_wingardium_leviosa,decline
+      start_msg_wingardium_leviosa:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Wingardium Leviosa. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_wingardium_leviosa
+        pointers: leave
+      remind_wingardium_leviosa:
+        text: Bài Wingardium Leviosa chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_wingardium_leviosa
+        pointers: leave
+      complete_wingardium_leviosa:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Wingardium Leviosa; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_wingardium_leviosa
+        actions: complete_wingardium_leviosa
+        pointers: thanks
+      offer_alohomora:
+        text: 'Chào em. Bùa chú đòi hỏi phát âm chính xác, cổ tay ổn định và một chút kiên nhẫn. Bài tiếp theo là &fAlohomora&7 — Bùa Mở Khoá. Yêu cầu: Năm 1, Cấp phép 2. Em có muốn bắt đầu không?'
+        conditions: can_start_alohomora
+        pointers: accept_alohomora,decline
+      start_msg_alohomora:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Alohomora. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_alohomora
+        pointers: leave
+      remind_alohomora:
+        text: Bài Alohomora chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_alohomora
+        pointers: leave
+      complete_alohomora:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Alohomora; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_alohomora
+        actions: complete_alohomora
+        pointers: thanks
+      offer_incendio:
+        text: 'Chào em. Bùa chú đòi hỏi phát âm chính xác, cổ tay ổn định và một chút kiên nhẫn. Bài tiếp theo là &fIncendio&7 — Bùa Nhóm Lửa. Yêu cầu: Năm 1, Cấp phép 3. Em có muốn bắt đầu không?'
+        conditions: can_start_incendio
+        pointers: accept_incendio,decline
+      start_msg_incendio:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Incendio. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_incendio
+        pointers: leave
+      remind_incendio:
+        text: Bài Incendio chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_incendio
+        pointers: leave
+      complete_incendio:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Incendio; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_incendio
+        actions: complete_incendio
+        pointers: thanks
+      offer_reparo:
+        text: 'Chào em. Bùa chú đòi hỏi phát âm chính xác, cổ tay ổn định và một chút kiên nhẫn. Bài tiếp theo là &fReparo&7 — Bùa Hàn Gắn. Yêu cầu: Năm 2, Cấp phép 6. Em có muốn bắt đầu không?'
+        conditions: can_start_reparo
+        pointers: accept_reparo,decline
+      start_msg_reparo:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Reparo. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_reparo
+        pointers: leave
+      remind_reparo:
+        text: Bài Reparo chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_reparo
+        pointers: leave
+      complete_reparo:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Reparo; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_reparo
+        actions: complete_reparo
+        pointers: thanks
+      offer_immobulus:
+        text: 'Chào em. Bùa chú đòi hỏi phát âm chính xác, cổ tay ổn định và một chút kiên nhẫn. Bài tiếp theo là &fImmobulus&7 — Bùa Bất Động. Yêu cầu: Năm 2, Cấp phép 7. Em có muốn bắt đầu không?'
+        conditions: can_start_immobulus
+        pointers: accept_immobulus,decline
+      start_msg_immobulus:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Immobulus. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_immobulus
+        pointers: leave
+      remind_immobulus:
+        text: Bài Immobulus chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_immobulus
+        pointers: leave
+      complete_immobulus:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Immobulus; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_immobulus
+        actions: complete_immobulus
+        pointers: thanks
+      offer_finite_incantatem:
+        text: 'Chào em. Bùa chú đòi hỏi phát âm chính xác, cổ tay ổn định và một chút kiên nhẫn. Bài tiếp theo là &fFinite Incantatem&7 — Bùa Chấm Dứt. Yêu cầu: Năm 2, Cấp phép 7. Em có muốn bắt đầu không?'
+        conditions: can_start_finite_incantatem
+        pointers: accept_finite_incantatem,decline
+      start_msg_finite_incantatem:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Finite Incantatem. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_finite_incantatem
+        pointers: leave
+      remind_finite_incantatem:
+        text: Bài Finite Incantatem chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_finite_incantatem
+        pointers: leave
+      complete_finite_incantatem:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Finite Incantatem; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_finite_incantatem
+        actions: complete_finite_incantatem
+        pointers: thanks
+      offer_lumos_maxima:
+        text: 'Chào em. Bùa chú đòi hỏi phát âm chính xác, cổ tay ổn định và một chút kiên nhẫn. Bài tiếp theo là &fLumos Maxima&7 — Bùa Đại Phát Sáng. Yêu cầu: Năm 3, Cấp phép 9. Em có muốn bắt đầu không?'
+        conditions: can_start_lumos_maxima
+        pointers: accept_lumos_maxima,decline
+      start_msg_lumos_maxima:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Lumos Maxima. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_lumos_maxima
+        pointers: leave
+      remind_lumos_maxima:
+        text: Bài Lumos Maxima chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_lumos_maxima
+        pointers: leave
+      complete_lumos_maxima:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Lumos Maxima; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_lumos_maxima
+        actions: complete_lumos_maxima
+        pointers: thanks
+      offer_impervius:
+        text: 'Chào em. Bùa chú đòi hỏi phát âm chính xác, cổ tay ổn định và một chút kiên nhẫn. Bài tiếp theo là &fImpervius&7 — Bùa Không Thấm. Yêu cầu: Năm 3, Cấp phép 9. Em có muốn bắt đầu không?'
+        conditions: can_start_impervius
+        pointers: accept_impervius,decline
+      start_msg_impervius:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Impervius. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_impervius
+        pointers: leave
+      remind_impervius:
+        text: Bài Impervius chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_impervius
+        pointers: leave
+      complete_impervius:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Impervius; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_impervius
+        actions: complete_impervius
+        pointers: thanks
+      offer_ferula:
+        text: 'Chào em. Bùa chú đòi hỏi phát âm chính xác, cổ tay ổn định và một chút kiên nhẫn. Bài tiếp theo là &fFerula&7 — Bùa Băng Bó. Yêu cầu: Năm 3, Cấp phép 10. Em có muốn bắt đầu không?'
+        conditions: can_start_ferula
+        pointers: accept_ferula,decline
+      start_msg_ferula:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Ferula. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_ferula
+        pointers: leave
+      remind_ferula:
+        text: Bài Ferula chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_ferula
+        pointers: leave
+      complete_ferula:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Ferula; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_ferula
+        actions: complete_ferula
+        pointers: thanks
+      offer_accio:
+        text: 'Chào em. Bùa chú đòi hỏi phát âm chính xác, cổ tay ổn định và một chút kiên nhẫn. Bài tiếp theo là &fAccio&7 — Bùa Triệu Tập. Yêu cầu: Năm 4, Cấp phép 11. Em có muốn bắt đầu không?'
+        conditions: can_start_accio
+        pointers: accept_accio,decline
+      start_msg_accio:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Accio. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_accio
+        pointers: leave
+      remind_accio:
+        text: Bài Accio chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_accio
+        pointers: leave
+      complete_accio:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Accio; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_accio
+        actions: complete_accio
+        pointers: thanks
+      offer_point_me:
+        text: 'Chào em. Bùa chú đòi hỏi phát âm chính xác, cổ tay ổn định và một chút kiên nhẫn. Bài tiếp theo là &fPoint Me&7 — Bùa La Bàn. Yêu cầu: Năm 4, Cấp phép 13. Em có muốn bắt đầu không?'
+        conditions: can_start_point_me
+        pointers: accept_point_me,decline
+      start_msg_point_me:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Point Me. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_point_me
+        pointers: leave
+      remind_point_me:
+        text: Bài Point Me chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_point_me
+        pointers: leave
+      complete_point_me:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Point Me; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_point_me
+        actions: complete_point_me
+        pointers: thanks
+      offer_silencio:
+        text: 'Chào em. Bùa chú đòi hỏi phát âm chính xác, cổ tay ổn định và một chút kiên nhẫn. Bài tiếp theo là &fSilencio&7 — Bùa Câm Lặng. Yêu cầu: Năm 5, Cấp phép 14. Em có muốn bắt đầu không?'
+        conditions: can_start_silencio
+        pointers: accept_silencio,decline
+      start_msg_silencio:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Silencio. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_silencio
+        pointers: leave
+      remind_silencio:
+        text: Bài Silencio chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_silencio
+        pointers: leave
+      complete_silencio:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Silencio; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_silencio
+        actions: complete_silencio
+        pointers: thanks
+      offer_episkey:
+        text: 'Chào em. Bùa chú đòi hỏi phát âm chính xác, cổ tay ổn định và một chút kiên nhẫn. Bài tiếp theo là &fEpiskey&7 — Bùa Chữa Lành. Yêu cầu: Năm 5, Cấp phép 16. Em có muốn bắt đầu không?'
+        conditions: can_start_episkey
+        pointers: accept_episkey,decline
+      start_msg_episkey:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Episkey. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_episkey
+        pointers: leave
+      remind_episkey:
+        text: Bài Episkey chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_episkey
+        pointers: leave
+      complete_episkey:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Episkey; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_episkey
+        actions: complete_episkey
+        pointers: thanks
+      offer_aguamenti:
+        text: 'Chào em. Bùa chú đòi hỏi phát âm chính xác, cổ tay ổn định và một chút kiên nhẫn. Bài tiếp theo là &fAguamenti&7 — Bùa Tạo Nước. Yêu cầu: Năm 6, Cấp phép 17. Em có muốn bắt đầu không?'
+        conditions: can_start_aguamenti
+        pointers: accept_aguamenti,decline
+      start_msg_aguamenti:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Aguamenti. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_aguamenti
+        pointers: leave
+      remind_aguamenti:
+        text: Bài Aguamenti chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_aguamenti
+        pointers: leave
+      complete_aguamenti:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Aguamenti; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_aguamenti
+        actions: complete_aguamenti
+        pointers: thanks
+      offer_muffliato:
+        text: 'Chào em. Bùa chú đòi hỏi phát âm chính xác, cổ tay ổn định và một chút kiên nhẫn. Bài tiếp theo là &fMuffliato&7 — Bùa Ù Tai. Yêu cầu: Năm 6, Cấp phép 17. Em có muốn bắt đầu không?'
+        conditions: can_start_muffliato
+        pointers: accept_muffliato,decline
+      start_msg_muffliato:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Muffliato. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_muffliato
+        pointers: leave
+      remind_muffliato:
+        text: Bài Muffliato chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_muffliato
+        pointers: leave
+      complete_muffliato:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Muffliato; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_muffliato
+        actions: complete_muffliato
+        pointers: thanks
+      locked:
+        text: 'Hiện chưa có bài mới phù hợp. Hãy kiểm tra &f/hogwarts&7: đúng năm học, đủ Cấp phép và hoàn thành bài trước của môn này.'
+        pointers: return_later
+      all_done:
+        text: Em đã hoàn tất toàn bộ bài mà ta phụ trách ở giai đoạn hiện tại. Hãy tiếp tục môn còn lại hoặc tới gặp Hiệu trưởng khi đã xong cả năm.
+        pointers: return_later
+      practice_exit:
+        text: '&eBài học vẫn đang tiếp tục.&7 Hãy luyện đủ yêu cầu và hệ thống sẽ tự chấm khi hoàn thành. Ta sẽ chỉ công nhận khi em hoàn thành bài.'
+      return_exit:
+        text: '&7Được. Khi đủ điều kiện hoặc sẵn sàng, hãy quay lại gặp ta.'
+      complete_exit:
+        text: '&aTốt lắm.&7 Bài học này đã hoàn thành. Phép vừa học đã được ghi vào Sổ Phép của em.'
+    player_options:
+      mission_accept_charms_y1:
+        text: '&aEm nhận nhiệm vụ.'
+        pointers: mission_start_charms_y1
+      mission_accept_charms_y2:
+        text: '&aEm nhận nhiệm vụ.'
+        pointers: mission_start_charms_y2
+      mission_accept_charms_y3:
+        text: '&aEm nhận nhiệm vụ.'
+        pointers: mission_start_charms_y3
+      mission_accept_charms_y4:
+        text: '&aEm nhận nhiệm vụ.'
+        pointers: mission_start_charms_y4
+      mission_accept_charms_y5:
+        text: '&aEm nhận nhiệm vụ.'
+        pointers: mission_start_charms_y5
+      mission_accept_charms_y6:
+        text: '&aEm nhận nhiệm vụ.'
+        pointers: mission_start_charms_y6
+      mission_decline:
+        text: '&7Em sẽ quay lại sau.'
+        pointers: mission_return_exit
+      mission_go:
+        text: '&aEm đi làm nhiệm vụ ngay.'
+        pointers: mission_continue_exit
+      mission_thanks:
+        text: '&aEm cảm ơn giáo sư.'
+        pointers: mission_complete_exit
+      accept_lumos:
+        text: '&aEm muốn học Lumos.'
+        pointers: start_msg_lumos
+      accept_nox:
+        text: '&aEm muốn học Nox.'
+        pointers: start_msg_nox
+      accept_wingardium_leviosa:
+        text: '&aEm muốn học Wingardium Leviosa.'
+        pointers: start_msg_wingardium_leviosa
+      accept_alohomora:
+        text: '&aEm muốn học Alohomora.'
+        pointers: start_msg_alohomora
+      accept_incendio:
+        text: '&aEm muốn học Incendio.'
+        pointers: start_msg_incendio
+      accept_reparo:
+        text: '&aEm muốn học Reparo.'
+        pointers: start_msg_reparo
+      accept_immobulus:
+        text: '&aEm muốn học Immobulus.'
+        pointers: start_msg_immobulus
+      accept_finite_incantatem:
+        text: '&aEm muốn học Finite Incantatem.'
+        pointers: start_msg_finite_incantatem
+      accept_lumos_maxima:
+        text: '&aEm muốn học Lumos Maxima.'
+        pointers: start_msg_lumos_maxima
+      accept_impervius:
+        text: '&aEm muốn học Impervius.'
+        pointers: start_msg_impervius
+      accept_ferula:
+        text: '&aEm muốn học Ferula.'
+        pointers: start_msg_ferula
+      accept_accio:
+        text: '&aEm muốn học Accio.'
+        pointers: start_msg_accio
+      accept_point_me:
+        text: '&aEm muốn học Point Me.'
+        pointers: start_msg_point_me
+      accept_silencio:
+        text: '&aEm muốn học Silencio.'
+        pointers: start_msg_silencio
+      accept_episkey:
+        text: '&aEm muốn học Episkey.'
+        pointers: start_msg_episkey
+      accept_aguamenti:
+        text: '&aEm muốn học Aguamenti.'
+        pointers: start_msg_aguamenti
+      accept_muffliato:
+        text: '&aEm muốn học Muffliato.'
+        pointers: start_msg_muffliato
+      decline:
+        text: '&7Em sẽ quay lại sau.'
+        pointers: return_exit
+      leave:
+        text: '&aEm đi luyện tiếp ạ.'
+        pointers: practice_exit
+      thanks:
+        text: '&aEm cảm ơn giáo sư.'
+        pointers: complete_exit
+      return_later:
+        text: '&7Vâng, em sẽ quay lại sau.'
+        pointers: return_exit

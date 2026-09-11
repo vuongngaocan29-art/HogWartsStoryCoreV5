@@ -1,0 +1,289 @@
+conversations:
+  dumbledore:
+    quester: '&6&lHiệu trưởng Albus Dumbledore&r'
+    stop: 'true'
+    NPC_options:
+      exam_offer_y1:
+        text: '&6Chương trình Năm 1 của em đã hoàn tất.&7 Trước khi lên Năm 2, em phải vượt qua kỳ hỏi đáp cuối năm. Sẵn sàng chưa?'
+        conditions: current_year_1,year_1_curriculum_complete,!exam_y1_done
+        pointers: exam_start_y1,exam_later
+      exam_q1_y1:
+        text: '&eCâu 1:&f Phép nào dùng để tạo ánh sáng ở đầu đũa?'
+        pointers: exam_y1_q1_a0,exam_y1_q1_a1,exam_y1_q1_a2
+      exam_q2_y1:
+        text: '&eCâu 2:&f Trước khi dùng một phép mới, em cần làm gì?'
+        pointers: exam_y1_q2_a0,exam_y1_q2_a1,exam_y1_q2_a2
+      exam_wrong_y1:
+        text: '&cChưa chính xác.&7 Hãy xem lại Sổ Phép và quay lại khi em sẵn sàng.'
+        pointers: exam_exit_answer
+      exam_pass_y1:
+        text: '&aĐạt.&7 Em đã vượt kỳ kiểm tra Năm 1 và được phép bước sang Năm 2.'
+        actions: pass_exam_y1
+        pointers: exam_pass_answer
+      exam_offer_y2:
+        text: '&6Chương trình Năm 2 của em đã hoàn tất.&7 Trước khi lên Năm 3, em phải vượt qua kỳ hỏi đáp cuối năm. Sẵn sàng chưa?'
+        conditions: current_year_2,year_2_curriculum_complete,!exam_y2_done
+        pointers: exam_start_y2,exam_later
+      exam_q1_y2:
+        text: '&eCâu 1:&f Phép nào thường dùng để tước vũ khí đối phương trong bài học?'
+        pointers: exam_y2_q1_a0,exam_y2_q1_a1,exam_y2_q1_a2
+      exam_q2_y2:
+        text: '&eCâu 2:&f Trong thực hành phòng vệ, ưu tiên nào là đúng?'
+        pointers: exam_y2_q2_a0,exam_y2_q2_a1,exam_y2_q2_a2
+      exam_wrong_y2:
+        text: '&cChưa chính xác.&7 Hãy xem lại Sổ Phép và quay lại khi em sẵn sàng.'
+        pointers: exam_exit_answer
+      exam_pass_y2:
+        text: '&aĐạt.&7 Em đã vượt kỳ kiểm tra Năm 2 và được phép bước sang Năm 3.'
+        actions: pass_exam_y2
+        pointers: exam_pass_answer
+      exam_offer_y3:
+        text: '&6Chương trình Năm 3 của em đã hoàn tất.&7 Trước khi lên Năm 4, em phải vượt qua kỳ hỏi đáp cuối năm. Sẵn sàng chưa?'
+        conditions: current_year_3,year_3_curriculum_complete,!exam_y3_done
+        pointers: exam_start_y3,exam_later
+      exam_q1_y3:
+        text: '&eCâu 1:&f Phép nào thuộc bài phòng vệ của Lupin?'
+        pointers: exam_y3_q1_a0,exam_y3_q1_a1,exam_y3_q1_a2
+      exam_q2_y3:
+        text: '&eCâu 2:&f Một học sinh giỏi nên làm gì khi bài chưa đạt?'
+        pointers: exam_y3_q2_a0,exam_y3_q2_a1,exam_y3_q2_a2
+      exam_wrong_y3:
+        text: '&cChưa chính xác.&7 Hãy xem lại Sổ Phép và quay lại khi em sẵn sàng.'
+        pointers: exam_exit_answer
+      exam_pass_y3:
+        text: '&aĐạt.&7 Em đã vượt kỳ kiểm tra Năm 3 và được phép bước sang Năm 4.'
+        actions: pass_exam_y3
+        pointers: exam_pass_answer
+      exam_offer_y4:
+        text: '&6Chương trình Năm 4 của em đã hoàn tất.&7 Trước khi lên Năm 5, em phải vượt qua kỳ hỏi đáp cuối năm. Sẵn sàng chưa?'
+        conditions: current_year_4,year_4_curriculum_complete,!exam_y4_done
+        pointers: exam_start_y4,exam_later
+      exam_q1_y4:
+        text: '&eCâu 1:&f Accio thuộc nhóm kỹ năng nào trong chương trình?'
+        pointers: exam_y4_q1_a0,exam_y4_q1_a1,exam_y4_q1_a2
+      exam_q2_y4:
+        text: '&eCâu 2:&f Moody nhấn mạnh điều gì trong thực hành?'
+        pointers: exam_y4_q2_a0,exam_y4_q2_a1,exam_y4_q2_a2
+      exam_wrong_y4:
+        text: '&cChưa chính xác.&7 Hãy xem lại Sổ Phép và quay lại khi em sẵn sàng.'
+        pointers: exam_exit_answer
+      exam_pass_y4:
+        text: '&aĐạt.&7 Em đã vượt kỳ kiểm tra Năm 4 và được phép bước sang Năm 5.'
+        actions: pass_exam_y4
+        pointers: exam_pass_answer
+      exam_offer_y5:
+        text: '&6Chương trình Năm 5 của em đã hoàn tất.&7 Trước khi lên Năm 6, em phải vượt qua kỳ hỏi đáp cuối năm. Sẵn sàng chưa?'
+        conditions: current_year_5,year_5_curriculum_complete,!exam_y5_done
+        pointers: exam_start_y5,exam_later
+      exam_q1_y5:
+        text: '&eCâu 1:&f Protego được dùng như bài học về kỹ năng gì?'
+        pointers: exam_y5_q1_a0,exam_y5_q1_a1,exam_y5_q1_a2
+      exam_q2_y5:
+        text: '&eCâu 2:&f Điều kiện để một phép được ghi vĩnh viễn vào Sổ Phép là gì?'
+        pointers: exam_y5_q2_a0,exam_y5_q2_a1,exam_y5_q2_a2
+      exam_wrong_y5:
+        text: '&cChưa chính xác.&7 Hãy xem lại Sổ Phép và quay lại khi em sẵn sàng.'
+        pointers: exam_exit_answer
+      exam_pass_y5:
+        text: '&aĐạt.&7 Em đã vượt kỳ kiểm tra Năm 5 và được phép bước sang Năm 6.'
+        actions: pass_exam_y5
+        pointers: exam_pass_answer
+      exam_offer_y6:
+        text: '&6Chương trình Năm 6 của em đã hoàn tất.&7 Trước khi lên Năm 7, em phải vượt qua kỳ hỏi đáp cuối năm. Sẵn sàng chưa?'
+        conditions: current_year_6,year_6_curriculum_complete,!exam_y6_done
+        pointers: exam_start_y6,exam_later
+      exam_q1_y6:
+        text: '&eCâu 1:&f Aguamenti liên quan tới yếu tố nào?'
+        pointers: exam_y6_q1_a0,exam_y6_q1_a1,exam_y6_q1_a2
+      exam_q2_y6:
+        text: '&eCâu 2:&f Khi học phép nâng cao, điều quan trọng nhất là gì?'
+        pointers: exam_y6_q2_a0,exam_y6_q2_a1,exam_y6_q2_a2
+      exam_wrong_y6:
+        text: '&cChưa chính xác.&7 Hãy xem lại Sổ Phép và quay lại khi em sẵn sàng.'
+        pointers: exam_exit_answer
+      exam_pass_y6:
+        text: '&aĐạt.&7 Em đã vượt kỳ kiểm tra Năm 6 và được phép bước sang Năm 7.'
+        actions: pass_exam_y6
+        pointers: exam_pass_answer
+      exam_offer_y7:
+        text: '&6Chương trình Năm 7 của em đã hoàn tất.&7 Trước khi tốt nghiệp, em phải vượt qua kỳ hỏi đáp cuối năm. Sẵn sàng chưa?'
+        conditions: current_year_7,year_7_curriculum_complete,!exam_y7_done
+        pointers: exam_start_y7,exam_later
+      exam_q1_y7:
+        text: '&eCâu 1:&f Protego Totalum thuộc giai đoạn nào của chương trình?'
+        pointers: exam_y7_q1_a0,exam_y7_q1_a1,exam_y7_q1_a2
+      exam_q2_y7:
+        text: '&eCâu 2:&f Trước khi tốt nghiệp, học sinh cần làm gì?'
+        pointers: exam_y7_q2_a0,exam_y7_q2_a1,exam_y7_q2_a2
+      exam_wrong_y7:
+        text: '&cChưa chính xác.&7 Hãy xem lại Sổ Phép và quay lại khi em sẵn sàng.'
+        pointers: exam_exit_answer
+      exam_pass_y7:
+        text: '&6&lTỐT NGHIỆP!&r &fEm đã vượt qua kỳ kiểm tra cuối cùng.'
+        actions: pass_exam_y7
+        pointers: exam_pass_answer
+      waiting:
+        text: '&7Em vẫn còn bài hoặc nhiệm vụ NPC chưa hoàn thành trong năm hiện tại. Hãy tiếp tục chương trình rồi quay lại.'
+        pointers: exam_exit_answer
+      exam_exit:
+        text: '&7Hãy tiếp tục học tập. Cánh cửa Đại Sảnh vẫn luôn mở.'
+      exam_complete_exit:
+        text: '&6Hogwarts ghi nhận kết quả của em. Chúc em may mắn ở chặng tiếp theo.'
+    player_options:
+      exam_start_y1:
+        text: '&aEm sẵn sàng.'
+        pointers: exam_q1_y1
+      exam_y1_q1_a0:
+        text: '&aLumos'
+        pointers: exam_q2_y1
+      exam_y1_q1_a1:
+        text: '&7Nox'
+        pointers: exam_wrong_y1
+      exam_y1_q1_a2:
+        text: '&7Alohomora'
+        pointers: exam_wrong_y1
+      exam_y1_q2_a0:
+        text: '&aHọc và luyện đúng bài với giáo sư'
+        pointers: exam_pass_y1
+      exam_y1_q2_a1:
+        text: '&7Dùng ngay không cần học'
+        pointers: exam_wrong_y1
+      exam_y1_q2_a2:
+        text: '&7Bỏ qua yêu cầu cấp phép'
+        pointers: exam_wrong_y1
+      exam_start_y2:
+        text: '&aEm sẵn sàng.'
+        pointers: exam_q1_y2
+      exam_y2_q1_a0:
+        text: '&aExpelliarmus'
+        pointers: exam_q2_y2
+      exam_y2_q1_a1:
+        text: '&7Reparo'
+        pointers: exam_wrong_y2
+      exam_y2_q1_a2:
+        text: '&7Nox'
+        pointers: exam_wrong_y2
+      exam_y2_q2_a0:
+        text: '&aKiểm soát và dùng phép đúng lúc'
+        pointers: exam_pass_y2
+      exam_y2_q2_a1:
+        text: '&7Niệm càng nhanh càng tốt'
+        pointers: exam_wrong_y2
+      exam_y2_q2_a2:
+        text: '&7Bỏ qua hướng dẫn'
+        pointers: exam_wrong_y2
+      exam_start_y3:
+        text: '&aEm sẵn sàng.'
+        pointers: exam_q1_y3
+      exam_y3_q1_a0:
+        text: '&aRiddikulus'
+        pointers: exam_q2_y3
+      exam_y3_q1_a1:
+        text: '&7Aguamenti'
+        pointers: exam_wrong_y3
+      exam_y3_q1_a2:
+        text: '&7Accio'
+        pointers: exam_wrong_y3
+      exam_y3_q2_a0:
+        text: '&aLuyện tiếp rồi quay lại nộp bài'
+        pointers: exam_pass_y3
+      exam_y3_q2_a1:
+        text: '&7Tự đánh dấu hoàn thành'
+        pointers: exam_wrong_y3
+      exam_y3_q2_a2:
+        text: '&7Bỏ luôn môn học'
+        pointers: exam_wrong_y3
+      exam_start_y4:
+        text: '&aEm sẵn sàng.'
+        pointers: exam_q1_y4
+      exam_y4_q1_a0:
+        text: '&aTriệu tập'
+        pointers: exam_q2_y4
+      exam_y4_q1_a1:
+        text: '&7Tắt sáng'
+        pointers: exam_wrong_y4
+      exam_y4_q1_a2:
+        text: '&7Băng bó'
+        pointers: exam_wrong_y4
+      exam_y4_q2_a0:
+        text: '&aCảnh giác và phản ứng đúng lúc'
+        pointers: exam_pass_y4
+      exam_y4_q2_a1:
+        text: '&7Chỉ cần thuộc tên phép'
+        pointers: exam_wrong_y4
+      exam_y4_q2_a2:
+        text: '&7Không cần luyện tập'
+        pointers: exam_wrong_y4
+      exam_start_y5:
+        text: '&aEm sẵn sàng.'
+        pointers: exam_q1_y5
+      exam_y5_q1_a0:
+        text: '&aPhòng vệ'
+        pointers: exam_q2_y5
+      exam_y5_q1_a1:
+        text: '&7Mở khóa'
+        pointers: exam_wrong_y5
+      exam_y5_q1_a2:
+        text: '&7Tạo nước'
+        pointers: exam_wrong_y5
+      exam_y5_q2_a0:
+        text: '&aHoàn thành bài và nộp cho giáo sư'
+        pointers: exam_pass_y5
+      exam_y5_q2_a1:
+        text: '&7Chỉ niệm một lần'
+        pointers: exam_wrong_y5
+      exam_y5_q2_a2:
+        text: '&7Chỉ cần có đủ mana'
+        pointers: exam_wrong_y5
+      exam_start_y6:
+        text: '&aEm sẵn sàng.'
+        pointers: exam_q1_y6
+      exam_y6_q1_a0:
+        text: '&aNước'
+        pointers: exam_q2_y6
+      exam_y6_q1_a1:
+        text: '&7Ánh sáng'
+        pointers: exam_wrong_y6
+      exam_y6_q1_a2:
+        text: '&7Khóa cửa'
+        pointers: exam_wrong_y6
+      exam_y6_q2_a0:
+        text: '&aKiểm soát và tuân thủ bài thực hành'
+        pointers: exam_pass_y6
+      exam_y6_q2_a1:
+        text: '&7Bỏ qua điều kiện năm học'
+        pointers: exam_wrong_y6
+      exam_y6_q2_a2:
+        text: '&7Dùng phép chưa học'
+        pointers: exam_wrong_y6
+      exam_start_y7:
+        text: '&aEm sẵn sàng.'
+        pointers: exam_q1_y7
+      exam_y7_q1_a0:
+        text: '&aNăm cuối'
+        pointers: exam_q2_y7
+      exam_y7_q1_a1:
+        text: '&7Năm I'
+        pointers: exam_wrong_y7
+      exam_y7_q1_a2:
+        text: '&7Chỉ là nhiệm vụ phụ'
+        pointers: exam_wrong_y7
+      exam_y7_q2_a0:
+        text: '&aHoàn tất chương trình và vượt kỳ kiểm tra cuối'
+        pointers: exam_pass_y7
+      exam_y7_q2_a1:
+        text: '&7Chỉ gặp Hiệu trưởng một lần'
+        pointers: exam_wrong_y7
+      exam_y7_q2_a2:
+        text: '&7Chỉ đạt đủ tiền'
+        pointers: exam_wrong_y7
+      exam_later:
+        text: '&7Em muốn chuẩn bị thêm.'
+        pointers: exam_exit
+      exam_exit_answer:
+        text: '&7Vâng, em sẽ quay lại.'
+        pointers: exam_exit
+      exam_pass_answer:
+        text: '&aEm cảm ơn thầy.'
+        pointers: exam_complete_exit
+    first: exam_offer_y1,exam_offer_y2,exam_offer_y3,exam_offer_y4,exam_offer_y5,exam_offer_y6,exam_offer_y7,waiting

@@ -1,0 +1,37 @@
+HOGWARTS STORY CORE 0.4.4 - DAMAGE REBALANCE
+
+Quy ước: 2.0 damage = 1 tim Minecraft.
+Damage thực tế = damage cơ bản x sức mạnh lõi đũa x multiplier mục tiêu.
+Lõi Rồng: x1.25 | Phượng hoàng: x1.00 | Kỳ lân: x0.90
+PvP mặc định: x0.65 | Quái: x1.00
+
+PHÉP CÓ DAMAGE:
+Năm 1: Incendio                  4.0 damage (2.00 tim trước hệ số)
+Năm 1: Petrificus Totalus        3.0 damage (1.50 tim trước hệ số)
+Năm 1: Locomotor Mortis          2.5 damage (1.25 tim trước hệ số)
+Năm 2: Expelliarmus              5.0 damage (2.50 tim trước hệ số)
+Năm 2: Rictusempra               4.0 damage (2.00 tim trước hệ số)
+Năm 2: Immobulus                 2.5 damage (1.25 tim trước hệ số)
+Năm 3: Riddikulus                8.0 damage (4.00 tim trước hệ số)
+Năm 3: Expecto Patronum          7.0 damage (3.50 tim trước hệ số)
+Năm 3: Lumos Maxima              2.5 damage (1.25 tim trước hệ số)
+Năm 4: Stupefy                   8.0 damage (4.00 tim trước hệ số)
+Năm 4: Impedimenta               5.0 damage (2.50 tim trước hệ số)
+Năm 4: Reducto                  12.0 damage (6.00 tim trước hệ số)
+Năm 4: Densaugeo                 4.0 damage (2.00 tim trước hệ số)
+Năm 5: Silencio                  2.5 damage (1.25 tim trước hệ số)
+Năm 5: Levicorpus                6.0 damage (3.00 tim trước hệ số)
+Năm 6: Confringo                14.0 damage (7.00 tim trước hệ số)
+Năm 6: Sectumsempra             16.0 damage (8.00 tim trước hệ số)
+Năm 6: Langlock                  3.0 damage (1.50 tim trước hệ số)
+Năm 7: Fiendfyre                18.0 damage (9.00 tim trước hệ số)
+Năm 7: Expelliarmus Maxima      10.0 damage (5.00 tim trước hệ số)
+Năm 7: Crucio                   12.0 damage (6.00 tim trước hệ số)
+
+Các phép hỗ trợ như Lumos, Nox, Alohomora, Reparo, Protego, Episkey...
+giữ damage = 0 vì mục đích chính không phải tấn công.
+
+Mục tiêu cân bằng với bộ quái thực hành:
+- Quái thường: khoảng 4-8 lần trúng phép chiến đấu phù hợp.
+- Mini-boss: khoảng 8-13 lần trúng.
+- Lõi Rồng mạnh hơn nhưng hồi/kiểm soát kém hơn theo hệ thống đũa hiện tại.

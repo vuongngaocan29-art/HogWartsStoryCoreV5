@@ -1,0 +1,137 @@
+# ============================================================
+#  HOGWARTS STORY CORE — CẤU HÌNH
+# ============================================================
+
+magic:
+  # Hồi ma lực: mỗi <mana-regen-ticks> tick hồi <mana-regen-amount> điểm
+  mana-regen-ticks: 40
+  mana-regen-amount: 3.0
+  show-mana-actionbar: true
+
+  # XP nhận được
+  xp-per-cast: 2
+  xp-per-spell-learned: 25
+
+  # Cân bằng sát thương phép.
+  # Quái nhận 100% damage; PvP chỉ nhận 65% để tránh one-shot người chơi.
+  mob-damage-multiplier: 1.0
+  pvp-damage-multiplier: 0.65
+
+  # Cho phép phép thuật phá khối (Reducto, Confringo...)
+  # Để false nếu không muốn người chơi đục lâu đài.
+  spell-block-damage: false
+
+  # Lời nguyền Không thể Tha thứ (Imperio, Crucio, Avada Kedavra)
+  # Chỉ bật khi bạn chạy tuyến cốt truyện đặc biệt.
+  allow-unforgivable: false
+
+story:
+  # Tự gửi thư nhập học cho người chơi mới
+  auto-letter-on-first-join: true
+  # Số giây chờ trước khi con cú bay tới
+  letter-delay-seconds: 5
+
+houses:
+  # Điểm thưởng khi hoàn thành nhiệm vụ cốt truyện
+  points-per-quest: 20
+  # Điểm thưởng khi học được phép mới
+  points-per-spell: 5
+
+storage:
+  autosave-minutes: 5
+
+# ============================================================
+#  CẦU NỐI SANG BETONQUEST
+#  Mỗi lần niệm phép thành công, chạy các lệnh console dưới đây.
+#  Biến: %player%  %spell%  %incantation%
+#
+#  "any" chạy cho MỌI phép. Còn lại đặt theo id phép trong spells.yml.
+#  Nếu action BetonQuest chưa tồn tại, console sẽ báo lỗi — hãy kiểm tra package.
+# ============================================================
+#
+#  QUAN TRỌNG: mặc định TẮT hết. Nếu bật mà chưa cài package BetonQuest
+#  hogwarts_spell_school thì console sẽ báo lỗi action mỗi lần niệm phép.
+#  Cài package xong rồi hãy bỏ dấu # ở ba mục dưới đây.
+# ============================================================
+cast-hooks:
+  any: []
+
+  # Hogwarts Spell School: mỗi cast hợp lệ cộng 1 điểm luyện nếu bài đang active.
+  lumos:
+    - "bq action %player% hogwarts_spell_school>practice_tick_lumos"
+  nox:
+    - "bq action %player% hogwarts_spell_school>practice_tick_nox"
+  wingardium-leviosa:
+    - "bq action %player% hogwarts_spell_school>practice_tick_wingardium_leviosa"
+  alohomora:
+    - "bq action %player% hogwarts_spell_school>practice_tick_alohomora"
+  incendio:
+    - "bq action %player% hogwarts_spell_school>practice_tick_incendio"
+  petrificus-totalus:
+    - "bq action %player% hogwarts_spell_school>practice_tick_petrificus_totalus"
+  locomotor-mortis:
+    - "bq action %player% hogwarts_spell_school>practice_tick_locomotor_mortis"
+  expelliarmus:
+    - "bq action %player% hogwarts_spell_school>practice_tick_expelliarmus"
+  rictusempra:
+    - "bq action %player% hogwarts_spell_school>practice_tick_rictusempra"
+  serpensortia:
+    - "bq action %player% hogwarts_spell_school>practice_tick_serpensortia"
+  reparo:
+    - "bq action %player% hogwarts_spell_school>practice_tick_reparo"
+  immobulus:
+    - "bq action %player% hogwarts_spell_school>practice_tick_immobulus"
+  finite-incantatem:
+    - "bq action %player% hogwarts_spell_school>practice_tick_finite_incantatem"
+  riddikulus:
+    - "bq action %player% hogwarts_spell_school>practice_tick_riddikulus"
+  expecto-patronum:
+    - "bq action %player% hogwarts_spell_school>practice_tick_expecto_patronum"
+  lumos-maxima:
+    - "bq action %player% hogwarts_spell_school>practice_tick_lumos_maxima"
+  impervius:
+    - "bq action %player% hogwarts_spell_school>practice_tick_impervius"
+  ferula:
+    - "bq action %player% hogwarts_spell_school>practice_tick_ferula"
+  accio:
+    - "bq action %player% hogwarts_spell_school>practice_tick_accio"
+  stupefy:
+    - "bq action %player% hogwarts_spell_school>practice_tick_stupefy"
+  impedimenta:
+    - "bq action %player% hogwarts_spell_school>practice_tick_impedimenta"
+  reducto:
+    - "bq action %player% hogwarts_spell_school>practice_tick_reducto"
+  densaugeo:
+    - "bq action %player% hogwarts_spell_school>practice_tick_densaugeo"
+  point-me:
+    - "bq action %player% hogwarts_spell_school>practice_tick_point_me"
+  protego:
+    - "bq action %player% hogwarts_spell_school>practice_tick_protego"
+  silencio:
+    - "bq action %player% hogwarts_spell_school>practice_tick_silencio"
+  levicorpus:
+    - "bq action %player% hogwarts_spell_school>practice_tick_levicorpus"
+  liberacorpus:
+    - "bq action %player% hogwarts_spell_school>practice_tick_liberacorpus"
+  episkey:
+    - "bq action %player% hogwarts_spell_school>practice_tick_episkey"
+  aguamenti:
+    - "bq action %player% hogwarts_spell_school>practice_tick_aguamenti"
+  muffliato:
+    - "bq action %player% hogwarts_spell_school>practice_tick_muffliato"
+  confringo:
+    - "bq action %player% hogwarts_spell_school>practice_tick_confringo"
+  sectumsempra:
+    - "bq action %player% hogwarts_spell_school>practice_tick_sectumsempra"
+  langlock:
+    - "bq action %player% hogwarts_spell_school>practice_tick_langlock"
+  protego-totalum:
+    - "bq action %player% hogwarts_spell_school>practice_tick_protego_totalum"
+  salvio-hexia:
+    - "bq action %player% hogwarts_spell_school>practice_tick_salvio_hexia"
+  cave-inimicum:
+    - "bq action %player% hogwarts_spell_school>practice_tick_cave_inimicum"
+  fiendfyre:
+    - "bq action %player% hogwarts_spell_school>practice_tick_fiendfyre"
+  expelliarmus-maxima:
+    - "bq action %player% hogwarts_spell_school>practice_tick_expelliarmus_maxima"

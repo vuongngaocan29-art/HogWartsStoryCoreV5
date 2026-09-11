@@ -1,0 +1,20 @@
+LESSON FLOW FIX
+
+Lỗi cũ:
+- Người chơi chưa đủ 3 lần luyện vẫn bị dẫn tới NPC option "goodbye"
+- NPC nói "Buổi học kết thúc" làm hiểu nhầm bài đã hoàn thành
+- locked/all_done cũng dùng chung nút "Em đi luyện ngay"
+
+Đã sửa:
+- leave -> practice_exit
+  "Bài học vẫn đang tiếp tục. Hãy luyện đủ yêu cầu rồi quay lại."
+- decline -> return_exit
+- thanks sau complete -> complete_exit
+  Chỉ nhánh này mới nói bài học đã hoàn thành.
+- locked/all_done -> return_later, không còn "đi luyện ngay".
+- Hooch và Sprout cũng dùng luồng tương tự.
+
+Lưu ý:
+"You must finish your conversation!" vẫn có thể xuất hiện nếu người chơi spam lệnh
+trước khi dòng hội thoại cuối cùng đóng hẳn. Hãy chọn đáp án một lần và chờ hội thoại
+kết thúc rồi mới cast phép.

@@ -1,0 +1,18 @@
+HOGWARTS SPELL SCHOOL — BETONQUEST 3.2 LOGFIX
+
+Đã sửa theo latest.log:
+1) NPC: dùng BetonQuest NPC ID -> "citizens <Citizens ID>"
+2) npc_conversations: bind BetonQuest NPC ID -> Conversation ID
+3) Quest Item: thêm type "simple"
+4) Location: dùng %constant.loc_*%
+5) Hooch/Sprout: đổi player option yes/no -> accept/decline để tránh YAML boolean
+6) Thêm NPC option "goodbye" còn thiếu trong các conversation giáo sư
+7) Chuẩn hóa danh sách first/pointers/conditions/actions không có khoảng trắng thừa
+8) Giữ màu tên NPC trực tiếp trong quester.
+
+CÀI SẠCH:
+- XÓA folder hogwarts_spell_school cũ trước.
+- Upload folder hogwarts_spell_school mới vào plugins/BetonQuest/QuestPackages/
+- TẠM ĐƯA hogwarts_year1 và hogwarts_sidequests RA NGOÀI QuestPackages khi test.
+- Restart server.
+- Chạy: /bq reload

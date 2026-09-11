@@ -1,0 +1,8 @@
+items:
+  magic_shard: 'simple AMETHYST_SHARD "name:<!i><light_purple><bold>Mảnh Ma Thuật" "lore:<!i><gray>Tinh thể thưởng sau khi hoàn thành bài học."'
+  feather_practice: 'simple FEATHER "name:<!i><aqua>Lông vũ luyện Bùa chú"'
+  training_target_token: 'simple PAPER "name:<!i><yellow>Phiếu bia luyện phép"'
+  broom_token: 'simple STICK "name:<!i><gold>Thẻ luyện bay"'
+  herbology_sample: 'simple FERN "name:<!i><green>Mẫu Thảo dược"'
+  nether_wart: 'simple NETHER_WART "name:<!i><dark_red>Nether Wart thí nghiệm"'
+  spider_eye: 'simple SPIDER_EYE "name:<!i><dark_purple>Mắt nhện thí nghiệm"'

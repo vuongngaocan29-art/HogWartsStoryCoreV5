@@ -1,0 +1,181 @@
+conversations:
+  mcgonagall:
+    quester: '&2&lGiáo sư Minerva McGonagall&r'
+    first: mission_turnin_transfiguration_y7,mission_remind_transfiguration_y7,mission_offer_transfiguration_y7,transfig_done_msg,transfig_offer,complete_protego_totalum,remind_protego_totalum,offer_protego_totalum,complete_salvio_hexia,remind_salvio_hexia,offer_salvio_hexia,complete_cave_inimicum,remind_cave_inimicum,offer_cave_inimicum,complete_fiendfyre,remind_fiendfyre,offer_fiendfyre,complete_expelliarmus_maxima,remind_expelliarmus_maxima,offer_expelliarmus_maxima,locked,all_done
+    stop: 'true'
+    NPC_options:
+      mission_offer_transfiguration_y7:
+        text: '&eThực hành chiến đấu — Năm 7: &fThử thách tốt nghiệp thực hành&7. Vượt qua đấu trường Năm VII: Chỉ Huy Tử Thần Thực Tử, Inferi Cổ Đại, Tiếng Vọng Hắc Chúa và Vệ Binh Tốt Nghiệp. Tổng cộng &e13&7 mục tiêu. Em nhận bài chứ?'
+        conditions: can_start_mission_transfiguration_y7
+        pointers: mission_accept_transfiguration_y7,mission_decline
+      mission_start_transfiguration_y7:
+        text: '&aBắt đầu.&7 Ta đã triệu hồi quái luyện tập &eriêng cho em&7 tại đấu trường. Hãy đánh bại đủ &e13&7 mục tiêu rồi quay lại.'
+        actions: start_mission_transfiguration_y7
+        pointers: mission_go
+      mission_remind_transfiguration_y7:
+        text: '&eBài Năm 7 vẫn chưa xong.&7 Hãy quay lại đấu trường và đánh bại đủ &e13&7 quái luyện tập đã được giao.'
+        conditions: in_progress_mission_transfiguration_y7
+        pointers: mission_go
+      mission_turnin_transfiguration_y7:
+        text: '&aĐạt yêu cầu.&7 Em đã hoàn thành bài thực hành chiến đấu Năm 7. Các bài học/phép tiếp theo tương ứng giờ đã được mở.'
+        conditions: can_turnin_mission_transfiguration_y7
+        actions: finish_mission_transfiguration_y7
+        pointers: mission_thanks
+      mission_continue_exit:
+        text: '&eNhiệm vụ vẫn đang tiếp tục.&7 Hoàn thành mục tiêu rồi quay lại. Ta sẽ không tính là xong trước khi em nộp bài.'
+      mission_return_exit:
+        text: '&7Được. Khi sẵn sàng hãy quay lại nhận nhiệm vụ.'
+      mission_complete_exit:
+        text: '&aTốt.&7 Nhiệm vụ môn học đã được ghi nhận hoàn thành.'
+      transfig_offer:
+        text: Biến hình là môn học đòi hỏi sự tập trung tuyệt đối. Năm nhất, em sẽ bắt đầu bằng một bài thực hành cơ bản tại bàn học.
+        conditions: current_year_1,!transfiguration_done
+        pointers: accept_transfig,decline
+      transfig_start_msg:
+        text: Tới bàn Biến hình và tương tác với đe thực hành. Quan sát, tập trung, rồi quay lại.
+        actions: start_transfiguration
+        pointers: leave
+      transfig_done_msg:
+        text: Bài thực hành của em đạt yêu cầu. Nhớ rằng biến hình không phải trò đùa.
+        conditions: transfiguration_done,current_year_1
+        pointers: thanks
+      offer_protego_totalum:
+        text: 'Năm cuối không còn chỗ cho cẩu thả. Em phải chứng minh khả năng kiểm soát trước khi được công nhận. Bài tiếp theo là &fProtego Totalum&7 — Bùa Bảo Vệ Toàn Vẹn. Yêu cầu: Năm 7, Cấp phép 20. Em có muốn bắt đầu không?'
+        conditions: can_start_protego_totalum
+        pointers: accept_protego_totalum,decline
+      start_msg_protego_totalum:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Protego Totalum. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_protego_totalum
+        pointers: leave
+      remind_protego_totalum:
+        text: Bài Protego Totalum chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_protego_totalum
+        pointers: leave
+      complete_protego_totalum:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Protego Totalum; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_protego_totalum
+        actions: complete_protego_totalum
+        pointers: thanks
+      offer_salvio_hexia:
+        text: 'Năm cuối không còn chỗ cho cẩu thả. Em phải chứng minh khả năng kiểm soát trước khi được công nhận. Bài tiếp theo là &fSalvio Hexia&7 — Bùa Chắn Ếm. Yêu cầu: Năm 7, Cấp phép 20. Em có muốn bắt đầu không?'
+        conditions: can_start_salvio_hexia
+        pointers: accept_salvio_hexia,decline
+      start_msg_salvio_hexia:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Salvio Hexia. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_salvio_hexia
+        pointers: leave
+      remind_salvio_hexia:
+        text: Bài Salvio Hexia chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_salvio_hexia
+        pointers: leave
+      complete_salvio_hexia:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Salvio Hexia; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_salvio_hexia
+        actions: complete_salvio_hexia
+        pointers: thanks
+      offer_cave_inimicum:
+        text: 'Năm cuối không còn chỗ cho cẩu thả. Em phải chứng minh khả năng kiểm soát trước khi được công nhận. Bài tiếp theo là &fCave Inimicum&7 — Bùa Cảnh Giới. Yêu cầu: Năm 7, Cấp phép 21. Em có muốn bắt đầu không?'
+        conditions: can_start_cave_inimicum
+        pointers: accept_cave_inimicum,decline
+      start_msg_cave_inimicum:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Cave Inimicum. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_cave_inimicum
+        pointers: leave
+      remind_cave_inimicum:
+        text: Bài Cave Inimicum chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_cave_inimicum
+        pointers: leave
+      complete_cave_inimicum:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Cave Inimicum; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_cave_inimicum
+        actions: complete_cave_inimicum
+        pointers: thanks
+      offer_fiendfyre:
+        text: 'Năm cuối không còn chỗ cho cẩu thả. Em phải chứng minh khả năng kiểm soát trước khi được công nhận. Bài tiếp theo là &fFiendfyre&7 — Quỷ Hoả. Yêu cầu: Năm 7, Cấp phép 21. Em có muốn bắt đầu không?'
+        conditions: can_start_fiendfyre
+        pointers: accept_fiendfyre,decline
+      start_msg_fiendfyre:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Fiendfyre. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_fiendfyre
+        pointers: leave
+      remind_fiendfyre:
+        text: Bài Fiendfyre chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_fiendfyre
+        pointers: leave
+      complete_fiendfyre:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Fiendfyre; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_fiendfyre
+        actions: complete_fiendfyre
+        pointers: thanks
+      offer_expelliarmus_maxima:
+        text: 'Năm cuối không còn chỗ cho cẩu thả. Em phải chứng minh khả năng kiểm soát trước khi được công nhận. Bài tiếp theo là &fExpelliarmus Maxima&7 — Đại Bùa Tước Vũ Khí. Yêu cầu: Năm 7, Cấp phép 22. Em có muốn bắt đầu không?'
+        conditions: can_start_expelliarmus_maxima
+        pointers: accept_expelliarmus_maxima,decline
+      start_msg_expelliarmus_maxima:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Expelliarmus Maxima. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_expelliarmus_maxima
+        pointers: leave
+      remind_expelliarmus_maxima:
+        text: Bài Expelliarmus Maxima chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_expelliarmus_maxima
+        pointers: leave
+      complete_expelliarmus_maxima:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Expelliarmus Maxima; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_expelliarmus_maxima
+        actions: complete_expelliarmus_maxima
+        pointers: thanks
+      locked:
+        text: 'Hiện chưa có bài mới phù hợp. Hãy kiểm tra &f/hogwarts&7: đúng năm học, đủ Cấp phép và hoàn thành bài trước của môn này.'
+        pointers: return_later
+      all_done:
+        text: Em đã hoàn tất toàn bộ bài mà ta phụ trách ở giai đoạn hiện tại. Hãy tiếp tục môn còn lại hoặc tới gặp Hiệu trưởng khi đã xong cả năm.
+        pointers: return_later
+      practice_exit:
+        text: '&eBài học vẫn đang tiếp tục.&7 Hãy luyện đủ yêu cầu và hệ thống sẽ tự chấm khi hoàn thành. Ta sẽ chỉ công nhận khi em hoàn thành bài.'
+      return_exit:
+        text: '&7Được. Khi đủ điều kiện hoặc sẵn sàng, hãy quay lại gặp ta.'
+      complete_exit:
+        text: '&aTốt lắm.&7 Bài học này đã hoàn thành. Phép vừa học đã được ghi vào Sổ Phép của em.'
+    player_options:
+      mission_accept_transfiguration_y7:
+        text: '&aEm nhận nhiệm vụ.'
+        pointers: mission_start_transfiguration_y7
+      mission_decline:
+        text: '&7Em sẽ quay lại sau.'
+        pointers: mission_return_exit
+      mission_go:
+        text: '&aEm đi làm nhiệm vụ ngay.'
+        pointers: mission_continue_exit
+      mission_thanks:
+        text: '&aEm cảm ơn giáo sư.'
+        pointers: mission_complete_exit
+      accept_transfig:
+        text: '&aEm sẵn sàng học Biến hình.'
+        pointers: transfig_start_msg
+      accept_protego_totalum:
+        text: '&aEm muốn học Protego Totalum.'
+        pointers: start_msg_protego_totalum
+      accept_salvio_hexia:
+        text: '&aEm muốn học Salvio Hexia.'
+        pointers: start_msg_salvio_hexia
+      accept_cave_inimicum:
+        text: '&aEm muốn học Cave Inimicum.'
+        pointers: start_msg_cave_inimicum
+      accept_fiendfyre:
+        text: '&aEm muốn học Fiendfyre.'
+        pointers: start_msg_fiendfyre
+      accept_expelliarmus_maxima:
+        text: '&aEm muốn học Expelliarmus Maxima.'
+        pointers: start_msg_expelliarmus_maxima
+      decline:
+        text: '&7Em sẽ quay lại sau.'
+        pointers: return_exit
+      leave:
+        text: '&aEm đi luyện tiếp ạ.'
+        pointers: practice_exit
+      thanks:
+        text: '&aEm cảm ơn giáo sư.'
+        pointers: complete_exit
+      return_later:
+        text: '&7Vâng, em sẽ quay lại sau.'
+        pointers: return_exit

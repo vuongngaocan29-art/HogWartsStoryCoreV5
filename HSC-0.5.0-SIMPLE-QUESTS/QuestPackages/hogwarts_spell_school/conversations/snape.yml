@@ -1,0 +1,146 @@
+conversations:
+  snape:
+    quester: '&8&lGiáo sư Severus Snape&r'
+    first: mission_turnin_potions_y6,mission_remind_potions_y6,mission_offer_potions_y6,potions_complete,potions_wait,potions_offer,complete_confringo,remind_confringo,offer_confringo,complete_sectumsempra,remind_sectumsempra,offer_sectumsempra,complete_langlock,remind_langlock,offer_langlock,locked,all_done
+    stop: 'true'
+    NPC_options:
+      mission_offer_potions_y6:
+        text: '&eThực hành chiến đấu — Năm 6: &fĐộc dược nâng cao: Thu thập tinh chất&7. Snape yêu cầu đánh bại sinh vật Năm VI để thu tinh chất thực hành: Giáp Nguyền, Inferi Tinh Nhuệ, Pháp Sư Hắc Ám và Chỉ Huy Inferi. Tổng cộng &e12&7 mục tiêu. Em nhận bài chứ?'
+        conditions: can_start_mission_potions_y6
+        pointers: mission_accept_potions_y6,mission_decline
+      mission_start_potions_y6:
+        text: '&aBắt đầu.&7 Ta đã triệu hồi quái luyện tập &eriêng cho em&7 tại đấu trường. Hãy đánh bại đủ &e12&7 mục tiêu rồi quay lại.'
+        actions: start_mission_potions_y6
+        pointers: mission_go
+      mission_remind_potions_y6:
+        text: '&eBài Năm 6 vẫn chưa xong.&7 Hãy quay lại đấu trường và đánh bại đủ &e12&7 quái luyện tập đã được giao.'
+        conditions: in_progress_mission_potions_y6
+        pointers: mission_go
+      mission_turnin_potions_y6:
+        text: '&aĐạt yêu cầu.&7 Em đã hoàn thành bài thực hành chiến đấu Năm 6. Các bài học/phép tiếp theo tương ứng giờ đã được mở.'
+        conditions: can_turnin_mission_potions_y6
+        actions: finish_mission_potions_y6
+        pointers: mission_thanks
+      mission_continue_exit:
+        text: '&eNhiệm vụ vẫn đang tiếp tục.&7 Hoàn thành mục tiêu rồi quay lại. Ta sẽ không tính là xong trước khi em nộp bài.'
+      mission_return_exit:
+        text: '&7Được. Khi sẵn sàng hãy quay lại nhận nhiệm vụ.'
+      mission_complete_exit:
+        text: '&aTốt.&7 Nhiệm vụ môn học đã được ghi nhận hoàn thành.'
+      potions_offer:
+        text: Năm nhất. Trước khi nói tới những phép cao cấp, em phải chứng minh mình biết làm theo hướng dẫn. Thu thập nguyên liệu cho bài Độc dược cơ bản.
+        conditions: current_year_1,!potions_started,!potions_done
+        pointers: accept_potions,decline
+      potions_start_msg:
+        text: Tốt. Đi lấy nguyên liệu. Đừng làm bẩn hầm ngục của ta.
+        actions: start_potions
+        pointers: leave
+      potions_wait:
+        text: Ba Nether Wart và một Spider Eye. Ta đã nói rất rõ. Đừng quay lại tay không.
+        conditions: current_year_1,potions_started,!has_potion_ingredients,!potions_done
+        pointers: leave
+      potions_complete:
+        text: 'Đủ nguyên liệu. Ít nhất em cũng biết đếm. Bài Độc dược Năm I: đạt.'
+        conditions: current_year_1,potions_started,has_potion_ingredients,!potions_done
+        actions: complete_potions
+        pointers: thanks
+      offer_confringo:
+        text: 'Tập trung. Một câu chú sai nhịp cũng đủ làm hỏng cả bài thực hành. Bài tiếp theo là &fConfringo&7 — Bùa Nổ. Yêu cầu: Năm 6, Cấp phép 18. Em có muốn bắt đầu không?'
+        conditions: can_start_confringo
+        pointers: accept_confringo,decline
+      start_msg_confringo:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Confringo. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_confringo
+        pointers: leave
+      remind_confringo:
+        text: Bài Confringo chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_confringo
+        pointers: leave
+      complete_confringo:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Confringo; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_confringo
+        actions: complete_confringo
+        pointers: thanks
+      offer_sectumsempra:
+        text: 'Tập trung. Một câu chú sai nhịp cũng đủ làm hỏng cả bài thực hành. Bài tiếp theo là &fSectumsempra&7 — Bùa Cắt Xé. Yêu cầu: Năm 6, Cấp phép 18. Em có muốn bắt đầu không?'
+        conditions: can_start_sectumsempra
+        pointers: accept_sectumsempra,decline
+      start_msg_sectumsempra:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Sectumsempra. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_sectumsempra
+        pointers: leave
+      remind_sectumsempra:
+        text: Bài Sectumsempra chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_sectumsempra
+        pointers: leave
+      complete_sectumsempra:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Sectumsempra; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_sectumsempra
+        actions: complete_sectumsempra
+        pointers: thanks
+      offer_langlock:
+        text: 'Tập trung. Một câu chú sai nhịp cũng đủ làm hỏng cả bài thực hành. Bài tiếp theo là &fLanglock&7 — Bùa Dính Lưỡi. Yêu cầu: Năm 6, Cấp phép 19. Em có muốn bắt đầu không?'
+        conditions: can_start_langlock
+        pointers: accept_langlock,decline
+      start_msg_langlock:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Langlock. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_langlock
+        pointers: leave
+      remind_langlock:
+        text: Bài Langlock chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_langlock
+        pointers: leave
+      complete_langlock:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Langlock; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_langlock
+        actions: complete_langlock
+        pointers: thanks
+      locked:
+        text: 'Hiện chưa có bài mới phù hợp. Hãy kiểm tra &f/hogwarts&7: đúng năm học, đủ Cấp phép và hoàn thành bài trước của môn này.'
+        pointers: return_later
+      all_done:
+        text: Em đã hoàn tất toàn bộ bài mà ta phụ trách ở giai đoạn hiện tại. Hãy tiếp tục môn còn lại hoặc tới gặp Hiệu trưởng khi đã xong cả năm.
+        pointers: return_later
+      practice_exit:
+        text: '&eBài học vẫn đang tiếp tục.&7 Hãy luyện đủ yêu cầu và hệ thống sẽ tự chấm khi hoàn thành. Ta sẽ chỉ công nhận khi em hoàn thành bài.'
+      return_exit:
+        text: '&7Được. Khi đủ điều kiện hoặc sẵn sàng, hãy quay lại gặp ta.'
+      complete_exit:
+        text: '&aTốt lắm.&7 Bài học này đã hoàn thành. Phép vừa học đã được ghi vào Sổ Phép của em.'
+    player_options:
+      mission_accept_potions_y6:
+        text: '&aEm nhận nhiệm vụ.'
+        pointers: mission_start_potions_y6
+      mission_decline:
+        text: '&7Em sẽ quay lại sau.'
+        pointers: mission_return_exit
+      mission_go:
+        text: '&aEm đi làm nhiệm vụ ngay.'
+        pointers: mission_continue_exit
+      mission_thanks:
+        text: '&aEm cảm ơn giáo sư.'
+        pointers: mission_complete_exit
+      accept_potions:
+        text: '&aEm nhận bài Độc dược.'
+        pointers: potions_start_msg
+      accept_confringo:
+        text: '&aEm muốn học Confringo.'
+        pointers: start_msg_confringo
+      accept_sectumsempra:
+        text: '&aEm muốn học Sectumsempra.'
+        pointers: start_msg_sectumsempra
+      accept_langlock:
+        text: '&aEm muốn học Langlock.'
+        pointers: start_msg_langlock
+      decline:
+        text: '&7Em sẽ quay lại sau.'
+        pointers: return_exit
+      leave:
+        text: '&aEm đi luyện tiếp ạ.'
+        pointers: practice_exit
+      thanks:
+        text: '&aEm cảm ơn giáo sư.'
+        pointers: complete_exit
+      return_later:
+        text: '&7Vâng, em sẽ quay lại sau.'
+        pointers: return_exit

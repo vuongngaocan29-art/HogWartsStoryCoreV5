@@ -1,0 +1,146 @@
+conversations:
+  moody:
+    quester: '&4&lGiáo sư Alastor Moody&r'
+    first: mission_turnin_dada_y4,mission_remind_dada_y4,mission_offer_dada_y4,complete_stupefy,remind_stupefy,offer_stupefy,complete_impedimenta,remind_impedimenta,offer_impedimenta,complete_reducto,remind_reducto,offer_reducto,complete_densaugeo,remind_densaugeo,offer_densaugeo,locked,all_done
+    stop: 'true'
+    NPC_options:
+      mission_offer_dada_y4:
+        text: '&eThực hành chiến đấu — Năm 4: &fCảnh giác liên tục&7. Vượt qua đấu trường Năm IV: Cua Lửa, Acromantula, Pháp Sư Hắc Ám Tập Sự và Vệ Binh Tam Pháp Thuật. Tổng cộng &e10&7 mục tiêu. Em nhận bài chứ?'
+        conditions: can_start_mission_dada_y4
+        pointers: mission_accept_dada_y4,mission_decline
+      mission_start_dada_y4:
+        text: '&aBắt đầu.&7 Ta đã triệu hồi quái luyện tập &eriêng cho em&7 tại đấu trường. Hãy đánh bại đủ &e10&7 mục tiêu rồi quay lại.'
+        actions: start_mission_dada_y4
+        pointers: mission_go
+      mission_remind_dada_y4:
+        text: '&eBài Năm 4 vẫn chưa xong.&7 Hãy quay lại đấu trường và đánh bại đủ &e10&7 quái luyện tập đã được giao.'
+        conditions: in_progress_mission_dada_y4
+        pointers: mission_go
+      mission_turnin_dada_y4:
+        text: '&aĐạt yêu cầu.&7 Em đã hoàn thành bài thực hành chiến đấu Năm 4. Các bài học/phép tiếp theo tương ứng giờ đã được mở.'
+        conditions: can_turnin_mission_dada_y4
+        actions: finish_mission_dada_y4
+        pointers: mission_thanks
+      mission_continue_exit:
+        text: '&eNhiệm vụ vẫn đang tiếp tục.&7 Hoàn thành mục tiêu rồi quay lại. Ta sẽ không tính là xong trước khi em nộp bài.'
+      mission_return_exit:
+        text: '&7Được. Khi sẵn sàng hãy quay lại nhận nhiệm vụ.'
+      mission_complete_exit:
+        text: '&aTốt.&7 Nhiệm vụ môn học đã được ghi nhận hoàn thành.'
+      offer_stupefy:
+        text: 'CẢNH GIÁC LIÊN TỤC. Học phép không phải để khoe, mà để phản ứng đúng lúc. Bài tiếp theo là &fStupefy&7 — Bùa Choáng Váng. Yêu cầu: Năm 4, Cấp phép 11. Em có muốn bắt đầu không?'
+        conditions: can_start_stupefy
+        pointers: accept_stupefy,decline
+      start_msg_stupefy:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Stupefy. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_stupefy
+        pointers: leave
+      remind_stupefy:
+        text: Bài Stupefy chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_stupefy
+        pointers: leave
+      complete_stupefy:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Stupefy; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_stupefy
+        actions: complete_stupefy
+        pointers: thanks
+      offer_impedimenta:
+        text: 'CẢNH GIÁC LIÊN TỤC. Học phép không phải để khoe, mà để phản ứng đúng lúc. Bài tiếp theo là &fImpedimenta&7 — Bùa Cản Trở. Yêu cầu: Năm 4, Cấp phép 12. Em có muốn bắt đầu không?'
+        conditions: can_start_impedimenta
+        pointers: accept_impedimenta,decline
+      start_msg_impedimenta:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Impedimenta. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_impedimenta
+        pointers: leave
+      remind_impedimenta:
+        text: Bài Impedimenta chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_impedimenta
+        pointers: leave
+      complete_impedimenta:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Impedimenta; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_impedimenta
+        actions: complete_impedimenta
+        pointers: thanks
+      offer_reducto:
+        text: 'CẢNH GIÁC LIÊN TỤC. Học phép không phải để khoe, mà để phản ứng đúng lúc. Bài tiếp theo là &fReducto&7 — Bùa Phá Huỷ. Yêu cầu: Năm 4, Cấp phép 12. Em có muốn bắt đầu không?'
+        conditions: can_start_reducto
+        pointers: accept_reducto,decline
+      start_msg_reducto:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Reducto. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_reducto
+        pointers: leave
+      remind_reducto:
+        text: Bài Reducto chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_reducto
+        pointers: leave
+      complete_reducto:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Reducto; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_reducto
+        actions: complete_reducto
+        pointers: thanks
+      offer_densaugeo:
+        text: 'CẢNH GIÁC LIÊN TỤC. Học phép không phải để khoe, mà để phản ứng đúng lúc. Bài tiếp theo là &fDensaugeo&7 — Bùa Mọc Răng. Yêu cầu: Năm 4, Cấp phép 13. Em có muốn bắt đầu không?'
+        conditions: can_start_densaugeo
+        pointers: accept_densaugeo,decline
+      start_msg_densaugeo:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Densaugeo. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_densaugeo
+        pointers: leave
+      remind_densaugeo:
+        text: Bài Densaugeo chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_densaugeo
+        pointers: leave
+      complete_densaugeo:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Densaugeo; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_densaugeo
+        actions: complete_densaugeo
+        pointers: thanks
+      locked:
+        text: 'Hiện chưa có bài mới phù hợp. Hãy kiểm tra &f/hogwarts&7: đúng năm học, đủ Cấp phép và hoàn thành bài trước của môn này.'
+        pointers: return_later
+      all_done:
+        text: Em đã hoàn tất toàn bộ bài mà ta phụ trách ở giai đoạn hiện tại. Hãy tiếp tục môn còn lại hoặc tới gặp Hiệu trưởng khi đã xong cả năm.
+        pointers: return_later
+      practice_exit:
+        text: '&eBài học vẫn đang tiếp tục.&7 Hãy luyện đủ yêu cầu và hệ thống sẽ tự chấm khi hoàn thành. Ta sẽ chỉ công nhận khi em hoàn thành bài.'
+      return_exit:
+        text: '&7Được. Khi đủ điều kiện hoặc sẵn sàng, hãy quay lại gặp ta.'
+      complete_exit:
+        text: '&aTốt lắm.&7 Bài học này đã hoàn thành. Phép vừa học đã được ghi vào Sổ Phép của em.'
+    player_options:
+      mission_accept_dada_y4:
+        text: '&aEm nhận nhiệm vụ.'
+        pointers: mission_start_dada_y4
+      mission_decline:
+        text: '&7Em sẽ quay lại sau.'
+        pointers: mission_return_exit
+      mission_go:
+        text: '&aEm đi làm nhiệm vụ ngay.'
+        pointers: mission_continue_exit
+      mission_thanks:
+        text: '&aEm cảm ơn giáo sư.'
+        pointers: mission_complete_exit
+      accept_stupefy:
+        text: '&aEm muốn học Stupefy.'
+        pointers: start_msg_stupefy
+      accept_impedimenta:
+        text: '&aEm muốn học Impedimenta.'
+        pointers: start_msg_impedimenta
+      accept_reducto:
+        text: '&aEm muốn học Reducto.'
+        pointers: start_msg_reducto
+      accept_densaugeo:
+        text: '&aEm muốn học Densaugeo.'
+        pointers: start_msg_densaugeo
+      decline:
+        text: '&7Em sẽ quay lại sau.'
+        pointers: return_exit
+      leave:
+        text: '&aEm đi luyện tiếp ạ.'
+        pointers: practice_exit
+      thanks:
+        text: '&aEm cảm ơn giáo sư.'
+        pointers: complete_exit
+      return_later:
+        text: '&7Vâng, em sẽ quay lại sau.'
+        pointers: return_exit

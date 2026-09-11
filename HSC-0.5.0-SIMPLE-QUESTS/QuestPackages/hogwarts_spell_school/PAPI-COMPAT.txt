@@ -1,0 +1,3 @@
+Package học phép chính: hogwarts_spell_school
+Package hogwarts_year1 đi kèm chỉ là compatibility shim cho placeholder cũ.
+Không xóa shim nếu TAB/scoreboard vẫn đang gọi placeholder hogwarts_year1.

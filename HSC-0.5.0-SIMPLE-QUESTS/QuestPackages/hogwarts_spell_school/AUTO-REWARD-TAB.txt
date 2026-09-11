@@ -1,0 +1,16 @@
+AUTO REWARD + TAB PROGRESS
+
+Bản này thay đổi:
+1. Bài học phép: đủ 3 lần cast -> tự complete -> tự mở phép -> tự thưởng.
+2. Nhiệm vụ NPC: objective hoàn tất -> tự complete -> tự thưởng.
+3. Không cần quay lại NPC để nộp bài.
+4. HogwartsStoryCore 0.4.5 theo dõi nhiệm vụ gần nhất cho TAB.
+
+Placeholder mới:
+%hogwarts_quest_name%
+%hogwarts_quest_progress%
+%hogwarts_quest_bar%
+%hogwarts_quest_line%
+%hogwarts_quest_status%
+
+TAB chỉ hiển thị nhiệm vụ gần nhất đang được theo dõi.

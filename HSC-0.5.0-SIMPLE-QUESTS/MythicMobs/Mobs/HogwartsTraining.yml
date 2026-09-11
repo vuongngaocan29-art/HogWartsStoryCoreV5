@@ -1,0 +1,389 @@
+# ============================================================
+# HOGWARTS TRAINING MOBS - MythicMobs 5.x
+# 28 mobs: 4 mobs per school year
+# ============================================================
+
+# ------------------------------------------------------------
+# YEAR 1
+# ------------------------------------------------------------
+HOG_Y1_TRAINING_DUMMY:
+  Type: HUSK
+  Display: '&e[Năm I] &fHình Nhân Tập Sự'
+  Health: 22
+  Damage: 2.0
+  Faction: HogwartsTrainingY1
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    MovementSpeed: 0.19
+
+HOG_Y1_MANA_SLIME:
+  Type: SLIME
+  Display: '&b[Năm I] &fMana Slime'
+  Health: 18
+  Damage: 2.0
+  Faction: HogwartsTrainingY1
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    MovementSpeed: 0.19
+
+HOG_Y1_CURSED_SPIDER:
+  Type: SPIDER
+  Display: '&5[Năm I] &fNhện Bị Nguyền'
+  Health: 24
+  Damage: 2.5
+  Faction: HogwartsTrainingY1
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    MovementSpeed: 0.19
+
+HOG_Y1_BONE_GUARDIAN:
+  Type: SKELETON
+  Display: '&6&l[Năm I] Vệ Binh Xương'
+  Health: 42
+  Damage: 3.5
+  Faction: HogwartsTrainingY1
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    MovementSpeed: 0.19
+
+# ------------------------------------------------------------
+# YEAR 2
+# ------------------------------------------------------------
+HOG_Y2_CORNISH_PIXIE:
+  Type: VEX
+  Display: '&b[Năm II] &fPixie Cornwall'
+  Health: 28
+  Damage: 3.0
+  Faction: HogwartsTrainingY2
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    MovementSpeed: 0.198
+
+HOG_Y2_VENOM_SPIDER:
+  Type: CAVE_SPIDER
+  Display: '&2[Năm II] &fNhện Độc'
+  Health: 30
+  Damage: 3.0
+  Faction: HogwartsTrainingY2
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    MovementSpeed: 0.198
+
+HOG_Y2_CURSED_ARCHER:
+  Type: STRAY
+  Display: '&9[Năm II] &fXạ Thủ Bị Nguyền'
+  Health: 34
+  Damage: 3.5
+  Faction: HogwartsTrainingY2
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    MovementSpeed: 0.198
+
+HOG_Y2_PIXIE_CAPTAIN:
+  Type: VEX
+  Display: '&6&l[Năm II] Đội Trưởng Pixie'
+  Health: 58
+  Damage: 4.5
+  Faction: HogwartsTrainingY2
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    MovementSpeed: 0.198
+
+# ------------------------------------------------------------
+# YEAR 3
+# ------------------------------------------------------------
+HOG_Y3_BOGGART:
+  Type: ZOMBIE
+  Display: '&d[Năm III] &fBoggart'
+  Health: 42
+  Damage: 4.0
+  Faction: HogwartsTrainingY3
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    MovementSpeed: 0.206
+
+HOG_Y3_DEMENTOR_ECHO:
+  Type: PHANTOM
+  Display: '&8[Năm III] &fTiếng Vọng Dementor'
+  Health: 38
+  Damage: 4.0
+  Faction: HogwartsTrainingY3
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    MovementSpeed: 0.206
+
+HOG_Y3_WEREWOLF_TRAINEE:
+  Type: HUSK
+  Display: '&7[Năm III] &fNgười Sói Tập Sự'
+  Health: 48
+  Damage: 4.5
+  Faction: HogwartsTrainingY3
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    MovementSpeed: 0.206
+
+HOG_Y3_DARK_CREATURE:
+  Type: WITHER_SKELETON
+  Display: '&6&l[Năm III] Sinh Vật Bóng Tối'
+  Health: 78
+  Damage: 5.5
+  Faction: HogwartsTrainingY3
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    MovementSpeed: 0.206
+
+# ------------------------------------------------------------
+# YEAR 4
+# ------------------------------------------------------------
+HOG_Y4_FIRE_CRAB:
+  Type: MAGMA_CUBE
+  Display: '&6[Năm IV] &fCua Lửa'
+  Health: 52
+  Damage: 5.0
+  Faction: HogwartsTrainingY4
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    MovementSpeed: 0.214
+
+HOG_Y4_ACROMANTULA:
+  Type: SPIDER
+  Display: '&8[Năm IV] &fAcromantula'
+  Health: 58
+  Damage: 5.0
+  Faction: HogwartsTrainingY4
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    MovementSpeed: 0.214
+
+HOG_Y4_DARK_WIZARD_APPRENTICE:
+  Type: PILLAGER
+  Display: '&5[Năm IV] &fPháp Sư Hắc Ám Tập Sự'
+  Health: 62
+  Damage: 5.5
+  Faction: HogwartsTrainingY4
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    MovementSpeed: 0.214
+
+HOG_Y4_TRIWIZARD_GUARDIAN:
+  Type: VINDICATOR
+  Display: '&6&l[Năm IV] Vệ Binh Tam Pháp Thuật'
+  Health: 98
+  Damage: 7.0
+  Faction: HogwartsTrainingY4
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    MovementSpeed: 0.214
+
+# ------------------------------------------------------------
+# YEAR 5
+# ------------------------------------------------------------
+HOG_Y5_DEATH_EATER_TRAINEE:
+  Type: PILLAGER
+  Display: '&5[Năm V] &fTử Thần Thực Tử Tập Sự'
+  Health: 70
+  Damage: 6.0
+  Faction: HogwartsTrainingY5
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    MovementSpeed: 0.222
+
+HOG_Y5_DEMENTOR:
+  Type: PHANTOM
+  Display: '&8[Năm V] &fDementor'
+  Health: 66
+  Damage: 6.0
+  Faction: HogwartsTrainingY5
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    MovementSpeed: 0.222
+
+HOG_Y5_INFERI:
+  Type: HUSK
+  Display: '&7[Năm V] &fInferi'
+  Health: 78
+  Damage: 6.5
+  Faction: HogwartsTrainingY5
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    MovementSpeed: 0.222
+
+HOG_Y5_DARK_INQUISITOR:
+  Type: VINDICATOR
+  Display: '&6&l[Năm V] Thanh Tra Hắc Ám'
+  Health: 120
+  Damage: 8.5
+  Faction: HogwartsTrainingY5
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    MovementSpeed: 0.222
+
+# ------------------------------------------------------------
+# YEAR 6
+# ------------------------------------------------------------
+HOG_Y6_CURSED_ARMOR:
+  Type: WITHER_SKELETON
+  Display: '&8[Năm VI] &fGiáp Nguyền'
+  Health: 92
+  Damage: 7.0
+  Faction: HogwartsTrainingY6
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    MovementSpeed: 0.23
+
+HOG_Y6_ELITE_INFERI:
+  Type: HUSK
+  Display: '&7[Năm VI] &fInferi Tinh Nhuệ'
+  Health: 96
+  Damage: 7.5
+  Faction: HogwartsTrainingY6
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    MovementSpeed: 0.23
+
+HOG_Y6_DARK_AUROR:
+  Type: PILLAGER
+  Display: '&5[Năm VI] &fPháp Sư Hắc Ám'
+  Health: 100
+  Damage: 8.0
+  Faction: HogwartsTrainingY6
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    MovementSpeed: 0.23
+
+HOG_Y6_INFERI_COMMANDER:
+  Type: EVOKER
+  Display: '&6&l[Năm VI] Chỉ Huy Inferi'
+  Health: 155
+  Damage: 10.0
+  Faction: HogwartsTrainingY6
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    MovementSpeed: 0.23
+
+# ------------------------------------------------------------
+# YEAR 7
+# ------------------------------------------------------------
+HOG_Y7_DEATH_EATER_COMMANDER:
+  Type: EVOKER
+  Display: '&5[Năm VII] &fChỉ Huy Tử Thần Thực Tử'
+  Health: 125
+  Damage: 9.0
+  Faction: HogwartsTrainingY7
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    MovementSpeed: 0.238
+
+HOG_Y7_ANCIENT_INFERI:
+  Type: WITHER_SKELETON
+  Display: '&8[Năm VII] &fInferi Cổ Đại'
+  Health: 135
+  Damage: 9.5
+  Faction: HogwartsTrainingY7
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    MovementSpeed: 0.238
+
+HOG_Y7_DARK_LORD_ECHO:
+  Type: BLAZE
+  Display: '&4[Năm VII] &fTiếng Vọng Hắc Chúa'
+  Health: 145
+  Damage: 10.0
+  Faction: HogwartsTrainingY7
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    MovementSpeed: 0.238
+
+HOG_Y7_FINAL_GUARDIAN:
+  Type: RAVAGER
+  Display: '&6&l[Năm VII] Vệ Binh Tốt Nghiệp'
+  Health: 220
+  Damage: 12.5
+  Faction: HogwartsTrainingY7
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    PreventSunburn: true
+    MovementSpeed: 0.238

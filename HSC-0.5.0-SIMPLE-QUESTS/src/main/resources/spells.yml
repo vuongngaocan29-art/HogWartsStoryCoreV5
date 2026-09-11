@@ -1,0 +1,389 @@
+# ============================================================
+# HOGWARTS STORY CORE - SPELLS 0.4.4 DAMAGE REBALANCE
+# damage = điểm máu Minecraft; 2.0 damage = 1 tim.
+# Phép hỗ trợ/tiện ích giữ damage 0.
+# Damage thực tế còn nhân hệ số lõi đũa phép.
+# ============================================================
+
+spells:
+  lumos:
+    incantation: Lumos
+    vi-name: Bùa Phát Sáng
+    description: Thắp sáng đầu đũa phép.
+    year: 1
+    subject: Charms
+    mana-cost: 5
+    cooldown-ms: 1000
+    damage: 0.0
+  nox:
+    incantation: Nox
+    vi-name: Bùa Tắt Sáng
+    description: Dập tắt ánh sáng từ Lumos.
+    year: 1
+    subject: Charms
+    mana-cost: 0
+    cooldown-ms: 500
+    damage: 0.0
+  wingardium-leviosa:
+    incantation: Wingardium Leviosa
+    vi-name: Bùa Bay Bổng
+    description: Nâng vật thể hoặc sinh vật lên không trung.
+    year: 1
+    subject: Charms
+    mana-cost: 15
+    cooldown-ms: 4000
+    damage: 0.0
+  alohomora:
+    incantation: Alohomora
+    vi-name: Bùa Mở Khoá
+    description: Mở khoá cửa và ổ khoá thường.
+    year: 1
+    subject: Charms
+    mana-cost: 12
+    cooldown-ms: 3000
+    damage: 0.0
+  incendio:
+    incantation: Incendio
+    vi-name: Bùa Nhóm Lửa
+    description: Tạo ra lửa.
+    year: 1
+    subject: Charms
+    mana-cost: 18
+    cooldown-ms: 5000
+    damage: 4.0
+  petrificus-totalus:
+    incantation: Petrificus Totalus
+    vi-name: Bùa Đông Cứng Toàn Thân
+    description: Khoá cứng toàn bộ cơ thể đối thủ.
+    year: 1
+    subject: DADA
+    mana-cost: 25
+    cooldown-ms: 12000
+    damage: 3.0
+  locomotor-mortis:
+    incantation: Locomotor Mortis
+    vi-name: Bùa Khoá Chân
+    description: Dính hai chân đối thủ lại với nhau.
+    year: 1
+    subject: DADA
+    mana-cost: 18
+    cooldown-ms: 8000
+    damage: 2.5
+  expelliarmus:
+    incantation: Expelliarmus
+    vi-name: Bùa Tước Vũ Khí
+    description: Đánh bật vũ khí khỏi tay đối thủ.
+    year: 2
+    subject: DADA
+    mana-cost: 20
+    cooldown-ms: 6000
+    damage: 5.0
+  rictusempra:
+    incantation: Rictusempra
+    vi-name: Bùa Thọt Lét
+    description: Khiến đối thủ cười ngặt nghẽo và mất sức.
+    year: 2
+    subject: DADA
+    mana-cost: 15
+    cooldown-ms: 6000
+    damage: 4.0
+  serpensortia:
+    incantation: Serpensortia
+    vi-name: Bùa Gọi Rắn
+    description: Triệu hồi một con rắn từ đầu đũa.
+    year: 2
+    subject: DADA
+    mana-cost: 30
+    cooldown-ms: 20000
+    damage: 0.0
+  reparo:
+    incantation: Reparo
+    vi-name: Bùa Hàn Gắn
+    description: Sửa chữa vật thể bị hỏng.
+    year: 2
+    subject: Charms
+    mana-cost: 25
+    cooldown-ms: 10000
+    damage: 0.0
+  immobulus:
+    incantation: Immobulus
+    vi-name: Bùa Bất Động
+    description: Làm bất động mọi thứ đang chuyển động quanh bạn.
+    year: 2
+    subject: Charms
+    mana-cost: 30
+    cooldown-ms: 15000
+    damage: 2.5
+  finite-incantatem:
+    incantation: Finite Incantatem
+    vi-name: Bùa Chấm Dứt
+    description: Chấm dứt hiệu ứng phép đang tác động.
+    year: 2
+    subject: Charms
+    mana-cost: 15
+    cooldown-ms: 8000
+    damage: 0.0
+  riddikulus:
+    incantation: Riddikulus
+    vi-name: Bùa Lố Bịch
+    description: Biến Ông Kẹ thành thứ nực cười và xua đuổi nó.
+    year: 3
+    subject: DADA
+    mana-cost: 25
+    cooldown-ms: 10000
+    damage: 8.0
+  expecto-patronum:
+    incantation: Expecto Patronum
+    vi-name: Bùa Thần Hộ Mệnh
+    description: Triệu hồi Thần Hộ Mệnh xua đuổi Giám ngục.
+    year: 3
+    subject: DADA
+    mana-cost: 60
+    cooldown-ms: 45000
+    damage: 7.0
+  lumos-maxima:
+    incantation: Lumos Maxima
+    vi-name: Bùa Đại Phát Sáng
+    description: Phóng ra một quả cầu sáng chói.
+    year: 3
+    subject: Charms
+    mana-cost: 20
+    cooldown-ms: 8000
+    damage: 2.5
+  impervius:
+    incantation: Impervius
+    vi-name: Bùa Không Thấm
+    description: Chống nước và các chất lỏng khác.
+    year: 3
+    subject: Charms
+    mana-cost: 20
+    cooldown-ms: 15000
+    damage: 0.0
+  ferula:
+    incantation: Ferula
+    vi-name: Bùa Băng Bó
+    description: Tạo băng và nẹp để chữa thương.
+    year: 3
+    subject: Charms
+    mana-cost: 25
+    cooldown-ms: 20000
+    damage: 0.0
+  accio:
+    incantation: Accio
+    vi-name: Bùa Triệu Tập
+    description: Kéo vật thể về phía người niệm chú.
+    year: 4
+    subject: Charms
+    mana-cost: 20
+    cooldown-ms: 6000
+    damage: 0.0
+  stupefy:
+    incantation: Stupefy
+    vi-name: Bùa Choáng Váng
+    description: Làm đối thủ bất tỉnh.
+    year: 4
+    subject: DADA
+    mana-cost: 30
+    cooldown-ms: 8000
+    damage: 8.0
+  impedimenta:
+    incantation: Impedimenta
+    vi-name: Bùa Cản Trở
+    description: Làm chậm hoặc chặn đứng kẻ đang lao tới.
+    year: 4
+    subject: DADA
+    mana-cost: 25
+    cooldown-ms: 10000
+    damage: 5.0
+  reducto:
+    incantation: Reducto
+    vi-name: Bùa Phá Huỷ
+    description: Thổi tung vật cản thành từng mảnh.
+    year: 4
+    subject: DADA
+    mana-cost: 35
+    cooldown-ms: 12000
+    damage: 12.0
+  densaugeo:
+    incantation: Densaugeo
+    vi-name: Bùa Mọc Răng
+    description: Khiến răng đối thủ dài ra bất thường.
+    year: 4
+    subject: DADA
+    mana-cost: 20
+    cooldown-ms: 10000
+    damage: 4.0
+  point-me:
+    incantation: Point Me
+    vi-name: Bùa La Bàn
+    description: Đũa phép quay về hướng Bắc.
+    year: 4
+    subject: Charms
+    mana-cost: 5
+    cooldown-ms: 3000
+    damage: 0.0
+  protego:
+    incantation: Protego
+    vi-name: Bùa Khiên Chắn
+    description: Dựng lá chắn phản lại phép thuật.
+    year: 5
+    subject: DADA
+    mana-cost: 30
+    cooldown-ms: 12000
+    damage: 0.0
+  silencio:
+    incantation: Silencio
+    vi-name: Bùa Câm Lặng
+    description: Khiến mục tiêu không thể phát ra tiếng.
+    year: 5
+    subject: Charms
+    mana-cost: 25
+    cooldown-ms: 15000
+    damage: 2.5
+  levicorpus:
+    incantation: Levicorpus
+    vi-name: Bùa Treo Ngược
+    description: Treo ngược đối thủ lên bằng mắt cá chân.
+    year: 5
+    subject: DADA
+    mana-cost: 30
+    cooldown-ms: 15000
+    damage: 6.0
+  liberacorpus:
+    incantation: Liberacorpus
+    vi-name: Bùa Thả Xuống
+    description: Phản chú của Levicorpus.
+    year: 5
+    subject: DADA
+    mana-cost: 10
+    cooldown-ms: 3000
+    damage: 0.0
+  episkey:
+    incantation: Episkey
+    vi-name: Bùa Chữa Lành
+    description: Chữa các vết thương nhẹ.
+    year: 5
+    subject: Charms
+    mana-cost: 30
+    cooldown-ms: 20000
+    damage: 0.0
+  aguamenti:
+    incantation: Aguamenti
+    vi-name: Bùa Tạo Nước
+    description: Phun ra dòng nước sạch từ đầu đũa.
+    year: 6
+    subject: Charms
+    mana-cost: 20
+    cooldown-ms: 8000
+    damage: 0.0
+  muffliato:
+    incantation: Muffliato
+    vi-name: Bùa Ù Tai
+    description: Lấp tai người xung quanh bằng tiếng vo ve.
+    year: 6
+    subject: Charms
+    mana-cost: 25
+    cooldown-ms: 20000
+    damage: 0.0
+  confringo:
+    incantation: Confringo
+    vi-name: Bùa Nổ
+    description: Gây nổ tại điểm chạm.
+    year: 6
+    subject: DADA
+    mana-cost: 45
+    cooldown-ms: 18000
+    damage: 14.0
+  sectumsempra:
+    incantation: Sectumsempra
+    vi-name: Bùa Cắt Xé
+    description: Rạch những vết thương sâu vô hình. Phép hắc ám.
+    year: 6
+    subject: DADA
+    mana-cost: 55
+    cooldown-ms: 30000
+    damage: 16.0
+  langlock:
+    incantation: Langlock
+    vi-name: Bùa Dính Lưỡi
+    description: Dính lưỡi mục tiêu lên vòm miệng.
+    year: 6
+    subject: DADA
+    mana-cost: 25
+    cooldown-ms: 15000
+    damage: 3.0
+  protego-totalum:
+    incantation: Protego Totalum
+    vi-name: Bùa Bảo Vệ Toàn Vẹn
+    description: Bảo vệ cả một khu vực khỏi phép thuật.
+    year: 7
+    subject: DADA
+    mana-cost: 70
+    cooldown-ms: 60000
+    damage: 0.0
+  salvio-hexia:
+    incantation: Salvio Hexia
+    vi-name: Bùa Chắn Ếm
+    description: Chặn các lời nguyền nhắm vào khu vực.
+    year: 7
+    subject: DADA
+    mana-cost: 60
+    cooldown-ms: 60000
+    damage: 0.0
+  cave-inimicum:
+    incantation: Cave Inimicum
+    vi-name: Bùa Cảnh Giới
+    description: Che giấu nơi trú ẩn khỏi kẻ thù.
+    year: 7
+    subject: DADA
+    mana-cost: 60
+    cooldown-ms: 60000
+    damage: 0.0
+  fiendfyre:
+    incantation: Fiendfyre
+    vi-name: Quỷ Hoả
+    description: Ngọn lửa nguyền rủa không thể kiểm soát. Cực kỳ nguy hiểm.
+    year: 7
+    subject: DADA
+    mana-cost: 90
+    cooldown-ms: 120000
+    damage: 18.0
+  expelliarmus-maxima:
+    incantation: Expelliarmus Maxima
+    vi-name: Đại Bùa Tước Vũ Khí
+    description: Phiên bản bậc thầy của Expelliarmus.
+    year: 7
+    subject: DADA
+    mana-cost: 50
+    cooldown-ms: 25000
+    damage: 10.0
+  imperio:
+    incantation: Imperio
+    vi-name: Lời nguyền Độc đoán
+    description: Điều khiển hoàn toàn nạn nhân.
+    year: 7
+    subject: DADA
+    mana-cost: 80
+    cooldown-ms: 90000
+    unforgivable: true
+    damage: 0.0
+  crucio:
+    incantation: Crucio
+    vi-name: Lời nguyền Tra tấn
+    description: Gây đau đớn tột cùng.
+    year: 7
+    subject: DADA
+    mana-cost: 80
+    cooldown-ms: 90000
+    unforgivable: true
+    damage: 12.0
+  avada-kedavra:
+    incantation: Avada Kedavra
+    vi-name: Lời nguyền Chết chóc
+    description: Giết chết ngay lập tức. Không có phản chú.
+    year: 7
+    subject: DADA
+    mana-cost: 100
+    cooldown-ms: 180000
+    unforgivable: true
+    damage: 0.0

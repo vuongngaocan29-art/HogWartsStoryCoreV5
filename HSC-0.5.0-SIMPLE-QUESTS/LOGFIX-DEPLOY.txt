@@ -1,0 +1,15 @@
+HOGWARTS STORY CORE 0.4.2 + BETONQUEST 3.2 LOGFIX
+
+Server target:
+- Paper 1.21.11
+- Java 21
+- BetonQuest 3.2.0
+- Citizens
+
+Thay đổi:
+- cast-hooks dùng: bq action %player% hogwarts_spell_school>practice_tick_<spell>
+- chỉ bundle hogwarts_spell_school LOGFIX
+- không bundle hogwarts_year1 cũ
+- không bundle sidequests khi chưa có Citizens 20-26
+
+Build bằng GitHub Actions với build-hogwarts-0.4.2.yml.

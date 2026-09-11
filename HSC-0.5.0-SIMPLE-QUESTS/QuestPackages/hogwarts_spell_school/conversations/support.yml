@@ -1,0 +1,143 @@
+conversations:
+  hooch:
+    quester: '&9&lMadam Rolanda Hooch&r'
+    first: mission_turnin_flying_y4,mission_remind_flying_y4,mission_offer_flying_y4,mission_turnin_flying_y4,mission_remind_flying_y4,mission_offer_flying_y4,done,offer
+    stop: 'true'
+    NPC_options:
+      mission_offer_flying_y4:
+        text: '&eNhiệm vụ môn học — Năm 4: &fĐường bay nâng cao&7. Bay tới checkpoint nâng cao ở sân bay rồi quay lại gặp Madam Hooch. Em nhận bài chứ?'
+        conditions: can_start_mission_flying_y4
+        pointers: mission_accept_flying_y4,mission_decline
+      mission_start_flying_y4:
+        text: '&aTốt.&7 Ta đã ghi nhiệm vụ &fĐường bay nâng cao&7 vào Sổ Nhiệm Vụ. Hoàn thành mục tiêu và hệ thống sẽ tự chấm khi hoàn thành.'
+        actions: start_mission_flying_y4
+        pointers: mission_go
+      mission_remind_flying_y4:
+        text: '&eBài &fĐường bay nâng cao&e vẫn chưa xong.&7 Bay tới checkpoint nâng cao ở sân bay rồi quay lại gặp Madam Hooch.'
+        conditions: in_progress_mission_flying_y4
+        pointers: mission_go
+      mission_turnin_flying_y4:
+        text: '&aTa đã kiểm tra kết quả.&7 Em hoàn thành &fĐường bay nâng cao&7. Từ giờ các bài phép tương ứng của môn này đã mở cho em.'
+        conditions: can_turnin_mission_flying_y4
+        actions: finish_mission_flying_y4
+        pointers: mission_thanks
+      mission_continue_exit:
+        text: '&eNhiệm vụ vẫn đang tiếp tục.&7 Hoàn thành mục tiêu rồi quay lại. Ta sẽ không tính là xong trước khi em nộp bài.'
+      mission_return_exit:
+        text: '&7Được. Khi sẵn sàng hãy quay lại nhận nhiệm vụ.'
+      mission_complete_exit:
+        text: '&aTốt.&7 Nhiệm vụ môn học đã được ghi nhận hoàn thành.'
+      offer:
+        text: Trước khi lao vào những bài phép khó, em phải biết giữ thăng bằng và kiểm soát di chuyển. Muốn làm bài bay cơ bản không?
+        conditions: '!flying_done'
+        pointers: accept,decline
+      start:
+        text: Tới sân bay, hoàn thành bài độ cao rồi quay lại. Đừng liều lĩnh.
+        actions: start_flying
+        pointers: practice_done
+      done:
+        text: Tốt. Khả năng kiểm soát của em khá hơn rồi.
+        conditions: flying_done
+        pointers: complete_done
+      practice_exit:
+        text: '&eBài Bay vẫn đang tiếp tục.&7 Hoàn thành bài độ cao và hệ thống sẽ tự chấm khi hoàn thành.'
+      return_exit:
+        text: '&7Được. Khi sẵn sàng hãy quay lại sân tập.'
+      complete_exit:
+        text: '&aTốt.&7 Bài Bay cơ bản đã hoàn thành.'
+    player_options:
+      mission_accept_flying_y4:
+        text: '&aEm nhận nhiệm vụ.'
+        pointers: mission_start_flying_y4
+      mission_decline:
+        text: '&7Em sẽ quay lại sau.'
+        pointers: mission_return_exit
+      mission_go:
+        text: '&aEm đi làm nhiệm vụ ngay.'
+        pointers: mission_continue_exit
+      mission_thanks:
+        text: '&aEm cảm ơn giáo sư.'
+        pointers: mission_complete_exit
+      accept:
+        text: '&aEm sẵn sàng.'
+        pointers: start
+      decline:
+        text: '&7Để lúc khác ạ.'
+        pointers: return_exit
+      practice_done:
+        text: '&aEm đi luyện ngay ạ.'
+        pointers: practice_exit
+      complete_done:
+        text: '&aEm cảm ơn cô.'
+        pointers: complete_exit
+  sprout:
+    quester: '&a&lGiáo sư Pomona Sprout&r'
+    first: mission_turnin_herbology_y3,mission_remind_herbology_y3,mission_offer_herbology_y3,mission_turnin_herbology_y3,mission_remind_herbology_y3,mission_offer_herbology_y3,done,offer
+    stop: 'true'
+    NPC_options:
+      mission_offer_herbology_y3:
+        text: '&eNhiệm vụ môn học — Năm 3: &fNhà kính nâng cao&7. Tương tác với COMPOSTER tại nhà kính để hoàn thành bài nhận biết môi trường trồng cây. Em nhận bài chứ?'
+        conditions: can_start_mission_herbology_y3
+        pointers: mission_accept_herbology_y3,mission_decline
+      mission_start_herbology_y3:
+        text: '&aTốt.&7 Ta đã ghi nhiệm vụ &fNhà kính nâng cao&7 vào Sổ Nhiệm Vụ. Hoàn thành mục tiêu và hệ thống sẽ tự chấm khi hoàn thành.'
+        actions: start_mission_herbology_y3
+        pointers: mission_go
+      mission_remind_herbology_y3:
+        text: '&eBài &fNhà kính nâng cao&e vẫn chưa xong.&7 Tương tác với COMPOSTER tại nhà kính để hoàn thành bài nhận biết môi trường trồng cây.'
+        conditions: in_progress_mission_herbology_y3
+        pointers: mission_go
+      mission_turnin_herbology_y3:
+        text: '&aTa đã kiểm tra kết quả.&7 Em hoàn thành &fNhà kính nâng cao&7. Từ giờ các bài phép tương ứng của môn này đã mở cho em.'
+        conditions: can_turnin_mission_herbology_y3
+        actions: finish_mission_herbology_y3
+        pointers: mission_thanks
+      mission_continue_exit:
+        text: '&eNhiệm vụ vẫn đang tiếp tục.&7 Hoàn thành mục tiêu rồi quay lại. Ta sẽ không tính là xong trước khi em nộp bài.'
+      mission_return_exit:
+        text: '&7Được. Khi sẵn sàng hãy quay lại nhận nhiệm vụ.'
+      mission_complete_exit:
+        text: '&aTốt.&7 Nhiệm vụ môn học đã được ghi nhận hoàn thành.'
+      offer:
+        text: Phù thuỷ giỏi không chỉ biết vung đũa. Hãy giúp ta thu thập 5 mẫu dương xỉ trong nhà kính.
+        conditions: '!herbology_done'
+        pointers: accept,decline
+      start:
+        text: Mang găng tay và làm cẩn thận.
+        actions: start_herbology
+        pointers: practice_done
+      done:
+        text: Mẫu tốt. Em đã học được cách quan sát nguyên liệu phép thuật.
+        conditions: herbology_done
+        pointers: complete_done
+      practice_exit:
+        text: '&eBài Thảo dược vẫn đang tiếp tục.&7 Thu thập đủ mẫu và hệ thống sẽ tự chấm khi hoàn thành.'
+      return_exit:
+        text: '&7Được. Khi sẵn sàng hãy quay lại nhà kính.'
+      complete_exit:
+        text: '&aTốt lắm.&7 Bài Thảo dược này đã hoàn thành.'
+    player_options:
+      mission_accept_herbology_y3:
+        text: '&aEm nhận nhiệm vụ.'
+        pointers: mission_start_herbology_y3
+      mission_decline:
+        text: '&7Em sẽ quay lại sau.'
+        pointers: mission_return_exit
+      mission_go:
+        text: '&aEm đi làm nhiệm vụ ngay.'
+        pointers: mission_continue_exit
+      mission_thanks:
+        text: '&aEm cảm ơn giáo sư.'
+        pointers: mission_complete_exit
+      accept:
+        text: '&aEm nhận bài ạ.'
+        pointers: start
+      decline:
+        text: '&7Em quay lại sau.'
+        pointers: return_exit
+      practice_done:
+        text: '&aEm đi luyện ngay ạ.'
+        pointers: practice_exit
+      complete_done:
+        text: '&aEm cảm ơn cô.'
+        pointers: complete_exit

@@ -1,0 +1,212 @@
+# ============================================================
+# HOGWARTS SIMPLE QUESTS 0.5.0
+#
+# Không dùng BetonQuest cho quest Hogwarts.
+#
+# type:
+#   CAST    = click NPC -> niệm phép đủ số lần -> tự xong
+#   COLLECT = click NPC -> NPC tự thả item -> nhặt đủ -> tự xong
+#   KILL    = click NPC -> NPC tự spawn mob -> giết đủ -> tự xong
+#
+# NPC IDs hiện tại:
+# 3 Flitwick, 4 Quirrell, 5 Lockhart, 6 Lupin, 7 Moody,
+# 8 Umbridge, 9 Snape, 10 McGonagall, 11 Hooch,
+# 12 Sprout, 13 Dumbledore
+# ============================================================
+
+missions:
+
+  flitwick_y1_lumos:
+    enabled: true
+    npc-id: 3
+    min-year: 1
+    max-year: 1
+    type: CAST
+    title: "Lumos nhập môn"
+    description: "Giáo sư mở Lumos tạm thời. Chỉ cần niệm thành công một lần vào bất kỳ đâu."
+    goal: 1
+    cast:
+      spell: lumos
+      teach-spell: lumos
+    reward:
+      house-points: 3
+      money: 25
+      xp: 75
+
+  quirrell_y1_defense:
+    enabled: true
+    npc-id: 4
+    min-year: 1
+    max-year: 1
+    type: KILL
+    title: "Phản xạ phòng vệ"
+    description: "Đánh bại các Bóng Tối Tập Sự do giáo sư triệu hồi."
+    goal: 5
+    mob:
+      type: ZOMBIE
+      name: "&5Bóng Tối Tập Sự"
+      health: 18
+      damage: 2.5
+    reward:
+      house-points: 3
+      money: 30
+      xp: 90
+
+  lockhart_y2_pixie:
+    enabled: true
+    npc-id: 5
+    min-year: 2
+    max-year: 2
+    type: KILL
+    title: "Pixie náo loạn"
+    description: "Xử lý nhóm sinh vật luyện tập do Lockhart triệu hồi."
+    goal: 6
+    mob:
+      type: SILVERFISH
+      name: "&bPixie Luyện Tập"
+      health: 16
+      damage: 2.0
+    reward:
+      house-points: 4
+      money: 35
+      xp: 110
+
+  lupin_y3_boggart:
+    enabled: true
+    npc-id: 6
+    min-year: 3
+    max-year: 3
+    type: KILL
+    title: "Boggart giả lập"
+    description: "Hoàn thành buổi thực hành đối phó sinh vật giả lập."
+    goal: 5
+    mob:
+      type: HUSK
+      name: "&dBoggart Giả Lập"
+      health: 30
+      damage: 3.5
+    reward:
+      house-points: 5
+      money: 40
+      xp: 130
+
+  moody_y4_combat:
+    enabled: true
+    npc-id: 7
+    min-year: 4
+    max-year: 4
+    type: KILL
+    title: "Buổi huấn luyện cảnh giác"
+    description: "Đánh bại hình nhân chiến đấu do Moody triệu hồi."
+    goal: 7
+    mob:
+      type: PILLAGER
+      name: "&4Hình Nhân Chiến Đấu"
+      health: 36
+      damage: 4.0
+    reward:
+      house-points: 6
+      money: 50
+      xp: 160
+
+  umbridge_y5_cast:
+    enabled: true
+    npc-id: 8
+    min-year: 5
+    max-year: 5
+    type: CAST
+    title: "Kiểm tra kiểm soát phép"
+    description: "Niệm thành công hai phép bất kỳ."
+    goal: 2
+    cast:
+      spell: any
+      teach-spell: ""
+    reward:
+      house-points: 4
+      money: 40
+      xp: 120
+
+  snape_y1_ingredients:
+    enabled: true
+    npc-id: 9
+    min-year: 1
+    max-year: 7
+    type: COLLECT
+    title: "Nguyên liệu Độc dược"
+    description: "Nhặt đủ nguyên liệu mà Snape đặt quanh khu thực hành."
+    goal: 5
+    collect:
+      material: NETHER_WART
+      name: "&5Nguyên liệu Độc dược"
+    reward:
+      house-points: 3
+      money: 25
+      xp: 75
+
+  mcgonagall_y1_cast:
+    enabled: true
+    npc-id: 10
+    min-year: 1
+    max-year: 7
+    type: CAST
+    title: "Kiểm soát đũa phép"
+    description: "Niệm thành công hai phép bất kỳ."
+    goal: 2
+    cast:
+      spell: any
+      teach-spell: ""
+    reward:
+      house-points: 3
+      money: 25
+      xp: 80
+
+  hooch_y1_feathers:
+    enabled: true
+    npc-id: 11
+    min-year: 1
+    max-year: 7
+    type: COLLECT
+    title: "Chuẩn bị giờ Bay"
+    description: "Thu thập lông vũ luyện tập do Madam Hooch thả quanh sân."
+    goal: 5
+    collect:
+      material: FEATHER
+      name: "&fLông Vũ Luyện Tập"
+    reward:
+      house-points: 3
+      money: 25
+      xp: 70
+
+  sprout_y1_herbs:
+    enabled: true
+    npc-id: 12
+    min-year: 1
+    max-year: 7
+    type: COLLECT
+    title: "Thu thập thảo dược"
+    description: "Nhặt đủ mẫu cây do Giáo sư Sprout chuẩn bị."
+    goal: 6
+    collect:
+      material: FERN
+      name: "&aMẫu Thảo Dược"
+    reward:
+      house-points: 3
+      money: 30
+      xp: 85
+
+  dumbledore_exam:
+    enabled: true
+    npc-id: 13
+    min-year: 1
+    max-year: 7
+    type: CAST
+    title: "Kiểm tra của Hiệu trưởng"
+    description: "Niệm thành công một phép bất kỳ để hoàn thành bài kiểm tra ngắn."
+    goal: 1
+    cast:
+      spell: any
+      teach-spell: ""
+    reward:
+      house-points: 5
+      money: 50
+      xp: 100

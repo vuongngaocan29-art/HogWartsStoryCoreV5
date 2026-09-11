@@ -1,0 +1,42 @@
+package:
+  enabled: true
+  version: 3.2.0-QUEST-2
+npcs:
+  flitwick: citizens 3
+  quirrell: citizens 4
+  lockhart: citizens 5
+  lupin: citizens 6
+  moody: citizens 7
+  umbridge: citizens 8
+  snape: citizens 9
+  mcgonagall: citizens 10
+  hooch: citizens 11
+  sprout: citizens 12
+  dumbledore: citizens 13
+npc_conversations:
+  flitwick: flitwick
+  quirrell: quirrell
+  lockhart: lockhart
+  lupin: lupin
+  moody: moody
+  umbridge: umbridge
+  snape: snape
+  mcgonagall: mcgonagall
+  hooch: hooch
+  sprout: sprout
+  dumbledore: dumbledore
+constants:
+  world: world
+  loc_charms: 40;70;20;world
+  loc_dada: 80;72;10;world
+  loc_transfiguration: 60;70;20;world
+  loc_potions: 20;60;-40;world
+  loc_flying: 0;65;80;world
+  loc_flying_high: 0;90;80;world
+  loc_greenhouse: -30;68;45;world
+  loc_great_hall: 0;70;0;world
+  loc_flying_advanced: 20;95;100;world
+  loc_training_a: 76;72;6;world
+  loc_training_b: 84;72;6;world
+  loc_training_c: 76;72;14;world
+  loc_training_boss: 84;72;14;world

@@ -1,0 +1,4 @@
+# Hogwarts Training Skills
+# File intentionally kept minimal for stability on MythicMobs 5.x.
+# The training mobs currently rely on vanilla AI + custom health/damage.
+# You can add visual/active skills later without changing the BetonQuest IDs.

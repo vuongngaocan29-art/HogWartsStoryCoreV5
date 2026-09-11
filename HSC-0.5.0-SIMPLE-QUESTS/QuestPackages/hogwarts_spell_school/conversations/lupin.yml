@@ -1,0 +1,106 @@
+conversations:
+  lupin:
+    quester: '&e&lGiáo sư Remus Lupin&r'
+    first: mission_turnin_dada_y3,mission_remind_dada_y3,mission_offer_dada_y3,complete_riddikulus,remind_riddikulus,offer_riddikulus,complete_expecto_patronum,remind_expecto_patronum,offer_expecto_patronum,locked,all_done
+    stop: 'true'
+    NPC_options:
+      mission_offer_dada_y3:
+        text: '&eThực hành chiến đấu — Năm 3: &fGiữ bình tĩnh&7. Vượt qua đấu trường Năm III: Boggart, Tiếng Vọng Dementor, Người Sói Tập Sự và Sinh Vật Bóng Tối. Tổng cộng &e9&7 mục tiêu. Em nhận bài chứ?'
+        conditions: can_start_mission_dada_y3
+        pointers: mission_accept_dada_y3,mission_decline
+      mission_start_dada_y3:
+        text: '&aBắt đầu.&7 Ta đã triệu hồi quái luyện tập &eriêng cho em&7 tại đấu trường. Hãy đánh bại đủ &e9&7 mục tiêu rồi quay lại.'
+        actions: start_mission_dada_y3
+        pointers: mission_go
+      mission_remind_dada_y3:
+        text: '&eBài Năm 3 vẫn chưa xong.&7 Hãy quay lại đấu trường và đánh bại đủ &e9&7 quái luyện tập đã được giao.'
+        conditions: in_progress_mission_dada_y3
+        pointers: mission_go
+      mission_turnin_dada_y3:
+        text: '&aĐạt yêu cầu.&7 Em đã hoàn thành bài thực hành chiến đấu Năm 3. Các bài học/phép tiếp theo tương ứng giờ đã được mở.'
+        conditions: can_turnin_mission_dada_y3
+        actions: finish_mission_dada_y3
+        pointers: mission_thanks
+      mission_continue_exit:
+        text: '&eNhiệm vụ vẫn đang tiếp tục.&7 Hoàn thành mục tiêu rồi quay lại. Ta sẽ không tính là xong trước khi em nộp bài.'
+      mission_return_exit:
+        text: '&7Được. Khi sẵn sàng hãy quay lại nhận nhiệm vụ.'
+      mission_complete_exit:
+        text: '&aTốt.&7 Nhiệm vụ môn học đã được ghi nhận hoàn thành.'
+      offer_riddikulus:
+        text: 'Phòng vệ tốt bắt đầu từ bình tĩnh. Ta sẽ luyện từng bước cho đến khi em kiểm soát được phép. Bài tiếp theo là &fRiddikulus&7 — Bùa Lố Bịch. Yêu cầu: Năm 3, Cấp phép 8. Em có muốn bắt đầu không?'
+        conditions: can_start_riddikulus
+        pointers: accept_riddikulus,decline
+      start_msg_riddikulus:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Riddikulus. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_riddikulus
+        pointers: leave
+      remind_riddikulus:
+        text: Bài Riddikulus chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_riddikulus
+        pointers: leave
+      complete_riddikulus:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Riddikulus; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_riddikulus
+        actions: complete_riddikulus
+        pointers: thanks
+      offer_expecto_patronum:
+        text: 'Phòng vệ tốt bắt đầu từ bình tĩnh. Ta sẽ luyện từng bước cho đến khi em kiểm soát được phép. Bài tiếp theo là &fExpecto Patronum&7 — Bùa Thần Hộ Mệnh. Yêu cầu: Năm 3, Cấp phép 8. Em có muốn bắt đầu không?'
+        conditions: can_start_expecto_patronum
+        pointers: accept_expecto_patronum,decline
+      start_msg_expecto_patronum:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Expecto Patronum. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_expecto_patronum
+        pointers: leave
+      remind_expecto_patronum:
+        text: Bài Expecto Patronum chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_expecto_patronum
+        pointers: leave
+      complete_expecto_patronum:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Expecto Patronum; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_expecto_patronum
+        actions: complete_expecto_patronum
+        pointers: thanks
+      locked:
+        text: 'Hiện chưa có bài mới phù hợp. Hãy kiểm tra &f/hogwarts&7: đúng năm học, đủ Cấp phép và hoàn thành bài trước của môn này.'
+        pointers: return_later
+      all_done:
+        text: Em đã hoàn tất toàn bộ bài mà ta phụ trách ở giai đoạn hiện tại. Hãy tiếp tục môn còn lại hoặc tới gặp Hiệu trưởng khi đã xong cả năm.
+        pointers: return_later
+      practice_exit:
+        text: '&eBài học vẫn đang tiếp tục.&7 Hãy luyện đủ yêu cầu và hệ thống sẽ tự chấm khi hoàn thành. Ta sẽ chỉ công nhận khi em hoàn thành bài.'
+      return_exit:
+        text: '&7Được. Khi đủ điều kiện hoặc sẵn sàng, hãy quay lại gặp ta.'
+      complete_exit:
+        text: '&aTốt lắm.&7 Bài học này đã hoàn thành. Phép vừa học đã được ghi vào Sổ Phép của em.'
+    player_options:
+      mission_accept_dada_y3:
+        text: '&aEm nhận nhiệm vụ.'
+        pointers: mission_start_dada_y3
+      mission_decline:
+        text: '&7Em sẽ quay lại sau.'
+        pointers: mission_return_exit
+      mission_go:
+        text: '&aEm đi làm nhiệm vụ ngay.'
+        pointers: mission_continue_exit
+      mission_thanks:
+        text: '&aEm cảm ơn giáo sư.'
+        pointers: mission_complete_exit
+      accept_riddikulus:
+        text: '&aEm muốn học Riddikulus.'
+        pointers: start_msg_riddikulus
+      accept_expecto_patronum:
+        text: '&aEm muốn học Expecto Patronum.'
+        pointers: start_msg_expecto_patronum
+      decline:
+        text: '&7Em sẽ quay lại sau.'
+        pointers: return_exit
+      leave:
+        text: '&aEm đi luyện tiếp ạ.'
+        pointers: practice_exit
+      thanks:
+        text: '&aEm cảm ơn giáo sư.'
+        pointers: complete_exit
+      return_later:
+        text: '&7Vâng, em sẽ quay lại sau.'
+        pointers: return_exit

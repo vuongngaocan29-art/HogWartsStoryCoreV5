@@ -1,0 +1,66 @@
+============================================================
+HOGWARTS NPC - BẢNG MÀU ĐỒNG BỘ
+============================================================
+
+Mã màu:
+&0 Đen | &1 Xanh đậm | &2 Xanh lá đậm | &3 Aqua đậm
+&4 Đỏ đậm | &5 Tím đậm | &6 Vàng kim | &7 Xám
+&8 Xám đậm | &9 Xanh lam | &a Xanh lá | &b Aqua
+&c Đỏ | &d Hồng/Tím sáng | &e Vàng sáng | &f Trắng
+&l = in đậm | &r = reset
+
+============================================================
+LỆNH ÁP MÀU CHO NPC CITIZENS
+============================================================
+
+Giáo sư Filius Flitwick — ID 3 — Aqua - Bùa chú
+/npc select 3
+/npc color &b
+
+Giáo sư Quirinus Quirrell — ID 4 — Tím - Phòng chống Nghệ thuật Hắc ám
+/npc select 4
+/npc color &5
+
+Giáo sư Gilderoy Lockhart — ID 5 — Vàng kim - Phô trương
+/npc select 5
+/npc color &6
+
+Giáo sư Remus Lupin — ID 6 — Vàng ấm - Phòng chống Hắc ám
+/npc select 6
+/npc color &e
+
+Giáo sư Alastor Moody — ID 7 — Đỏ đậm - Chiến đấu
+/npc select 7
+/npc color &4
+
+Giáo sư Dolores Umbridge — ID 8 — Hồng - Umbridge
+/npc select 8
+/npc color &d
+
+Giáo sư Severus Snape — ID 9 — Xám đậm - Độc dược
+/npc select 9
+/npc color &8
+
+Giáo sư Minerva McGonagall — ID 10 — Xanh lục - Biến hình
+/npc select 10
+/npc color &2
+
+Madam Rolanda Hooch — ID 11 — Xanh lam - Bay
+/npc select 11
+/npc color &9
+
+Giáo sư Pomona Sprout — ID 12 — Xanh lá - Thảo dược
+/npc select 12
+/npc color &a
+
+Hiệu trưởng Albus Dumbledore — ID 13 — Vàng + tím - Hiệu trưởng
+/npc select 13
+/npc color &6
+
+Gợi ý UI nhiệm vụ:
+&6&l✦ HOGWARTS ✦
+&e&lNHIỆM VỤ
+&b&lBÀI HỌC
+&d&lPHÉP THUẬT
+&a&lHOÀN THÀNH
+&c&lCHƯA ĐỦ ĐIỀU KIỆN

@@ -1,0 +1,967 @@
+actions:
+  start_lumos: folder tag_start_lumos,clear_practice_lumos,enable_practice_lumos,journal_start_lumos,notify_start_lumos,questtrack_start_lumos
+  tag_start_lumos: tag add lesson_lumos_started
+  clear_practice_lumos: deletepoint practice_lumos
+  enable_practice_lumos: command hogwarts practice %player% lumos on
+  journal_start_lumos: journal add lesson_lumos
+  notify_start_lumos: 'notify &e✦ BÀI HỌC: &fLumos&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_lumos: folder practice_add_lumos,practice_auto_lumos conditions:started_lumos,!done_lumos
+  complete_lumos: folder disable_practice_lumos,teach_lumos,bonus_xp_lumos,reward_shards_lumos,tag_done_lumos,tag_end_lumos,journal_done_lumos,reward_housepoints_lumos,reward_money_lumos,questtrack_done_lumos,notify_done_lumos
+  disable_practice_lumos: command hogwarts practice %player% lumos off
+  teach_lumos: command hogwarts teach %player% lumos
+  bonus_xp_lumos: command hogwarts xp %player% 150
+  reward_shards_lumos: give magic_shard:2
+  tag_done_lumos: tag add lesson_lumos_done
+  tag_end_lumos: tag delete lesson_lumos_started
+  journal_done_lumos: journal add lesson_lumos_done
+  notify_done_lumos: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dLumos&f (Bùa Phát Sáng). &7Thưởng: &d+150 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_nox: folder tag_start_nox,clear_practice_nox,enable_practice_nox,journal_start_nox,notify_start_nox,questtrack_start_nox
+  tag_start_nox: tag add lesson_nox_started
+  clear_practice_nox: deletepoint practice_nox
+  enable_practice_nox: command hogwarts practice %player% nox on
+  journal_start_nox: journal add lesson_nox
+  notify_start_nox: 'notify &e✦ BÀI HỌC: &fNox&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_nox: folder practice_add_nox,practice_auto_nox conditions:started_nox,!done_nox
+  complete_nox: folder disable_practice_nox,teach_nox,bonus_xp_nox,reward_shards_nox,tag_done_nox,tag_end_nox,journal_done_nox,reward_housepoints_nox,reward_money_nox,questtrack_done_nox,notify_done_nox
+  disable_practice_nox: command hogwarts practice %player% nox off
+  teach_nox: command hogwarts teach %player% nox
+  bonus_xp_nox: command hogwarts xp %player% 150
+  reward_shards_nox: give magic_shard:2
+  tag_done_nox: tag add lesson_nox_done
+  tag_end_nox: tag delete lesson_nox_started
+  journal_done_nox: journal add lesson_nox_done
+  notify_done_nox: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dNox&f (Bùa Tắt Sáng). &7Thưởng: &d+150 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_wingardium_leviosa: folder tag_start_wingardium_leviosa,clear_practice_wingardium_leviosa,enable_practice_wingardium_leviosa,journal_start_wingardium_leviosa,notify_start_wingardium_leviosa,questtrack_start_wingardium_leviosa
+  tag_start_wingardium_leviosa: tag add lesson_wingardium_leviosa_started
+  clear_practice_wingardium_leviosa: deletepoint practice_wingardium_leviosa
+  enable_practice_wingardium_leviosa: command hogwarts practice %player% wingardium-leviosa on
+  journal_start_wingardium_leviosa: journal add lesson_wingardium_leviosa
+  notify_start_wingardium_leviosa: 'notify &e✦ BÀI HỌC: &fWingardium Leviosa&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_wingardium_leviosa: folder practice_add_wingardium_leviosa,practice_auto_wingardium_leviosa conditions:started_wingardium_leviosa,!done_wingardium_leviosa
+  complete_wingardium_leviosa: folder disable_practice_wingardium_leviosa,teach_wingardium_leviosa,bonus_xp_wingardium_leviosa,reward_shards_wingardium_leviosa,tag_done_wingardium_leviosa,tag_end_wingardium_leviosa,journal_done_wingardium_leviosa,reward_housepoints_wingardium_leviosa,reward_money_wingardium_leviosa,questtrack_done_wingardium_leviosa,notify_done_wingardium_leviosa
+  disable_practice_wingardium_leviosa: command hogwarts practice %player% wingardium-leviosa off
+  teach_wingardium_leviosa: command hogwarts teach %player% wingardium-leviosa
+  bonus_xp_wingardium_leviosa: command hogwarts xp %player% 150
+  reward_shards_wingardium_leviosa: give magic_shard:2
+  tag_done_wingardium_leviosa: tag add lesson_wingardium_leviosa_done
+  tag_end_wingardium_leviosa: tag delete lesson_wingardium_leviosa_started
+  journal_done_wingardium_leviosa: journal add lesson_wingardium_leviosa_done
+  notify_done_wingardium_leviosa: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dWingardium Leviosa&f (Bùa Bay Bổng). &7Thưởng: &d+150 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_alohomora: folder tag_start_alohomora,clear_practice_alohomora,enable_practice_alohomora,journal_start_alohomora,notify_start_alohomora,questtrack_start_alohomora
+  tag_start_alohomora: tag add lesson_alohomora_started
+  clear_practice_alohomora: deletepoint practice_alohomora
+  enable_practice_alohomora: command hogwarts practice %player% alohomora on
+  journal_start_alohomora: journal add lesson_alohomora
+  notify_start_alohomora: 'notify &e✦ BÀI HỌC: &fAlohomora&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_alohomora: folder practice_add_alohomora,practice_auto_alohomora conditions:started_alohomora,!done_alohomora
+  complete_alohomora: folder disable_practice_alohomora,teach_alohomora,bonus_xp_alohomora,reward_shards_alohomora,tag_done_alohomora,tag_end_alohomora,journal_done_alohomora,reward_housepoints_alohomora,reward_money_alohomora,questtrack_done_alohomora,notify_done_alohomora
+  disable_practice_alohomora: command hogwarts practice %player% alohomora off
+  teach_alohomora: command hogwarts teach %player% alohomora
+  bonus_xp_alohomora: command hogwarts xp %player% 150
+  reward_shards_alohomora: give magic_shard:2
+  tag_done_alohomora: tag add lesson_alohomora_done
+  tag_end_alohomora: tag delete lesson_alohomora_started
+  journal_done_alohomora: journal add lesson_alohomora_done
+  notify_done_alohomora: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dAlohomora&f (Bùa Mở Khoá). &7Thưởng: &d+150 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_incendio: folder tag_start_incendio,clear_practice_incendio,enable_practice_incendio,journal_start_incendio,notify_start_incendio,questtrack_start_incendio
+  tag_start_incendio: tag add lesson_incendio_started
+  clear_practice_incendio: deletepoint practice_incendio
+  enable_practice_incendio: command hogwarts practice %player% incendio on
+  journal_start_incendio: journal add lesson_incendio
+  notify_start_incendio: 'notify &e✦ BÀI HỌC: &fIncendio&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_incendio: folder practice_add_incendio,practice_auto_incendio conditions:started_incendio,!done_incendio
+  complete_incendio: folder disable_practice_incendio,teach_incendio,bonus_xp_incendio,reward_shards_incendio,tag_done_incendio,tag_end_incendio,journal_done_incendio,reward_housepoints_incendio,reward_money_incendio,questtrack_done_incendio,notify_done_incendio
+  disable_practice_incendio: command hogwarts practice %player% incendio off
+  teach_incendio: command hogwarts teach %player% incendio
+  bonus_xp_incendio: command hogwarts xp %player% 150
+  reward_shards_incendio: give magic_shard:2
+  tag_done_incendio: tag add lesson_incendio_done
+  tag_end_incendio: tag delete lesson_incendio_started
+  journal_done_incendio: journal add lesson_incendio_done
+  notify_done_incendio: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dIncendio&f (Bùa Nhóm Lửa). &7Thưởng: &d+150 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_petrificus_totalus: folder tag_start_petrificus_totalus,clear_practice_petrificus_totalus,enable_practice_petrificus_totalus,journal_start_petrificus_totalus,notify_start_petrificus_totalus,questtrack_start_petrificus_totalus
+  tag_start_petrificus_totalus: tag add lesson_petrificus_totalus_started
+  clear_practice_petrificus_totalus: deletepoint practice_petrificus_totalus
+  enable_practice_petrificus_totalus: command hogwarts practice %player% petrificus-totalus on
+  journal_start_petrificus_totalus: journal add lesson_petrificus_totalus
+  notify_start_petrificus_totalus: 'notify &e✦ BÀI HỌC: &fPetrificus Totalus&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_petrificus_totalus: folder practice_add_petrificus_totalus,practice_auto_petrificus_totalus conditions:started_petrificus_totalus,!done_petrificus_totalus
+  complete_petrificus_totalus: folder disable_practice_petrificus_totalus,teach_petrificus_totalus,bonus_xp_petrificus_totalus,reward_shards_petrificus_totalus,tag_done_petrificus_totalus,tag_end_petrificus_totalus,journal_done_petrificus_totalus,reward_housepoints_petrificus_totalus,reward_money_petrificus_totalus,questtrack_done_petrificus_totalus,notify_done_petrificus_totalus
+  disable_practice_petrificus_totalus: command hogwarts practice %player% petrificus-totalus off
+  teach_petrificus_totalus: command hogwarts teach %player% petrificus-totalus
+  bonus_xp_petrificus_totalus: command hogwarts xp %player% 150
+  reward_shards_petrificus_totalus: give magic_shard:2
+  tag_done_petrificus_totalus: tag add lesson_petrificus_totalus_done
+  tag_end_petrificus_totalus: tag delete lesson_petrificus_totalus_started
+  journal_done_petrificus_totalus: journal add lesson_petrificus_totalus_done
+  notify_done_petrificus_totalus: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dPetrificus Totalus&f (Bùa Đông Cứng Toàn Thân). &7Thưởng: &d+150 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_locomotor_mortis: folder tag_start_locomotor_mortis,clear_practice_locomotor_mortis,enable_practice_locomotor_mortis,journal_start_locomotor_mortis,notify_start_locomotor_mortis,questtrack_start_locomotor_mortis
+  tag_start_locomotor_mortis: tag add lesson_locomotor_mortis_started
+  clear_practice_locomotor_mortis: deletepoint practice_locomotor_mortis
+  enable_practice_locomotor_mortis: command hogwarts practice %player% locomotor-mortis on
+  journal_start_locomotor_mortis: journal add lesson_locomotor_mortis
+  notify_start_locomotor_mortis: 'notify &e✦ BÀI HỌC: &fLocomotor Mortis&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_locomotor_mortis: folder practice_add_locomotor_mortis,practice_auto_locomotor_mortis conditions:started_locomotor_mortis,!done_locomotor_mortis
+  complete_locomotor_mortis: folder disable_practice_locomotor_mortis,teach_locomotor_mortis,bonus_xp_locomotor_mortis,reward_shards_locomotor_mortis,tag_done_locomotor_mortis,tag_end_locomotor_mortis,journal_done_locomotor_mortis,reward_housepoints_locomotor_mortis,reward_money_locomotor_mortis,questtrack_done_locomotor_mortis,notify_done_locomotor_mortis
+  disable_practice_locomotor_mortis: command hogwarts practice %player% locomotor-mortis off
+  teach_locomotor_mortis: command hogwarts teach %player% locomotor-mortis
+  bonus_xp_locomotor_mortis: command hogwarts xp %player% 150
+  reward_shards_locomotor_mortis: give magic_shard:2
+  tag_done_locomotor_mortis: tag add lesson_locomotor_mortis_done
+  tag_end_locomotor_mortis: tag delete lesson_locomotor_mortis_started
+  journal_done_locomotor_mortis: journal add lesson_locomotor_mortis_done
+  notify_done_locomotor_mortis: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dLocomotor Mortis&f (Bùa Khoá Chân). &7Thưởng: &d+150 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_expelliarmus: folder tag_start_expelliarmus,clear_practice_expelliarmus,enable_practice_expelliarmus,journal_start_expelliarmus,notify_start_expelliarmus,questtrack_start_expelliarmus
+  tag_start_expelliarmus: tag add lesson_expelliarmus_started
+  clear_practice_expelliarmus: deletepoint practice_expelliarmus
+  enable_practice_expelliarmus: command hogwarts practice %player% expelliarmus on
+  journal_start_expelliarmus: journal add lesson_expelliarmus
+  notify_start_expelliarmus: 'notify &e✦ BÀI HỌC: &fExpelliarmus&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_expelliarmus: folder practice_add_expelliarmus,practice_auto_expelliarmus conditions:started_expelliarmus,!done_expelliarmus
+  complete_expelliarmus: folder disable_practice_expelliarmus,teach_expelliarmus,bonus_xp_expelliarmus,reward_shards_expelliarmus,tag_done_expelliarmus,tag_end_expelliarmus,journal_done_expelliarmus,reward_housepoints_expelliarmus,reward_money_expelliarmus,questtrack_done_expelliarmus,notify_done_expelliarmus
+  disable_practice_expelliarmus: command hogwarts practice %player% expelliarmus off
+  teach_expelliarmus: command hogwarts teach %player% expelliarmus
+  bonus_xp_expelliarmus: command hogwarts xp %player% 225
+  reward_shards_expelliarmus: give magic_shard:2
+  tag_done_expelliarmus: tag add lesson_expelliarmus_done
+  tag_end_expelliarmus: tag delete lesson_expelliarmus_started
+  journal_done_expelliarmus: journal add lesson_expelliarmus_done
+  notify_done_expelliarmus: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dExpelliarmus&f (Bùa Tước Vũ Khí). &7Thưởng: &d+225 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_rictusempra: folder tag_start_rictusempra,clear_practice_rictusempra,enable_practice_rictusempra,journal_start_rictusempra,notify_start_rictusempra,questtrack_start_rictusempra
+  tag_start_rictusempra: tag add lesson_rictusempra_started
+  clear_practice_rictusempra: deletepoint practice_rictusempra
+  enable_practice_rictusempra: command hogwarts practice %player% rictusempra on
+  journal_start_rictusempra: journal add lesson_rictusempra
+  notify_start_rictusempra: 'notify &e✦ BÀI HỌC: &fRictusempra&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_rictusempra: folder practice_add_rictusempra,practice_auto_rictusempra conditions:started_rictusempra,!done_rictusempra
+  complete_rictusempra: folder disable_practice_rictusempra,teach_rictusempra,bonus_xp_rictusempra,reward_shards_rictusempra,tag_done_rictusempra,tag_end_rictusempra,journal_done_rictusempra,reward_housepoints_rictusempra,reward_money_rictusempra,questtrack_done_rictusempra,notify_done_rictusempra
+  disable_practice_rictusempra: command hogwarts practice %player% rictusempra off
+  teach_rictusempra: command hogwarts teach %player% rictusempra
+  bonus_xp_rictusempra: command hogwarts xp %player% 225
+  reward_shards_rictusempra: give magic_shard:2
+  tag_done_rictusempra: tag add lesson_rictusempra_done
+  tag_end_rictusempra: tag delete lesson_rictusempra_started
+  journal_done_rictusempra: journal add lesson_rictusempra_done
+  notify_done_rictusempra: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dRictusempra&f (Bùa Thọt Lét). &7Thưởng: &d+225 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_serpensortia: folder tag_start_serpensortia,clear_practice_serpensortia,enable_practice_serpensortia,journal_start_serpensortia,notify_start_serpensortia,questtrack_start_serpensortia
+  tag_start_serpensortia: tag add lesson_serpensortia_started
+  clear_practice_serpensortia: deletepoint practice_serpensortia
+  enable_practice_serpensortia: command hogwarts practice %player% serpensortia on
+  journal_start_serpensortia: journal add lesson_serpensortia
+  notify_start_serpensortia: 'notify &e✦ BÀI HỌC: &fSerpensortia&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_serpensortia: folder practice_add_serpensortia,practice_auto_serpensortia conditions:started_serpensortia,!done_serpensortia
+  complete_serpensortia: folder disable_practice_serpensortia,teach_serpensortia,bonus_xp_serpensortia,reward_shards_serpensortia,tag_done_serpensortia,tag_end_serpensortia,journal_done_serpensortia,reward_housepoints_serpensortia,reward_money_serpensortia,questtrack_done_serpensortia,notify_done_serpensortia
+  disable_practice_serpensortia: command hogwarts practice %player% serpensortia off
+  teach_serpensortia: command hogwarts teach %player% serpensortia
+  bonus_xp_serpensortia: command hogwarts xp %player% 225
+  reward_shards_serpensortia: give magic_shard:2
+  tag_done_serpensortia: tag add lesson_serpensortia_done
+  tag_end_serpensortia: tag delete lesson_serpensortia_started
+  journal_done_serpensortia: journal add lesson_serpensortia_done
+  notify_done_serpensortia: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dSerpensortia&f (Bùa Gọi Rắn). &7Thưởng: &d+225 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_reparo: folder tag_start_reparo,clear_practice_reparo,enable_practice_reparo,journal_start_reparo,notify_start_reparo,questtrack_start_reparo
+  tag_start_reparo: tag add lesson_reparo_started
+  clear_practice_reparo: deletepoint practice_reparo
+  enable_practice_reparo: command hogwarts practice %player% reparo on
+  journal_start_reparo: journal add lesson_reparo
+  notify_start_reparo: 'notify &e✦ BÀI HỌC: &fReparo&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_reparo: folder practice_add_reparo,practice_auto_reparo conditions:started_reparo,!done_reparo
+  complete_reparo: folder disable_practice_reparo,teach_reparo,bonus_xp_reparo,reward_shards_reparo,tag_done_reparo,tag_end_reparo,journal_done_reparo,reward_housepoints_reparo,reward_money_reparo,questtrack_done_reparo,notify_done_reparo
+  disable_practice_reparo: command hogwarts practice %player% reparo off
+  teach_reparo: command hogwarts teach %player% reparo
+  bonus_xp_reparo: command hogwarts xp %player% 225
+  reward_shards_reparo: give magic_shard:2
+  tag_done_reparo: tag add lesson_reparo_done
+  tag_end_reparo: tag delete lesson_reparo_started
+  journal_done_reparo: journal add lesson_reparo_done
+  notify_done_reparo: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dReparo&f (Bùa Hàn Gắn). &7Thưởng: &d+225 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_immobulus: folder tag_start_immobulus,clear_practice_immobulus,enable_practice_immobulus,journal_start_immobulus,notify_start_immobulus,questtrack_start_immobulus
+  tag_start_immobulus: tag add lesson_immobulus_started
+  clear_practice_immobulus: deletepoint practice_immobulus
+  enable_practice_immobulus: command hogwarts practice %player% immobulus on
+  journal_start_immobulus: journal add lesson_immobulus
+  notify_start_immobulus: 'notify &e✦ BÀI HỌC: &fImmobulus&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_immobulus: folder practice_add_immobulus,practice_auto_immobulus conditions:started_immobulus,!done_immobulus
+  complete_immobulus: folder disable_practice_immobulus,teach_immobulus,bonus_xp_immobulus,reward_shards_immobulus,tag_done_immobulus,tag_end_immobulus,journal_done_immobulus,reward_housepoints_immobulus,reward_money_immobulus,questtrack_done_immobulus,notify_done_immobulus
+  disable_practice_immobulus: command hogwarts practice %player% immobulus off
+  teach_immobulus: command hogwarts teach %player% immobulus
+  bonus_xp_immobulus: command hogwarts xp %player% 225
+  reward_shards_immobulus: give magic_shard:2
+  tag_done_immobulus: tag add lesson_immobulus_done
+  tag_end_immobulus: tag delete lesson_immobulus_started
+  journal_done_immobulus: journal add lesson_immobulus_done
+  notify_done_immobulus: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dImmobulus&f (Bùa Bất Động). &7Thưởng: &d+225 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_finite_incantatem: folder tag_start_finite_incantatem,clear_practice_finite_incantatem,enable_practice_finite_incantatem,journal_start_finite_incantatem,notify_start_finite_incantatem,questtrack_start_finite_incantatem
+  tag_start_finite_incantatem: tag add lesson_finite_incantatem_started
+  clear_practice_finite_incantatem: deletepoint practice_finite_incantatem
+  enable_practice_finite_incantatem: command hogwarts practice %player% finite-incantatem on
+  journal_start_finite_incantatem: journal add lesson_finite_incantatem
+  notify_start_finite_incantatem: 'notify &e✦ BÀI HỌC: &fFinite Incantatem&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_finite_incantatem: folder practice_add_finite_incantatem,practice_auto_finite_incantatem conditions:started_finite_incantatem,!done_finite_incantatem
+  complete_finite_incantatem: folder disable_practice_finite_incantatem,teach_finite_incantatem,bonus_xp_finite_incantatem,reward_shards_finite_incantatem,tag_done_finite_incantatem,tag_end_finite_incantatem,journal_done_finite_incantatem,reward_housepoints_finite_incantatem,reward_money_finite_incantatem,questtrack_done_finite_incantatem,notify_done_finite_incantatem
+  disable_practice_finite_incantatem: command hogwarts practice %player% finite-incantatem off
+  teach_finite_incantatem: command hogwarts teach %player% finite-incantatem
+  bonus_xp_finite_incantatem: command hogwarts xp %player% 225
+  reward_shards_finite_incantatem: give magic_shard:2
+  tag_done_finite_incantatem: tag add lesson_finite_incantatem_done
+  tag_end_finite_incantatem: tag delete lesson_finite_incantatem_started
+  journal_done_finite_incantatem: journal add lesson_finite_incantatem_done
+  notify_done_finite_incantatem: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dFinite Incantatem&f (Bùa Chấm Dứt). &7Thưởng: &d+225 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_riddikulus: folder tag_start_riddikulus,clear_practice_riddikulus,enable_practice_riddikulus,journal_start_riddikulus,notify_start_riddikulus,questtrack_start_riddikulus
+  tag_start_riddikulus: tag add lesson_riddikulus_started
+  clear_practice_riddikulus: deletepoint practice_riddikulus
+  enable_practice_riddikulus: command hogwarts practice %player% riddikulus on
+  journal_start_riddikulus: journal add lesson_riddikulus
+  notify_start_riddikulus: 'notify &e✦ BÀI HỌC: &fRiddikulus&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_riddikulus: folder practice_add_riddikulus,practice_auto_riddikulus conditions:started_riddikulus,!done_riddikulus
+  complete_riddikulus: folder disable_practice_riddikulus,teach_riddikulus,bonus_xp_riddikulus,reward_shards_riddikulus,tag_done_riddikulus,tag_end_riddikulus,journal_done_riddikulus,reward_housepoints_riddikulus,reward_money_riddikulus,questtrack_done_riddikulus,notify_done_riddikulus
+  disable_practice_riddikulus: command hogwarts practice %player% riddikulus off
+  teach_riddikulus: command hogwarts teach %player% riddikulus
+  bonus_xp_riddikulus: command hogwarts xp %player% 300
+  reward_shards_riddikulus: give magic_shard:2
+  tag_done_riddikulus: tag add lesson_riddikulus_done
+  tag_end_riddikulus: tag delete lesson_riddikulus_started
+  journal_done_riddikulus: journal add lesson_riddikulus_done
+  notify_done_riddikulus: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dRiddikulus&f (Bùa Lố Bịch). &7Thưởng: &d+300 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_expecto_patronum: folder tag_start_expecto_patronum,clear_practice_expecto_patronum,enable_practice_expecto_patronum,journal_start_expecto_patronum,notify_start_expecto_patronum,questtrack_start_expecto_patronum
+  tag_start_expecto_patronum: tag add lesson_expecto_patronum_started
+  clear_practice_expecto_patronum: deletepoint practice_expecto_patronum
+  enable_practice_expecto_patronum: command hogwarts practice %player% expecto-patronum on
+  journal_start_expecto_patronum: journal add lesson_expecto_patronum
+  notify_start_expecto_patronum: 'notify &e✦ BÀI HỌC: &fExpecto Patronum&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_expecto_patronum: folder practice_add_expecto_patronum,practice_auto_expecto_patronum conditions:started_expecto_patronum,!done_expecto_patronum
+  complete_expecto_patronum: folder disable_practice_expecto_patronum,teach_expecto_patronum,bonus_xp_expecto_patronum,reward_shards_expecto_patronum,tag_done_expecto_patronum,tag_end_expecto_patronum,journal_done_expecto_patronum,reward_housepoints_expecto_patronum,reward_money_expecto_patronum,questtrack_done_expecto_patronum,notify_done_expecto_patronum
+  disable_practice_expecto_patronum: command hogwarts practice %player% expecto-patronum off
+  teach_expecto_patronum: command hogwarts teach %player% expecto-patronum
+  bonus_xp_expecto_patronum: command hogwarts xp %player% 300
+  reward_shards_expecto_patronum: give magic_shard:2
+  tag_done_expecto_patronum: tag add lesson_expecto_patronum_done
+  tag_end_expecto_patronum: tag delete lesson_expecto_patronum_started
+  journal_done_expecto_patronum: journal add lesson_expecto_patronum_done
+  notify_done_expecto_patronum: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dExpecto Patronum&f (Bùa Thần Hộ Mệnh). &7Thưởng: &d+300 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_lumos_maxima: folder tag_start_lumos_maxima,clear_practice_lumos_maxima,enable_practice_lumos_maxima,journal_start_lumos_maxima,notify_start_lumos_maxima,questtrack_start_lumos_maxima
+  tag_start_lumos_maxima: tag add lesson_lumos_maxima_started
+  clear_practice_lumos_maxima: deletepoint practice_lumos_maxima
+  enable_practice_lumos_maxima: command hogwarts practice %player% lumos-maxima on
+  journal_start_lumos_maxima: journal add lesson_lumos_maxima
+  notify_start_lumos_maxima: 'notify &e✦ BÀI HỌC: &fLumos Maxima&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_lumos_maxima: folder practice_add_lumos_maxima,practice_auto_lumos_maxima conditions:started_lumos_maxima,!done_lumos_maxima
+  complete_lumos_maxima: folder disable_practice_lumos_maxima,teach_lumos_maxima,bonus_xp_lumos_maxima,reward_shards_lumos_maxima,tag_done_lumos_maxima,tag_end_lumos_maxima,journal_done_lumos_maxima,reward_housepoints_lumos_maxima,reward_money_lumos_maxima,questtrack_done_lumos_maxima,notify_done_lumos_maxima
+  disable_practice_lumos_maxima: command hogwarts practice %player% lumos-maxima off
+  teach_lumos_maxima: command hogwarts teach %player% lumos-maxima
+  bonus_xp_lumos_maxima: command hogwarts xp %player% 300
+  reward_shards_lumos_maxima: give magic_shard:2
+  tag_done_lumos_maxima: tag add lesson_lumos_maxima_done
+  tag_end_lumos_maxima: tag delete lesson_lumos_maxima_started
+  journal_done_lumos_maxima: journal add lesson_lumos_maxima_done
+  notify_done_lumos_maxima: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dLumos Maxima&f (Bùa Đại Phát Sáng). &7Thưởng: &d+300 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_impervius: folder tag_start_impervius,clear_practice_impervius,enable_practice_impervius,journal_start_impervius,notify_start_impervius,questtrack_start_impervius
+  tag_start_impervius: tag add lesson_impervius_started
+  clear_practice_impervius: deletepoint practice_impervius
+  enable_practice_impervius: command hogwarts practice %player% impervius on
+  journal_start_impervius: journal add lesson_impervius
+  notify_start_impervius: 'notify &e✦ BÀI HỌC: &fImpervius&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_impervius: folder practice_add_impervius,practice_auto_impervius conditions:started_impervius,!done_impervius
+  complete_impervius: folder disable_practice_impervius,teach_impervius,bonus_xp_impervius,reward_shards_impervius,tag_done_impervius,tag_end_impervius,journal_done_impervius,reward_housepoints_impervius,reward_money_impervius,questtrack_done_impervius,notify_done_impervius
+  disable_practice_impervius: command hogwarts practice %player% impervius off
+  teach_impervius: command hogwarts teach %player% impervius
+  bonus_xp_impervius: command hogwarts xp %player% 300
+  reward_shards_impervius: give magic_shard:2
+  tag_done_impervius: tag add lesson_impervius_done
+  tag_end_impervius: tag delete lesson_impervius_started
+  journal_done_impervius: journal add lesson_impervius_done
+  notify_done_impervius: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dImpervius&f (Bùa Không Thấm). &7Thưởng: &d+300 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_ferula: folder tag_start_ferula,clear_practice_ferula,enable_practice_ferula,journal_start_ferula,notify_start_ferula,questtrack_start_ferula
+  tag_start_ferula: tag add lesson_ferula_started
+  clear_practice_ferula: deletepoint practice_ferula
+  enable_practice_ferula: command hogwarts practice %player% ferula on
+  journal_start_ferula: journal add lesson_ferula
+  notify_start_ferula: 'notify &e✦ BÀI HỌC: &fFerula&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_ferula: folder practice_add_ferula,practice_auto_ferula conditions:started_ferula,!done_ferula
+  complete_ferula: folder disable_practice_ferula,teach_ferula,bonus_xp_ferula,reward_shards_ferula,tag_done_ferula,tag_end_ferula,journal_done_ferula,reward_housepoints_ferula,reward_money_ferula,questtrack_done_ferula,notify_done_ferula
+  disable_practice_ferula: command hogwarts practice %player% ferula off
+  teach_ferula: command hogwarts teach %player% ferula
+  bonus_xp_ferula: command hogwarts xp %player% 300
+  reward_shards_ferula: give magic_shard:2
+  tag_done_ferula: tag add lesson_ferula_done
+  tag_end_ferula: tag delete lesson_ferula_started
+  journal_done_ferula: journal add lesson_ferula_done
+  notify_done_ferula: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dFerula&f (Bùa Băng Bó). &7Thưởng: &d+300 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_accio: folder tag_start_accio,clear_practice_accio,enable_practice_accio,journal_start_accio,notify_start_accio,questtrack_start_accio
+  tag_start_accio: tag add lesson_accio_started
+  clear_practice_accio: deletepoint practice_accio
+  enable_practice_accio: command hogwarts practice %player% accio on
+  journal_start_accio: journal add lesson_accio
+  notify_start_accio: 'notify &e✦ BÀI HỌC: &fAccio&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_accio: folder practice_add_accio,practice_auto_accio conditions:started_accio,!done_accio
+  complete_accio: folder disable_practice_accio,teach_accio,bonus_xp_accio,reward_shards_accio,tag_done_accio,tag_end_accio,journal_done_accio,reward_housepoints_accio,reward_money_accio,questtrack_done_accio,notify_done_accio
+  disable_practice_accio: command hogwarts practice %player% accio off
+  teach_accio: command hogwarts teach %player% accio
+  bonus_xp_accio: command hogwarts xp %player% 375
+  reward_shards_accio: give magic_shard:2
+  tag_done_accio: tag add lesson_accio_done
+  tag_end_accio: tag delete lesson_accio_started
+  journal_done_accio: journal add lesson_accio_done
+  notify_done_accio: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dAccio&f (Bùa Triệu Tập). &7Thưởng: &d+375 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_stupefy: folder tag_start_stupefy,clear_practice_stupefy,enable_practice_stupefy,journal_start_stupefy,notify_start_stupefy,questtrack_start_stupefy
+  tag_start_stupefy: tag add lesson_stupefy_started
+  clear_practice_stupefy: deletepoint practice_stupefy
+  enable_practice_stupefy: command hogwarts practice %player% stupefy on
+  journal_start_stupefy: journal add lesson_stupefy
+  notify_start_stupefy: 'notify &e✦ BÀI HỌC: &fStupefy&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_stupefy: folder practice_add_stupefy,practice_auto_stupefy conditions:started_stupefy,!done_stupefy
+  complete_stupefy: folder disable_practice_stupefy,teach_stupefy,bonus_xp_stupefy,reward_shards_stupefy,tag_done_stupefy,tag_end_stupefy,journal_done_stupefy,reward_housepoints_stupefy,reward_money_stupefy,questtrack_done_stupefy,notify_done_stupefy
+  disable_practice_stupefy: command hogwarts practice %player% stupefy off
+  teach_stupefy: command hogwarts teach %player% stupefy
+  bonus_xp_stupefy: command hogwarts xp %player% 375
+  reward_shards_stupefy: give magic_shard:2
+  tag_done_stupefy: tag add lesson_stupefy_done
+  tag_end_stupefy: tag delete lesson_stupefy_started
+  journal_done_stupefy: journal add lesson_stupefy_done
+  notify_done_stupefy: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dStupefy&f (Bùa Choáng Váng). &7Thưởng: &d+375 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_impedimenta: folder tag_start_impedimenta,clear_practice_impedimenta,enable_practice_impedimenta,journal_start_impedimenta,notify_start_impedimenta,questtrack_start_impedimenta
+  tag_start_impedimenta: tag add lesson_impedimenta_started
+  clear_practice_impedimenta: deletepoint practice_impedimenta
+  enable_practice_impedimenta: command hogwarts practice %player% impedimenta on
+  journal_start_impedimenta: journal add lesson_impedimenta
+  notify_start_impedimenta: 'notify &e✦ BÀI HỌC: &fImpedimenta&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_impedimenta: folder practice_add_impedimenta,practice_auto_impedimenta conditions:started_impedimenta,!done_impedimenta
+  complete_impedimenta: folder disable_practice_impedimenta,teach_impedimenta,bonus_xp_impedimenta,reward_shards_impedimenta,tag_done_impedimenta,tag_end_impedimenta,journal_done_impedimenta,reward_housepoints_impedimenta,reward_money_impedimenta,questtrack_done_impedimenta,notify_done_impedimenta
+  disable_practice_impedimenta: command hogwarts practice %player% impedimenta off
+  teach_impedimenta: command hogwarts teach %player% impedimenta
+  bonus_xp_impedimenta: command hogwarts xp %player% 375
+  reward_shards_impedimenta: give magic_shard:2
+  tag_done_impedimenta: tag add lesson_impedimenta_done
+  tag_end_impedimenta: tag delete lesson_impedimenta_started
+  journal_done_impedimenta: journal add lesson_impedimenta_done
+  notify_done_impedimenta: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dImpedimenta&f (Bùa Cản Trở). &7Thưởng: &d+375 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_reducto: folder tag_start_reducto,clear_practice_reducto,enable_practice_reducto,journal_start_reducto,notify_start_reducto,questtrack_start_reducto
+  tag_start_reducto: tag add lesson_reducto_started
+  clear_practice_reducto: deletepoint practice_reducto
+  enable_practice_reducto: command hogwarts practice %player% reducto on
+  journal_start_reducto: journal add lesson_reducto
+  notify_start_reducto: 'notify &e✦ BÀI HỌC: &fReducto&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_reducto: folder practice_add_reducto,practice_auto_reducto conditions:started_reducto,!done_reducto
+  complete_reducto: folder disable_practice_reducto,teach_reducto,bonus_xp_reducto,reward_shards_reducto,tag_done_reducto,tag_end_reducto,journal_done_reducto,reward_housepoints_reducto,reward_money_reducto,questtrack_done_reducto,notify_done_reducto
+  disable_practice_reducto: command hogwarts practice %player% reducto off
+  teach_reducto: command hogwarts teach %player% reducto
+  bonus_xp_reducto: command hogwarts xp %player% 375
+  reward_shards_reducto: give magic_shard:2
+  tag_done_reducto: tag add lesson_reducto_done
+  tag_end_reducto: tag delete lesson_reducto_started
+  journal_done_reducto: journal add lesson_reducto_done
+  notify_done_reducto: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dReducto&f (Bùa Phá Huỷ). &7Thưởng: &d+375 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_densaugeo: folder tag_start_densaugeo,clear_practice_densaugeo,enable_practice_densaugeo,journal_start_densaugeo,notify_start_densaugeo,questtrack_start_densaugeo
+  tag_start_densaugeo: tag add lesson_densaugeo_started
+  clear_practice_densaugeo: deletepoint practice_densaugeo
+  enable_practice_densaugeo: command hogwarts practice %player% densaugeo on
+  journal_start_densaugeo: journal add lesson_densaugeo
+  notify_start_densaugeo: 'notify &e✦ BÀI HỌC: &fDensaugeo&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_densaugeo: folder practice_add_densaugeo,practice_auto_densaugeo conditions:started_densaugeo,!done_densaugeo
+  complete_densaugeo: folder disable_practice_densaugeo,teach_densaugeo,bonus_xp_densaugeo,reward_shards_densaugeo,tag_done_densaugeo,tag_end_densaugeo,journal_done_densaugeo,reward_housepoints_densaugeo,reward_money_densaugeo,questtrack_done_densaugeo,notify_done_densaugeo
+  disable_practice_densaugeo: command hogwarts practice %player% densaugeo off
+  teach_densaugeo: command hogwarts teach %player% densaugeo
+  bonus_xp_densaugeo: command hogwarts xp %player% 375
+  reward_shards_densaugeo: give magic_shard:2
+  tag_done_densaugeo: tag add lesson_densaugeo_done
+  tag_end_densaugeo: tag delete lesson_densaugeo_started
+  journal_done_densaugeo: journal add lesson_densaugeo_done
+  notify_done_densaugeo: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dDensaugeo&f (Bùa Mọc Răng). &7Thưởng: &d+375 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_point_me: folder tag_start_point_me,clear_practice_point_me,enable_practice_point_me,journal_start_point_me,notify_start_point_me,questtrack_start_point_me
+  tag_start_point_me: tag add lesson_point_me_started
+  clear_practice_point_me: deletepoint practice_point_me
+  enable_practice_point_me: command hogwarts practice %player% point-me on
+  journal_start_point_me: journal add lesson_point_me
+  notify_start_point_me: 'notify &e✦ BÀI HỌC: &fPoint Me&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_point_me: folder practice_add_point_me,practice_auto_point_me conditions:started_point_me,!done_point_me
+  complete_point_me: folder disable_practice_point_me,teach_point_me,bonus_xp_point_me,reward_shards_point_me,tag_done_point_me,tag_end_point_me,journal_done_point_me,reward_housepoints_point_me,reward_money_point_me,questtrack_done_point_me,notify_done_point_me
+  disable_practice_point_me: command hogwarts practice %player% point-me off
+  teach_point_me: command hogwarts teach %player% point-me
+  bonus_xp_point_me: command hogwarts xp %player% 375
+  reward_shards_point_me: give magic_shard:2
+  tag_done_point_me: tag add lesson_point_me_done
+  tag_end_point_me: tag delete lesson_point_me_started
+  journal_done_point_me: journal add lesson_point_me_done
+  notify_done_point_me: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dPoint Me&f (Bùa La Bàn). &7Thưởng: &d+375 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_protego: folder tag_start_protego,clear_practice_protego,enable_practice_protego,journal_start_protego,notify_start_protego,questtrack_start_protego
+  tag_start_protego: tag add lesson_protego_started
+  clear_practice_protego: deletepoint practice_protego
+  enable_practice_protego: command hogwarts practice %player% protego on
+  journal_start_protego: journal add lesson_protego
+  notify_start_protego: 'notify &e✦ BÀI HỌC: &fProtego&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_protego: folder practice_add_protego,practice_auto_protego conditions:started_protego,!done_protego
+  complete_protego: folder disable_practice_protego,teach_protego,bonus_xp_protego,reward_shards_protego,tag_done_protego,tag_end_protego,journal_done_protego,reward_housepoints_protego,reward_money_protego,questtrack_done_protego,notify_done_protego
+  disable_practice_protego: command hogwarts practice %player% protego off
+  teach_protego: command hogwarts teach %player% protego
+  bonus_xp_protego: command hogwarts xp %player% 450
+  reward_shards_protego: give magic_shard:2
+  tag_done_protego: tag add lesson_protego_done
+  tag_end_protego: tag delete lesson_protego_started
+  journal_done_protego: journal add lesson_protego_done
+  notify_done_protego: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dProtego&f (Bùa Khiên Chắn). &7Thưởng: &d+450 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_silencio: folder tag_start_silencio,clear_practice_silencio,enable_practice_silencio,journal_start_silencio,notify_start_silencio,questtrack_start_silencio
+  tag_start_silencio: tag add lesson_silencio_started
+  clear_practice_silencio: deletepoint practice_silencio
+  enable_practice_silencio: command hogwarts practice %player% silencio on
+  journal_start_silencio: journal add lesson_silencio
+  notify_start_silencio: 'notify &e✦ BÀI HỌC: &fSilencio&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_silencio: folder practice_add_silencio,practice_auto_silencio conditions:started_silencio,!done_silencio
+  complete_silencio: folder disable_practice_silencio,teach_silencio,bonus_xp_silencio,reward_shards_silencio,tag_done_silencio,tag_end_silencio,journal_done_silencio,reward_housepoints_silencio,reward_money_silencio,questtrack_done_silencio,notify_done_silencio
+  disable_practice_silencio: command hogwarts practice %player% silencio off
+  teach_silencio: command hogwarts teach %player% silencio
+  bonus_xp_silencio: command hogwarts xp %player% 450
+  reward_shards_silencio: give magic_shard:2
+  tag_done_silencio: tag add lesson_silencio_done
+  tag_end_silencio: tag delete lesson_silencio_started
+  journal_done_silencio: journal add lesson_silencio_done
+  notify_done_silencio: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dSilencio&f (Bùa Câm Lặng). &7Thưởng: &d+450 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_levicorpus: folder tag_start_levicorpus,clear_practice_levicorpus,enable_practice_levicorpus,journal_start_levicorpus,notify_start_levicorpus,questtrack_start_levicorpus
+  tag_start_levicorpus: tag add lesson_levicorpus_started
+  clear_practice_levicorpus: deletepoint practice_levicorpus
+  enable_practice_levicorpus: command hogwarts practice %player% levicorpus on
+  journal_start_levicorpus: journal add lesson_levicorpus
+  notify_start_levicorpus: 'notify &e✦ BÀI HỌC: &fLevicorpus&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_levicorpus: folder practice_add_levicorpus,practice_auto_levicorpus conditions:started_levicorpus,!done_levicorpus
+  complete_levicorpus: folder disable_practice_levicorpus,teach_levicorpus,bonus_xp_levicorpus,reward_shards_levicorpus,tag_done_levicorpus,tag_end_levicorpus,journal_done_levicorpus,reward_housepoints_levicorpus,reward_money_levicorpus,questtrack_done_levicorpus,notify_done_levicorpus
+  disable_practice_levicorpus: command hogwarts practice %player% levicorpus off
+  teach_levicorpus: command hogwarts teach %player% levicorpus
+  bonus_xp_levicorpus: command hogwarts xp %player% 450
+  reward_shards_levicorpus: give magic_shard:2
+  tag_done_levicorpus: tag add lesson_levicorpus_done
+  tag_end_levicorpus: tag delete lesson_levicorpus_started
+  journal_done_levicorpus: journal add lesson_levicorpus_done
+  notify_done_levicorpus: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dLevicorpus&f (Bùa Treo Ngược). &7Thưởng: &d+450 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_liberacorpus: folder tag_start_liberacorpus,clear_practice_liberacorpus,enable_practice_liberacorpus,journal_start_liberacorpus,notify_start_liberacorpus,questtrack_start_liberacorpus
+  tag_start_liberacorpus: tag add lesson_liberacorpus_started
+  clear_practice_liberacorpus: deletepoint practice_liberacorpus
+  enable_practice_liberacorpus: command hogwarts practice %player% liberacorpus on
+  journal_start_liberacorpus: journal add lesson_liberacorpus
+  notify_start_liberacorpus: 'notify &e✦ BÀI HỌC: &fLiberacorpus&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_liberacorpus: folder practice_add_liberacorpus,practice_auto_liberacorpus conditions:started_liberacorpus,!done_liberacorpus
+  complete_liberacorpus: folder disable_practice_liberacorpus,teach_liberacorpus,bonus_xp_liberacorpus,reward_shards_liberacorpus,tag_done_liberacorpus,tag_end_liberacorpus,journal_done_liberacorpus,reward_housepoints_liberacorpus,reward_money_liberacorpus,questtrack_done_liberacorpus,notify_done_liberacorpus
+  disable_practice_liberacorpus: command hogwarts practice %player% liberacorpus off
+  teach_liberacorpus: command hogwarts teach %player% liberacorpus
+  bonus_xp_liberacorpus: command hogwarts xp %player% 450
+  reward_shards_liberacorpus: give magic_shard:2
+  tag_done_liberacorpus: tag add lesson_liberacorpus_done
+  tag_end_liberacorpus: tag delete lesson_liberacorpus_started
+  journal_done_liberacorpus: journal add lesson_liberacorpus_done
+  notify_done_liberacorpus: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dLiberacorpus&f (Bùa Thả Xuống). &7Thưởng: &d+450 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_episkey: folder tag_start_episkey,clear_practice_episkey,enable_practice_episkey,journal_start_episkey,notify_start_episkey,questtrack_start_episkey
+  tag_start_episkey: tag add lesson_episkey_started
+  clear_practice_episkey: deletepoint practice_episkey
+  enable_practice_episkey: command hogwarts practice %player% episkey on
+  journal_start_episkey: journal add lesson_episkey
+  notify_start_episkey: 'notify &e✦ BÀI HỌC: &fEpiskey&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_episkey: folder practice_add_episkey,practice_auto_episkey conditions:started_episkey,!done_episkey
+  complete_episkey: folder disable_practice_episkey,teach_episkey,bonus_xp_episkey,reward_shards_episkey,tag_done_episkey,tag_end_episkey,journal_done_episkey,reward_housepoints_episkey,reward_money_episkey,questtrack_done_episkey,notify_done_episkey
+  disable_practice_episkey: command hogwarts practice %player% episkey off
+  teach_episkey: command hogwarts teach %player% episkey
+  bonus_xp_episkey: command hogwarts xp %player% 450
+  reward_shards_episkey: give magic_shard:2
+  tag_done_episkey: tag add lesson_episkey_done
+  tag_end_episkey: tag delete lesson_episkey_started
+  journal_done_episkey: journal add lesson_episkey_done
+  notify_done_episkey: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dEpiskey&f (Bùa Chữa Lành). &7Thưởng: &d+450 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_aguamenti: folder tag_start_aguamenti,clear_practice_aguamenti,enable_practice_aguamenti,journal_start_aguamenti,notify_start_aguamenti,questtrack_start_aguamenti
+  tag_start_aguamenti: tag add lesson_aguamenti_started
+  clear_practice_aguamenti: deletepoint practice_aguamenti
+  enable_practice_aguamenti: command hogwarts practice %player% aguamenti on
+  journal_start_aguamenti: journal add lesson_aguamenti
+  notify_start_aguamenti: 'notify &e✦ BÀI HỌC: &fAguamenti&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_aguamenti: folder practice_add_aguamenti,practice_auto_aguamenti conditions:started_aguamenti,!done_aguamenti
+  complete_aguamenti: folder disable_practice_aguamenti,teach_aguamenti,bonus_xp_aguamenti,reward_shards_aguamenti,tag_done_aguamenti,tag_end_aguamenti,journal_done_aguamenti,reward_housepoints_aguamenti,reward_money_aguamenti,questtrack_done_aguamenti,notify_done_aguamenti
+  disable_practice_aguamenti: command hogwarts practice %player% aguamenti off
+  teach_aguamenti: command hogwarts teach %player% aguamenti
+  bonus_xp_aguamenti: command hogwarts xp %player% 525
+  reward_shards_aguamenti: give magic_shard:2
+  tag_done_aguamenti: tag add lesson_aguamenti_done
+  tag_end_aguamenti: tag delete lesson_aguamenti_started
+  journal_done_aguamenti: journal add lesson_aguamenti_done
+  notify_done_aguamenti: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dAguamenti&f (Bùa Tạo Nước). &7Thưởng: &d+525 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_muffliato: folder tag_start_muffliato,clear_practice_muffliato,enable_practice_muffliato,journal_start_muffliato,notify_start_muffliato,questtrack_start_muffliato
+  tag_start_muffliato: tag add lesson_muffliato_started
+  clear_practice_muffliato: deletepoint practice_muffliato
+  enable_practice_muffliato: command hogwarts practice %player% muffliato on
+  journal_start_muffliato: journal add lesson_muffliato
+  notify_start_muffliato: 'notify &e✦ BÀI HỌC: &fMuffliato&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_muffliato: folder practice_add_muffliato,practice_auto_muffliato conditions:started_muffliato,!done_muffliato
+  complete_muffliato: folder disable_practice_muffliato,teach_muffliato,bonus_xp_muffliato,reward_shards_muffliato,tag_done_muffliato,tag_end_muffliato,journal_done_muffliato,reward_housepoints_muffliato,reward_money_muffliato,questtrack_done_muffliato,notify_done_muffliato
+  disable_practice_muffliato: command hogwarts practice %player% muffliato off
+  teach_muffliato: command hogwarts teach %player% muffliato
+  bonus_xp_muffliato: command hogwarts xp %player% 525
+  reward_shards_muffliato: give magic_shard:2
+  tag_done_muffliato: tag add lesson_muffliato_done
+  tag_end_muffliato: tag delete lesson_muffliato_started
+  journal_done_muffliato: journal add lesson_muffliato_done
+  notify_done_muffliato: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dMuffliato&f (Bùa Ù Tai). &7Thưởng: &d+525 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_confringo: folder tag_start_confringo,clear_practice_confringo,enable_practice_confringo,journal_start_confringo,notify_start_confringo,questtrack_start_confringo
+  tag_start_confringo: tag add lesson_confringo_started
+  clear_practice_confringo: deletepoint practice_confringo
+  enable_practice_confringo: command hogwarts practice %player% confringo on
+  journal_start_confringo: journal add lesson_confringo
+  notify_start_confringo: 'notify &e✦ BÀI HỌC: &fConfringo&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_confringo: folder practice_add_confringo,practice_auto_confringo conditions:started_confringo,!done_confringo
+  complete_confringo: folder disable_practice_confringo,teach_confringo,bonus_xp_confringo,reward_shards_confringo,tag_done_confringo,tag_end_confringo,journal_done_confringo,reward_housepoints_confringo,reward_money_confringo,questtrack_done_confringo,notify_done_confringo
+  disable_practice_confringo: command hogwarts practice %player% confringo off
+  teach_confringo: command hogwarts teach %player% confringo
+  bonus_xp_confringo: command hogwarts xp %player% 525
+  reward_shards_confringo: give magic_shard:2
+  tag_done_confringo: tag add lesson_confringo_done
+  tag_end_confringo: tag delete lesson_confringo_started
+  journal_done_confringo: journal add lesson_confringo_done
+  notify_done_confringo: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dConfringo&f (Bùa Nổ). &7Thưởng: &d+525 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_sectumsempra: folder tag_start_sectumsempra,clear_practice_sectumsempra,enable_practice_sectumsempra,journal_start_sectumsempra,notify_start_sectumsempra,questtrack_start_sectumsempra
+  tag_start_sectumsempra: tag add lesson_sectumsempra_started
+  clear_practice_sectumsempra: deletepoint practice_sectumsempra
+  enable_practice_sectumsempra: command hogwarts practice %player% sectumsempra on
+  journal_start_sectumsempra: journal add lesson_sectumsempra
+  notify_start_sectumsempra: 'notify &e✦ BÀI HỌC: &fSectumsempra&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_sectumsempra: folder practice_add_sectumsempra,practice_auto_sectumsempra conditions:started_sectumsempra,!done_sectumsempra
+  complete_sectumsempra: folder disable_practice_sectumsempra,teach_sectumsempra,bonus_xp_sectumsempra,reward_shards_sectumsempra,tag_done_sectumsempra,tag_end_sectumsempra,journal_done_sectumsempra,reward_housepoints_sectumsempra,reward_money_sectumsempra,questtrack_done_sectumsempra,notify_done_sectumsempra
+  disable_practice_sectumsempra: command hogwarts practice %player% sectumsempra off
+  teach_sectumsempra: command hogwarts teach %player% sectumsempra
+  bonus_xp_sectumsempra: command hogwarts xp %player% 525
+  reward_shards_sectumsempra: give magic_shard:2
+  tag_done_sectumsempra: tag add lesson_sectumsempra_done
+  tag_end_sectumsempra: tag delete lesson_sectumsempra_started
+  journal_done_sectumsempra: journal add lesson_sectumsempra_done
+  notify_done_sectumsempra: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dSectumsempra&f (Bùa Cắt Xé). &7Thưởng: &d+525 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_langlock: folder tag_start_langlock,clear_practice_langlock,enable_practice_langlock,journal_start_langlock,notify_start_langlock,questtrack_start_langlock
+  tag_start_langlock: tag add lesson_langlock_started
+  clear_practice_langlock: deletepoint practice_langlock
+  enable_practice_langlock: command hogwarts practice %player% langlock on
+  journal_start_langlock: journal add lesson_langlock
+  notify_start_langlock: 'notify &e✦ BÀI HỌC: &fLanglock&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_langlock: folder practice_add_langlock,practice_auto_langlock conditions:started_langlock,!done_langlock
+  complete_langlock: folder disable_practice_langlock,teach_langlock,bonus_xp_langlock,reward_shards_langlock,tag_done_langlock,tag_end_langlock,journal_done_langlock,reward_housepoints_langlock,reward_money_langlock,questtrack_done_langlock,notify_done_langlock
+  disable_practice_langlock: command hogwarts practice %player% langlock off
+  teach_langlock: command hogwarts teach %player% langlock
+  bonus_xp_langlock: command hogwarts xp %player% 525
+  reward_shards_langlock: give magic_shard:2
+  tag_done_langlock: tag add lesson_langlock_done
+  tag_end_langlock: tag delete lesson_langlock_started
+  journal_done_langlock: journal add lesson_langlock_done
+  notify_done_langlock: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dLanglock&f (Bùa Dính Lưỡi). &7Thưởng: &d+525 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_protego_totalum: folder tag_start_protego_totalum,clear_practice_protego_totalum,enable_practice_protego_totalum,journal_start_protego_totalum,notify_start_protego_totalum,questtrack_start_protego_totalum
+  tag_start_protego_totalum: tag add lesson_protego_totalum_started
+  clear_practice_protego_totalum: deletepoint practice_protego_totalum
+  enable_practice_protego_totalum: command hogwarts practice %player% protego-totalum on
+  journal_start_protego_totalum: journal add lesson_protego_totalum
+  notify_start_protego_totalum: 'notify &e✦ BÀI HỌC: &fProtego Totalum&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_protego_totalum: folder practice_add_protego_totalum,practice_auto_protego_totalum conditions:started_protego_totalum,!done_protego_totalum
+  complete_protego_totalum: folder disable_practice_protego_totalum,teach_protego_totalum,bonus_xp_protego_totalum,reward_shards_protego_totalum,tag_done_protego_totalum,tag_end_protego_totalum,journal_done_protego_totalum,reward_housepoints_protego_totalum,reward_money_protego_totalum,questtrack_done_protego_totalum,notify_done_protego_totalum
+  disable_practice_protego_totalum: command hogwarts practice %player% protego-totalum off
+  teach_protego_totalum: command hogwarts teach %player% protego-totalum
+  bonus_xp_protego_totalum: command hogwarts xp %player% 600
+  reward_shards_protego_totalum: give magic_shard:2
+  tag_done_protego_totalum: tag add lesson_protego_totalum_done
+  tag_end_protego_totalum: tag delete lesson_protego_totalum_started
+  journal_done_protego_totalum: journal add lesson_protego_totalum_done
+  notify_done_protego_totalum: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dProtego Totalum&f (Bùa Bảo Vệ Toàn Vẹn). &7Thưởng: &d+600 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_salvio_hexia: folder tag_start_salvio_hexia,clear_practice_salvio_hexia,enable_practice_salvio_hexia,journal_start_salvio_hexia,notify_start_salvio_hexia,questtrack_start_salvio_hexia
+  tag_start_salvio_hexia: tag add lesson_salvio_hexia_started
+  clear_practice_salvio_hexia: deletepoint practice_salvio_hexia
+  enable_practice_salvio_hexia: command hogwarts practice %player% salvio-hexia on
+  journal_start_salvio_hexia: journal add lesson_salvio_hexia
+  notify_start_salvio_hexia: 'notify &e✦ BÀI HỌC: &fSalvio Hexia&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_salvio_hexia: folder practice_add_salvio_hexia,practice_auto_salvio_hexia conditions:started_salvio_hexia,!done_salvio_hexia
+  complete_salvio_hexia: folder disable_practice_salvio_hexia,teach_salvio_hexia,bonus_xp_salvio_hexia,reward_shards_salvio_hexia,tag_done_salvio_hexia,tag_end_salvio_hexia,journal_done_salvio_hexia,reward_housepoints_salvio_hexia,reward_money_salvio_hexia,questtrack_done_salvio_hexia,notify_done_salvio_hexia
+  disable_practice_salvio_hexia: command hogwarts practice %player% salvio-hexia off
+  teach_salvio_hexia: command hogwarts teach %player% salvio-hexia
+  bonus_xp_salvio_hexia: command hogwarts xp %player% 600
+  reward_shards_salvio_hexia: give magic_shard:2
+  tag_done_salvio_hexia: tag add lesson_salvio_hexia_done
+  tag_end_salvio_hexia: tag delete lesson_salvio_hexia_started
+  journal_done_salvio_hexia: journal add lesson_salvio_hexia_done
+  notify_done_salvio_hexia: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dSalvio Hexia&f (Bùa Chắn Ếm). &7Thưởng: &d+600 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_cave_inimicum: folder tag_start_cave_inimicum,clear_practice_cave_inimicum,enable_practice_cave_inimicum,journal_start_cave_inimicum,notify_start_cave_inimicum,questtrack_start_cave_inimicum
+  tag_start_cave_inimicum: tag add lesson_cave_inimicum_started
+  clear_practice_cave_inimicum: deletepoint practice_cave_inimicum
+  enable_practice_cave_inimicum: command hogwarts practice %player% cave-inimicum on
+  journal_start_cave_inimicum: journal add lesson_cave_inimicum
+  notify_start_cave_inimicum: 'notify &e✦ BÀI HỌC: &fCave Inimicum&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_cave_inimicum: folder practice_add_cave_inimicum,practice_auto_cave_inimicum conditions:started_cave_inimicum,!done_cave_inimicum
+  complete_cave_inimicum: folder disable_practice_cave_inimicum,teach_cave_inimicum,bonus_xp_cave_inimicum,reward_shards_cave_inimicum,tag_done_cave_inimicum,tag_end_cave_inimicum,journal_done_cave_inimicum,reward_housepoints_cave_inimicum,reward_money_cave_inimicum,questtrack_done_cave_inimicum,notify_done_cave_inimicum
+  disable_practice_cave_inimicum: command hogwarts practice %player% cave-inimicum off
+  teach_cave_inimicum: command hogwarts teach %player% cave-inimicum
+  bonus_xp_cave_inimicum: command hogwarts xp %player% 600
+  reward_shards_cave_inimicum: give magic_shard:2
+  tag_done_cave_inimicum: tag add lesson_cave_inimicum_done
+  tag_end_cave_inimicum: tag delete lesson_cave_inimicum_started
+  journal_done_cave_inimicum: journal add lesson_cave_inimicum_done
+  notify_done_cave_inimicum: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dCave Inimicum&f (Bùa Cảnh Giới). &7Thưởng: &d+600 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_fiendfyre: folder tag_start_fiendfyre,clear_practice_fiendfyre,enable_practice_fiendfyre,journal_start_fiendfyre,notify_start_fiendfyre,questtrack_start_fiendfyre
+  tag_start_fiendfyre: tag add lesson_fiendfyre_started
+  clear_practice_fiendfyre: deletepoint practice_fiendfyre
+  enable_practice_fiendfyre: command hogwarts practice %player% fiendfyre on
+  journal_start_fiendfyre: journal add lesson_fiendfyre
+  notify_start_fiendfyre: 'notify &e✦ BÀI HỌC: &fFiendfyre&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_fiendfyre: folder practice_add_fiendfyre,practice_auto_fiendfyre conditions:started_fiendfyre,!done_fiendfyre
+  complete_fiendfyre: folder disable_practice_fiendfyre,teach_fiendfyre,bonus_xp_fiendfyre,reward_shards_fiendfyre,tag_done_fiendfyre,tag_end_fiendfyre,journal_done_fiendfyre,reward_housepoints_fiendfyre,reward_money_fiendfyre,questtrack_done_fiendfyre,notify_done_fiendfyre
+  disable_practice_fiendfyre: command hogwarts practice %player% fiendfyre off
+  teach_fiendfyre: command hogwarts teach %player% fiendfyre
+  bonus_xp_fiendfyre: command hogwarts xp %player% 600
+  reward_shards_fiendfyre: give magic_shard:2
+  tag_done_fiendfyre: tag add lesson_fiendfyre_done
+  tag_end_fiendfyre: tag delete lesson_fiendfyre_started
+  journal_done_fiendfyre: journal add lesson_fiendfyre_done
+  notify_done_fiendfyre: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dFiendfyre&f (Quỷ Hoả). &7Thưởng: &d+600 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_expelliarmus_maxima: folder tag_start_expelliarmus_maxima,clear_practice_expelliarmus_maxima,enable_practice_expelliarmus_maxima,journal_start_expelliarmus_maxima,notify_start_expelliarmus_maxima,questtrack_start_expelliarmus_maxima
+  tag_start_expelliarmus_maxima: tag add lesson_expelliarmus_maxima_started
+  clear_practice_expelliarmus_maxima: deletepoint practice_expelliarmus_maxima
+  enable_practice_expelliarmus_maxima: command hogwarts practice %player% expelliarmus-maxima on
+  journal_start_expelliarmus_maxima: journal add lesson_expelliarmus_maxima
+  notify_start_expelliarmus_maxima: 'notify &e✦ BÀI HỌC: &fExpelliarmus Maxima&e — Hãy chọn phép và niệm thành công &f3 lần&e. Khi đủ 3 lần, hệ thống sẽ tự chấm và trao thưởng. io:chat'
+  practice_tick_expelliarmus_maxima: folder practice_add_expelliarmus_maxima,practice_auto_expelliarmus_maxima conditions:started_expelliarmus_maxima,!done_expelliarmus_maxima
+  complete_expelliarmus_maxima: folder disable_practice_expelliarmus_maxima,teach_expelliarmus_maxima,bonus_xp_expelliarmus_maxima,reward_shards_expelliarmus_maxima,tag_done_expelliarmus_maxima,tag_end_expelliarmus_maxima,journal_done_expelliarmus_maxima,reward_housepoints_expelliarmus_maxima,reward_money_expelliarmus_maxima,questtrack_done_expelliarmus_maxima,notify_done_expelliarmus_maxima
+  disable_practice_expelliarmus_maxima: command hogwarts practice %player% expelliarmus-maxima off
+  teach_expelliarmus_maxima: command hogwarts teach %player% expelliarmus-maxima
+  bonus_xp_expelliarmus_maxima: command hogwarts xp %player% 600
+  reward_shards_expelliarmus_maxima: give magic_shard:2
+  tag_done_expelliarmus_maxima: tag add lesson_expelliarmus_maxima_done
+  tag_end_expelliarmus_maxima: tag delete lesson_expelliarmus_maxima_started
+  journal_done_expelliarmus_maxima: journal add lesson_expelliarmus_maxima_done
+  notify_done_expelliarmus_maxima: 'notify &a&lĐẬU BÀI HỌC! &fBạn đã mở khoá vĩnh viễn &dExpelliarmus Maxima&f (Đại Bùa Tước Vũ Khí). &7Thưởng: &d+600 Magic XP &7+ &d2 Mảnh Ma Thuật. &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat'
+  start_potions: folder tag_potions_start,notify_potions
+  tag_potions_start: tag add support_potions_started
+  notify_potions: 'notify &2Giáo sư Snape: Thu thập 3 Nether Wart và 1 Spider Eye rồi quay lại. io:chat'
+  complete_potions: folder take_potion_ingredients,tag_potions_done,reward_potions_xp,reward_potions_item,reward_support_potions_y1,notify_reward_complete_potions
+  take_potion_ingredients: take nether_wart:3,spider_eye:1
+  tag_potions_done: tag add support_potions_done
+  reward_potions_xp: command hogwarts xp %player% 80
+  reward_potions_item: give magic_shard:3
+  start_flying: folder tag_flying_start,notify_flying,obj_flying
+  tag_flying_start: tag add support_flying_started
+  notify_flying: 'notify &fMadam Hooch: Bay qua sân tập và đạt độ cao quy định rồi trở lại. io:chat'
+  obj_flying: objective add flying_height
+  complete_flying: folder tag_flying_done,reward_flying_xp,reward_flying_item,reward_support_flying_y1,notify_reward_complete_flying
+  tag_flying_done: tag add support_flying_done
+  reward_flying_xp: command hogwarts xp %player% 80
+  reward_flying_item: give magic_shard:3
+  start_herbology: folder tag_herb_start,notify_herb,obj_herb
+  tag_herb_start: tag add support_herbology_started
+  notify_herb: 'notify &2Giáo sư Sprout: Hãy thu thập 5 mẫu dương xỉ trong nhà kính. io:chat'
+  obj_herb: objective add collect_fern
+  complete_herbology: folder tag_herb_done,reward_herb_xp,reward_herb_item,reward_support_herbology_y1,notify_reward_complete_herbology
+  tag_herb_done: tag add support_herbology_done
+  reward_herb_xp: command hogwarts xp %player% 80
+  reward_herb_item: give magic_shard:3
+  start_transfiguration: folder tag_transfig_start,notify_transfig,obj_transfig
+  tag_transfig_start: tag add support_transfiguration_started
+  notify_transfig: 'notify &6Giáo sư McGonagall: Hãy tới bàn thực hành và hoàn thành bài biến hình cơ bản. io:chat'
+  obj_transfig: objective add transfiguration_desk
+  complete_transfiguration: folder tag_transfig_done,reward_transfig_xp,reward_transfig_item,reward_support_transfiguration_y1,notify_reward_complete_transfiguration
+  tag_transfig_done: tag add support_transfiguration_done
+  reward_transfig_xp: command hogwarts xp %player% 80
+  reward_transfig_item: give magic_shard:3
+  advance_year_1: folder advance_year_1_cmd,advance_year_1_tag,advance_year_1_notify
+  advance_year_1_cmd: command hogwarts year %player% next
+  advance_year_1_tag: tag add curriculum_year_1_complete
+  advance_year_1_notify: notify &6✦ Bạn đã hoàn tất chương trình Năm 1. Năm học mới đã mở! io:chat
+  advance_year_2: folder advance_year_2_cmd,advance_year_2_tag,advance_year_2_notify
+  advance_year_2_cmd: command hogwarts year %player% next
+  advance_year_2_tag: tag add curriculum_year_2_complete
+  advance_year_2_notify: notify &6✦ Bạn đã hoàn tất chương trình Năm 2. Năm học mới đã mở! io:chat
+  advance_year_3: folder advance_year_3_cmd,advance_year_3_tag,advance_year_3_notify
+  advance_year_3_cmd: command hogwarts year %player% next
+  advance_year_3_tag: tag add curriculum_year_3_complete
+  advance_year_3_notify: notify &6✦ Bạn đã hoàn tất chương trình Năm 3. Năm học mới đã mở! io:chat
+  advance_year_4: folder advance_year_4_cmd,advance_year_4_tag,advance_year_4_notify
+  advance_year_4_cmd: command hogwarts year %player% next
+  advance_year_4_tag: tag add curriculum_year_4_complete
+  advance_year_4_notify: notify &6✦ Bạn đã hoàn tất chương trình Năm 4. Năm học mới đã mở! io:chat
+  advance_year_5: folder advance_year_5_cmd,advance_year_5_tag,advance_year_5_notify
+  advance_year_5_cmd: command hogwarts year %player% next
+  advance_year_5_tag: tag add curriculum_year_5_complete
+  advance_year_5_notify: notify &6✦ Bạn đã hoàn tất chương trình Năm 5. Năm học mới đã mở! io:chat
+  advance_year_6: folder advance_year_6_cmd,advance_year_6_tag,advance_year_6_notify
+  advance_year_6_cmd: command hogwarts year %player% next
+  advance_year_6_tag: tag add curriculum_year_6_complete
+  advance_year_6_notify: notify &6✦ Bạn đã hoàn tất chương trình Năm 6. Năm học mới đã mở! io:chat
+  graduate: folder graduate_tag,graduate_xp,graduate_item,graduate_notify
+  graduate_tag: tag add hogwarts_graduated
+  graduate_xp: command hogwarts xp %player% 500
+  graduate_item: give magic_shard:20
+  graduate_notify: notify &6&lTỐT NGHIỆP HOGWARTS! &fBạn đã hoàn thành toàn bộ chương trình phép thuật 7 năm. io:chat
+  reward_housepoints_lumos: command hogwarts lessonreward %player% 3 25 lumos
+  reward_money_lumos: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_nox: command hogwarts lessonreward %player% 3 25 nox
+  reward_money_nox: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_wingardium_leviosa: command hogwarts lessonreward %player% 3 25 wingardium_leviosa
+  reward_money_wingardium_leviosa: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_alohomora: command hogwarts lessonreward %player% 3 25 alohomora
+  reward_money_alohomora: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_incendio: command hogwarts lessonreward %player% 3 25 incendio
+  reward_money_incendio: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_petrificus_totalus: command hogwarts lessonreward %player% 3 25 petrificus_totalus
+  reward_money_petrificus_totalus: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_locomotor_mortis: command hogwarts lessonreward %player% 3 25 locomotor_mortis
+  reward_money_locomotor_mortis: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_expelliarmus: command hogwarts lessonreward %player% 3 25 expelliarmus
+  reward_money_expelliarmus: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_rictusempra: command hogwarts lessonreward %player% 3 25 rictusempra
+  reward_money_rictusempra: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_serpensortia: command hogwarts lessonreward %player% 3 25 serpensortia
+  reward_money_serpensortia: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_reparo: command hogwarts lessonreward %player% 3 25 reparo
+  reward_money_reparo: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_immobulus: command hogwarts lessonreward %player% 3 25 immobulus
+  reward_money_immobulus: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_finite_incantatem: command hogwarts lessonreward %player% 3 25 finite_incantatem
+  reward_money_finite_incantatem: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_riddikulus: command hogwarts lessonreward %player% 3 25 riddikulus
+  reward_money_riddikulus: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_expecto_patronum: command hogwarts lessonreward %player% 3 25 expecto_patronum
+  reward_money_expecto_patronum: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_lumos_maxima: command hogwarts lessonreward %player% 3 25 lumos_maxima
+  reward_money_lumos_maxima: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_impervius: command hogwarts lessonreward %player% 3 25 impervius
+  reward_money_impervius: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_ferula: command hogwarts lessonreward %player% 3 25 ferula
+  reward_money_ferula: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_accio: command hogwarts lessonreward %player% 3 25 accio
+  reward_money_accio: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_stupefy: command hogwarts lessonreward %player% 3 25 stupefy
+  reward_money_stupefy: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_impedimenta: command hogwarts lessonreward %player% 3 25 impedimenta
+  reward_money_impedimenta: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_reducto: command hogwarts lessonreward %player% 3 25 reducto
+  reward_money_reducto: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_densaugeo: command hogwarts lessonreward %player% 3 25 densaugeo
+  reward_money_densaugeo: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_point_me: command hogwarts lessonreward %player% 3 25 point_me
+  reward_money_point_me: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_protego: command hogwarts lessonreward %player% 3 25 protego
+  reward_money_protego: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_silencio: command hogwarts lessonreward %player% 3 25 silencio
+  reward_money_silencio: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_levicorpus: command hogwarts lessonreward %player% 3 25 levicorpus
+  reward_money_levicorpus: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_liberacorpus: command hogwarts lessonreward %player% 3 25 liberacorpus
+  reward_money_liberacorpus: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_episkey: command hogwarts lessonreward %player% 3 25 episkey
+  reward_money_episkey: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_aguamenti: command hogwarts lessonreward %player% 3 25 aguamenti
+  reward_money_aguamenti: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_muffliato: command hogwarts lessonreward %player% 3 25 muffliato
+  reward_money_muffliato: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_confringo: command hogwarts lessonreward %player% 3 25 confringo
+  reward_money_confringo: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_sectumsempra: command hogwarts lessonreward %player% 3 25 sectumsempra
+  reward_money_sectumsempra: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_langlock: command hogwarts lessonreward %player% 3 25 langlock
+  reward_money_langlock: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_protego_totalum: command hogwarts lessonreward %player% 3 25 protego_totalum
+  reward_money_protego_totalum: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_salvio_hexia: command hogwarts lessonreward %player% 3 25 salvio_hexia
+  reward_money_salvio_hexia: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_cave_inimicum: command hogwarts lessonreward %player% 3 25 cave_inimicum
+  reward_money_cave_inimicum: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_fiendfyre: command hogwarts lessonreward %player% 3 25 fiendfyre
+  reward_money_fiendfyre: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_housepoints_expelliarmus_maxima: command hogwarts lessonreward %player% 3 25 expelliarmus_maxima
+  reward_money_expelliarmus_maxima: notify &6+25 Galleon &8· &e+3 Điểm Nhà &7đã được trao cho em. io:chat
+  reward_support_potions_y1: command hogwarts lessonreward %player% 3 25 potions_y1
+  reward_support_flying_y1: command hogwarts lessonreward %player% 3 25 flying_y1
+  reward_support_herbology_y1: command hogwarts lessonreward %player% 3 25 herbology_y1
+  reward_support_transfiguration_y1: command hogwarts lessonreward %player% 3 25 transfiguration_y1
+  notify_reward_complete_potions: notify &a&lHOÀN THÀNH! &fĐộc dược Năm I &7— &e+3 Điểm Nhà &7+ &625 Galleon. io:chat
+  notify_reward_complete_flying: notify &a&lHOÀN THÀNH! &fBay Năm I &7— &e+3 Điểm Nhà &7+ &625 Galleon. io:chat
+  notify_reward_complete_herbology: notify &a&lHOÀN THÀNH! &fThảo dược Năm I &7— &e+3 Điểm Nhà &7+ &625 Galleon. io:chat
+  notify_reward_complete_transfiguration: notify &a&lHOÀN THÀNH! &fBiến hình Năm I &7— &e+3 Điểm Nhà &7+ &625 Galleon. io:chat
+  questtrack_start_accio: command hogwarts queststart %player% spell_accio 3 point practice_accio Accio
+  questtrack_done_accio: command hogwarts questcomplete %player% spell_accio
+  practice_add_accio: point practice_accio 1 action:add conditions:started_accio,!done_accio
+  practice_auto_accio: if practiced_accio complete_accio else questtrack_noop_accio
+  questtrack_noop_accio: command true
+  questtrack_start_aguamenti: command hogwarts queststart %player% spell_aguamenti 3 point practice_aguamenti Aguamenti
+  questtrack_done_aguamenti: command hogwarts questcomplete %player% spell_aguamenti
+  practice_add_aguamenti: point practice_aguamenti 1 action:add conditions:started_aguamenti,!done_aguamenti
+  practice_auto_aguamenti: if practiced_aguamenti complete_aguamenti else questtrack_noop_aguamenti
+  questtrack_noop_aguamenti: command true
+  questtrack_start_alohomora: command hogwarts queststart %player% spell_alohomora 3 point practice_alohomora Alohomora
+  questtrack_done_alohomora: command hogwarts questcomplete %player% spell_alohomora
+  practice_add_alohomora: point practice_alohomora 1 action:add conditions:started_alohomora,!done_alohomora
+  practice_auto_alohomora: if practiced_alohomora complete_alohomora else questtrack_noop_alohomora
+  questtrack_noop_alohomora: command true
+  questtrack_start_cave_inimicum: command hogwarts queststart %player% spell_cave_inimicum 3 point practice_cave_inimicum Cave_Inimicum
+  questtrack_done_cave_inimicum: command hogwarts questcomplete %player% spell_cave_inimicum
+  practice_add_cave_inimicum: point practice_cave_inimicum 1 action:add conditions:started_cave_inimicum,!done_cave_inimicum
+  practice_auto_cave_inimicum: if practiced_cave_inimicum complete_cave_inimicum else questtrack_noop_cave_inimicum
+  questtrack_noop_cave_inimicum: command true
+  questtrack_start_confringo: command hogwarts queststart %player% spell_confringo 3 point practice_confringo Confringo
+  questtrack_done_confringo: command hogwarts questcomplete %player% spell_confringo
+  practice_add_confringo: point practice_confringo 1 action:add conditions:started_confringo,!done_confringo
+  practice_auto_confringo: if practiced_confringo complete_confringo else questtrack_noop_confringo
+  questtrack_noop_confringo: command true
+  questtrack_start_densaugeo: command hogwarts queststart %player% spell_densaugeo 3 point practice_densaugeo Densaugeo
+  questtrack_done_densaugeo: command hogwarts questcomplete %player% spell_densaugeo
+  practice_add_densaugeo: point practice_densaugeo 1 action:add conditions:started_densaugeo,!done_densaugeo
+  practice_auto_densaugeo: if practiced_densaugeo complete_densaugeo else questtrack_noop_densaugeo
+  questtrack_noop_densaugeo: command true
+  questtrack_start_episkey: command hogwarts queststart %player% spell_episkey 3 point practice_episkey Episkey
+  questtrack_done_episkey: command hogwarts questcomplete %player% spell_episkey
+  practice_add_episkey: point practice_episkey 1 action:add conditions:started_episkey,!done_episkey
+  practice_auto_episkey: if practiced_episkey complete_episkey else questtrack_noop_episkey
+  questtrack_noop_episkey: command true
+  questtrack_start_expecto_patronum: command hogwarts queststart %player% spell_expecto_patronum 3 point practice_expecto_patronum Expecto_Patronum
+  questtrack_done_expecto_patronum: command hogwarts questcomplete %player% spell_expecto_patronum
+  practice_add_expecto_patronum: point practice_expecto_patronum 1 action:add conditions:started_expecto_patronum,!done_expecto_patronum
+  practice_auto_expecto_patronum: if practiced_expecto_patronum complete_expecto_patronum else questtrack_noop_expecto_patronum
+  questtrack_noop_expecto_patronum: command true
+  questtrack_start_expelliarmus: command hogwarts queststart %player% spell_expelliarmus 3 point practice_expelliarmus Expelliarmus
+  questtrack_done_expelliarmus: command hogwarts questcomplete %player% spell_expelliarmus
+  practice_add_expelliarmus: point practice_expelliarmus 1 action:add conditions:started_expelliarmus,!done_expelliarmus
+  practice_auto_expelliarmus: if practiced_expelliarmus complete_expelliarmus else questtrack_noop_expelliarmus
+  questtrack_noop_expelliarmus: command true
+  questtrack_start_expelliarmus_maxima: command hogwarts queststart %player% spell_expelliarmus_maxima 3 point practice_expelliarmus_maxima Expelliarmus_Maxima
+  questtrack_done_expelliarmus_maxima: command hogwarts questcomplete %player% spell_expelliarmus_maxima
+  practice_add_expelliarmus_maxima: point practice_expelliarmus_maxima 1 action:add conditions:started_expelliarmus_maxima,!done_expelliarmus_maxima
+  practice_auto_expelliarmus_maxima: if practiced_expelliarmus_maxima complete_expelliarmus_maxima else questtrack_noop_expelliarmus_maxima
+  questtrack_noop_expelliarmus_maxima: command true
+  questtrack_start_ferula: command hogwarts queststart %player% spell_ferula 3 point practice_ferula Ferula
+  questtrack_done_ferula: command hogwarts questcomplete %player% spell_ferula
+  practice_add_ferula: point practice_ferula 1 action:add conditions:started_ferula,!done_ferula
+  practice_auto_ferula: if practiced_ferula complete_ferula else questtrack_noop_ferula
+  questtrack_noop_ferula: command true
+  questtrack_start_fiendfyre: command hogwarts queststart %player% spell_fiendfyre 3 point practice_fiendfyre Fiendfyre
+  questtrack_done_fiendfyre: command hogwarts questcomplete %player% spell_fiendfyre
+  practice_add_fiendfyre: point practice_fiendfyre 1 action:add conditions:started_fiendfyre,!done_fiendfyre
+  practice_auto_fiendfyre: if practiced_fiendfyre complete_fiendfyre else questtrack_noop_fiendfyre
+  questtrack_noop_fiendfyre: command true
+  questtrack_start_finite_incantatem: command hogwarts queststart %player% spell_finite_incantatem 3 point practice_finite_incantatem Finite_Incantatem
+  questtrack_done_finite_incantatem: command hogwarts questcomplete %player% spell_finite_incantatem
+  practice_add_finite_incantatem: point practice_finite_incantatem 1 action:add conditions:started_finite_incantatem,!done_finite_incantatem
+  practice_auto_finite_incantatem: if practiced_finite_incantatem complete_finite_incantatem else questtrack_noop_finite_incantatem
+  questtrack_noop_finite_incantatem: command true
+  questtrack_start_immobulus: command hogwarts queststart %player% spell_immobulus 3 point practice_immobulus Immobulus
+  questtrack_done_immobulus: command hogwarts questcomplete %player% spell_immobulus
+  practice_add_immobulus: point practice_immobulus 1 action:add conditions:started_immobulus,!done_immobulus
+  practice_auto_immobulus: if practiced_immobulus complete_immobulus else questtrack_noop_immobulus
+  questtrack_noop_immobulus: command true
+  questtrack_start_impedimenta: command hogwarts queststart %player% spell_impedimenta 3 point practice_impedimenta Impedimenta
+  questtrack_done_impedimenta: command hogwarts questcomplete %player% spell_impedimenta
+  practice_add_impedimenta: point practice_impedimenta 1 action:add conditions:started_impedimenta,!done_impedimenta
+  practice_auto_impedimenta: if practiced_impedimenta complete_impedimenta else questtrack_noop_impedimenta
+  questtrack_noop_impedimenta: command true
+  questtrack_start_impervius: command hogwarts queststart %player% spell_impervius 3 point practice_impervius Impervius
+  questtrack_done_impervius: command hogwarts questcomplete %player% spell_impervius
+  practice_add_impervius: point practice_impervius 1 action:add conditions:started_impervius,!done_impervius
+  practice_auto_impervius: if practiced_impervius complete_impervius else questtrack_noop_impervius
+  questtrack_noop_impervius: command true
+  questtrack_start_incendio: command hogwarts queststart %player% spell_incendio 3 point practice_incendio Incendio
+  questtrack_done_incendio: command hogwarts questcomplete %player% spell_incendio
+  practice_add_incendio: point practice_incendio 1 action:add conditions:started_incendio,!done_incendio
+  practice_auto_incendio: if practiced_incendio complete_incendio else questtrack_noop_incendio
+  questtrack_noop_incendio: command true
+  questtrack_start_langlock: command hogwarts queststart %player% spell_langlock 3 point practice_langlock Langlock
+  questtrack_done_langlock: command hogwarts questcomplete %player% spell_langlock
+  practice_add_langlock: point practice_langlock 1 action:add conditions:started_langlock,!done_langlock
+  practice_auto_langlock: if practiced_langlock complete_langlock else questtrack_noop_langlock
+  questtrack_noop_langlock: command true
+  questtrack_start_levicorpus: command hogwarts queststart %player% spell_levicorpus 3 point practice_levicorpus Levicorpus
+  questtrack_done_levicorpus: command hogwarts questcomplete %player% spell_levicorpus
+  practice_add_levicorpus: point practice_levicorpus 1 action:add conditions:started_levicorpus,!done_levicorpus
+  practice_auto_levicorpus: if practiced_levicorpus complete_levicorpus else questtrack_noop_levicorpus
+  questtrack_noop_levicorpus: command true
+  questtrack_start_liberacorpus: command hogwarts queststart %player% spell_liberacorpus 3 point practice_liberacorpus Liberacorpus
+  questtrack_done_liberacorpus: command hogwarts questcomplete %player% spell_liberacorpus
+  practice_add_liberacorpus: point practice_liberacorpus 1 action:add conditions:started_liberacorpus,!done_liberacorpus
+  practice_auto_liberacorpus: if practiced_liberacorpus complete_liberacorpus else questtrack_noop_liberacorpus
+  questtrack_noop_liberacorpus: command true
+  questtrack_start_locomotor_mortis: command hogwarts queststart %player% spell_locomotor_mortis 3 point practice_locomotor_mortis Locomotor_Mortis
+  questtrack_done_locomotor_mortis: command hogwarts questcomplete %player% spell_locomotor_mortis
+  practice_add_locomotor_mortis: point practice_locomotor_mortis 1 action:add conditions:started_locomotor_mortis,!done_locomotor_mortis
+  practice_auto_locomotor_mortis: if practiced_locomotor_mortis complete_locomotor_mortis else questtrack_noop_locomotor_mortis
+  questtrack_noop_locomotor_mortis: command true
+  questtrack_start_lumos: command hogwarts queststart %player% spell_lumos 3 point practice_lumos Lumos
+  questtrack_done_lumos: command hogwarts questcomplete %player% spell_lumos
+  practice_add_lumos: point practice_lumos 1 action:add conditions:started_lumos,!done_lumos
+  practice_auto_lumos: if practiced_lumos complete_lumos else questtrack_noop_lumos
+  questtrack_noop_lumos: command true
+  questtrack_start_lumos_maxima: command hogwarts queststart %player% spell_lumos_maxima 3 point practice_lumos_maxima Lumos_Maxima
+  questtrack_done_lumos_maxima: command hogwarts questcomplete %player% spell_lumos_maxima
+  practice_add_lumos_maxima: point practice_lumos_maxima 1 action:add conditions:started_lumos_maxima,!done_lumos_maxima
+  practice_auto_lumos_maxima: if practiced_lumos_maxima complete_lumos_maxima else questtrack_noop_lumos_maxima
+  questtrack_noop_lumos_maxima: command true
+  questtrack_start_muffliato: command hogwarts queststart %player% spell_muffliato 3 point practice_muffliato Muffliato
+  questtrack_done_muffliato: command hogwarts questcomplete %player% spell_muffliato
+  practice_add_muffliato: point practice_muffliato 1 action:add conditions:started_muffliato,!done_muffliato
+  practice_auto_muffliato: if practiced_muffliato complete_muffliato else questtrack_noop_muffliato
+  questtrack_noop_muffliato: command true
+  questtrack_start_nox: command hogwarts queststart %player% spell_nox 3 point practice_nox Nox
+  questtrack_done_nox: command hogwarts questcomplete %player% spell_nox
+  practice_add_nox: point practice_nox 1 action:add conditions:started_nox,!done_nox
+  practice_auto_nox: if practiced_nox complete_nox else questtrack_noop_nox
+  questtrack_noop_nox: command true
+  questtrack_start_petrificus_totalus: command hogwarts queststart %player% spell_petrificus_totalus 3 point practice_petrificus_totalus Petrificus_Totalus
+  questtrack_done_petrificus_totalus: command hogwarts questcomplete %player% spell_petrificus_totalus
+  practice_add_petrificus_totalus: point practice_petrificus_totalus 1 action:add conditions:started_petrificus_totalus,!done_petrificus_totalus
+  practice_auto_petrificus_totalus: if practiced_petrificus_totalus complete_petrificus_totalus else questtrack_noop_petrificus_totalus
+  questtrack_noop_petrificus_totalus: command true
+  questtrack_start_point_me: command hogwarts queststart %player% spell_point_me 3 point practice_point_me Point_Me
+  questtrack_done_point_me: command hogwarts questcomplete %player% spell_point_me
+  practice_add_point_me: point practice_point_me 1 action:add conditions:started_point_me,!done_point_me
+  practice_auto_point_me: if practiced_point_me complete_point_me else questtrack_noop_point_me
+  questtrack_noop_point_me: command true
+  questtrack_start_protego: command hogwarts queststart %player% spell_protego 3 point practice_protego Protego
+  questtrack_done_protego: command hogwarts questcomplete %player% spell_protego
+  practice_add_protego: point practice_protego 1 action:add conditions:started_protego,!done_protego
+  practice_auto_protego: if practiced_protego complete_protego else questtrack_noop_protego
+  questtrack_noop_protego: command true
+  questtrack_start_protego_totalum: command hogwarts queststart %player% spell_protego_totalum 3 point practice_protego_totalum Protego_Totalum
+  questtrack_done_protego_totalum: command hogwarts questcomplete %player% spell_protego_totalum
+  practice_add_protego_totalum: point practice_protego_totalum 1 action:add conditions:started_protego_totalum,!done_protego_totalum
+  practice_auto_protego_totalum: if practiced_protego_totalum complete_protego_totalum else questtrack_noop_protego_totalum
+  questtrack_noop_protego_totalum: command true
+  questtrack_start_reducto: command hogwarts queststart %player% spell_reducto 3 point practice_reducto Reducto
+  questtrack_done_reducto: command hogwarts questcomplete %player% spell_reducto
+  practice_add_reducto: point practice_reducto 1 action:add conditions:started_reducto,!done_reducto
+  practice_auto_reducto: if practiced_reducto complete_reducto else questtrack_noop_reducto
+  questtrack_noop_reducto: command true
+  questtrack_start_reparo: command hogwarts queststart %player% spell_reparo 3 point practice_reparo Reparo
+  questtrack_done_reparo: command hogwarts questcomplete %player% spell_reparo
+  practice_add_reparo: point practice_reparo 1 action:add conditions:started_reparo,!done_reparo
+  practice_auto_reparo: if practiced_reparo complete_reparo else questtrack_noop_reparo
+  questtrack_noop_reparo: command true
+  questtrack_start_rictusempra: command hogwarts queststart %player% spell_rictusempra 3 point practice_rictusempra Rictusempra
+  questtrack_done_rictusempra: command hogwarts questcomplete %player% spell_rictusempra
+  practice_add_rictusempra: point practice_rictusempra 1 action:add conditions:started_rictusempra,!done_rictusempra
+  practice_auto_rictusempra: if practiced_rictusempra complete_rictusempra else questtrack_noop_rictusempra
+  questtrack_noop_rictusempra: command true
+  questtrack_start_riddikulus: command hogwarts queststart %player% spell_riddikulus 3 point practice_riddikulus Riddikulus
+  questtrack_done_riddikulus: command hogwarts questcomplete %player% spell_riddikulus
+  practice_add_riddikulus: point practice_riddikulus 1 action:add conditions:started_riddikulus,!done_riddikulus
+  practice_auto_riddikulus: if practiced_riddikulus complete_riddikulus else questtrack_noop_riddikulus
+  questtrack_noop_riddikulus: command true
+  questtrack_start_salvio_hexia: command hogwarts queststart %player% spell_salvio_hexia 3 point practice_salvio_hexia Salvio_Hexia
+  questtrack_done_salvio_hexia: command hogwarts questcomplete %player% spell_salvio_hexia
+  practice_add_salvio_hexia: point practice_salvio_hexia 1 action:add conditions:started_salvio_hexia,!done_salvio_hexia
+  practice_auto_salvio_hexia: if practiced_salvio_hexia complete_salvio_hexia else questtrack_noop_salvio_hexia
+  questtrack_noop_salvio_hexia: command true
+  questtrack_start_sectumsempra: command hogwarts queststart %player% spell_sectumsempra 3 point practice_sectumsempra Sectumsempra
+  questtrack_done_sectumsempra: command hogwarts questcomplete %player% spell_sectumsempra
+  practice_add_sectumsempra: point practice_sectumsempra 1 action:add conditions:started_sectumsempra,!done_sectumsempra
+  practice_auto_sectumsempra: if practiced_sectumsempra complete_sectumsempra else questtrack_noop_sectumsempra
+  questtrack_noop_sectumsempra: command true
+  questtrack_start_serpensortia: command hogwarts queststart %player% spell_serpensortia 3 point practice_serpensortia Serpensortia
+  questtrack_done_serpensortia: command hogwarts questcomplete %player% spell_serpensortia
+  practice_add_serpensortia: point practice_serpensortia 1 action:add conditions:started_serpensortia,!done_serpensortia
+  practice_auto_serpensortia: if practiced_serpensortia complete_serpensortia else questtrack_noop_serpensortia
+  questtrack_noop_serpensortia: command true
+  questtrack_start_silencio: command hogwarts queststart %player% spell_silencio 3 point practice_silencio Silencio
+  questtrack_done_silencio: command hogwarts questcomplete %player% spell_silencio
+  practice_add_silencio: point practice_silencio 1 action:add conditions:started_silencio,!done_silencio
+  practice_auto_silencio: if practiced_silencio complete_silencio else questtrack_noop_silencio
+  questtrack_noop_silencio: command true
+  questtrack_start_stupefy: command hogwarts queststart %player% spell_stupefy 3 point practice_stupefy Stupefy
+  questtrack_done_stupefy: command hogwarts questcomplete %player% spell_stupefy
+  practice_add_stupefy: point practice_stupefy 1 action:add conditions:started_stupefy,!done_stupefy
+  practice_auto_stupefy: if practiced_stupefy complete_stupefy else questtrack_noop_stupefy
+  questtrack_noop_stupefy: command true
+  questtrack_start_wingardium_leviosa: command hogwarts queststart %player% spell_wingardium_leviosa 3 point practice_wingardium_leviosa Wingardium_Leviosa
+  questtrack_done_wingardium_leviosa: command hogwarts questcomplete %player% spell_wingardium_leviosa
+  practice_add_wingardium_leviosa: point practice_wingardium_leviosa 1 action:add conditions:started_wingardium_leviosa,!done_wingardium_leviosa
+  practice_auto_wingardium_leviosa: if practiced_wingardium_leviosa complete_wingardium_leviosa else questtrack_noop_wingardium_leviosa
+  questtrack_noop_wingardium_leviosa: command true

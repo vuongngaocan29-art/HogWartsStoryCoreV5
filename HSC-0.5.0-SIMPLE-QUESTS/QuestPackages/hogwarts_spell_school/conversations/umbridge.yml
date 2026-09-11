@@ -1,0 +1,126 @@
+conversations:
+  umbridge:
+    quester: '&d&lGiáo sư Dolores Umbridge&r'
+    first: mission_turnin_dada_y5,mission_remind_dada_y5,mission_offer_dada_y5,complete_protego,remind_protego,offer_protego,complete_levicorpus,remind_levicorpus,offer_levicorpus,complete_liberacorpus,remind_liberacorpus,offer_liberacorpus,locked,all_done
+    stop: 'true'
+    NPC_options:
+      mission_offer_dada_y5:
+        text: '&eThực hành chiến đấu — Năm 5: &fBài kiểm tra phòng vệ&7. Vượt qua đấu trường Năm V: Tử Thần Thực Tử Tập Sự, Dementor, Inferi và Thanh Tra Hắc Ám. Tổng cộng &e11&7 mục tiêu. Em nhận bài chứ?'
+        conditions: can_start_mission_dada_y5
+        pointers: mission_accept_dada_y5,mission_decline
+      mission_start_dada_y5:
+        text: '&aBắt đầu.&7 Ta đã triệu hồi quái luyện tập &eriêng cho em&7 tại đấu trường. Hãy đánh bại đủ &e11&7 mục tiêu rồi quay lại.'
+        actions: start_mission_dada_y5
+        pointers: mission_go
+      mission_remind_dada_y5:
+        text: '&eBài Năm 5 vẫn chưa xong.&7 Hãy quay lại đấu trường và đánh bại đủ &e11&7 quái luyện tập đã được giao.'
+        conditions: in_progress_mission_dada_y5
+        pointers: mission_go
+      mission_turnin_dada_y5:
+        text: '&aĐạt yêu cầu.&7 Em đã hoàn thành bài thực hành chiến đấu Năm 5. Các bài học/phép tiếp theo tương ứng giờ đã được mở.'
+        conditions: can_turnin_mission_dada_y5
+        actions: finish_mission_dada_y5
+        pointers: mission_thanks
+      mission_continue_exit:
+        text: '&eNhiệm vụ vẫn đang tiếp tục.&7 Hoàn thành mục tiêu rồi quay lại. Ta sẽ không tính là xong trước khi em nộp bài.'
+      mission_return_exit:
+        text: '&7Được. Khi sẵn sàng hãy quay lại nhận nhiệm vụ.'
+      mission_complete_exit:
+        text: '&aTốt.&7 Nhiệm vụ môn học đã được ghi nhận hoàn thành.'
+      offer_protego:
+        text: 'Chúng ta sẽ tuân thủ chương trình. Chỉ học đúng phép được phép trong năm của em. Bài tiếp theo là &fProtego&7 — Bùa Khiên Chắn. Yêu cầu: Năm 5, Cấp phép 14. Em có muốn bắt đầu không?'
+        conditions: can_start_protego
+        pointers: accept_protego,decline
+      start_msg_protego:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Protego. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_protego
+        pointers: leave
+      remind_protego:
+        text: Bài Protego chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_protego
+        pointers: leave
+      complete_protego:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Protego; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_protego
+        actions: complete_protego
+        pointers: thanks
+      offer_levicorpus:
+        text: 'Chúng ta sẽ tuân thủ chương trình. Chỉ học đúng phép được phép trong năm của em. Bài tiếp theo là &fLevicorpus&7 — Bùa Treo Ngược. Yêu cầu: Năm 5, Cấp phép 15. Em có muốn bắt đầu không?'
+        conditions: can_start_levicorpus
+        pointers: accept_levicorpus,decline
+      start_msg_levicorpus:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Levicorpus. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_levicorpus
+        pointers: leave
+      remind_levicorpus:
+        text: Bài Levicorpus chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_levicorpus
+        pointers: leave
+      complete_levicorpus:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Levicorpus; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_levicorpus
+        actions: complete_levicorpus
+        pointers: thanks
+      offer_liberacorpus:
+        text: 'Chúng ta sẽ tuân thủ chương trình. Chỉ học đúng phép được phép trong năm của em. Bài tiếp theo là &fLiberacorpus&7 — Bùa Thả Xuống. Yêu cầu: Năm 5, Cấp phép 15. Em có muốn bắt đầu không?'
+        conditions: can_start_liberacorpus
+        pointers: accept_liberacorpus,decline
+      start_msg_liberacorpus:
+        text: Tốt. Ta đã mở quyền &eluyện tạm thời&7 cho Liberacorpus. Hãy niệm thành công 3 lần. Khi đủ 3 lần thành công, phép sẽ tự mở khoá vĩnh viễn và nhận thưởng.
+        actions: start_liberacorpus
+        pointers: leave
+      remind_liberacorpus:
+        text: Bài Liberacorpus chưa đạt. Em cần niệm thành công 3 lần; đủ số lần hệ thống sẽ tự chấm.
+        conditions: in_progress_liberacorpus
+        pointers: leave
+      complete_liberacorpus:
+        text: Được rồi. Kiểm soát ổn định và câu chú rõ ràng. Em đã đạt bài Liberacorpus; từ giờ phép này thuộc Sổ Phép của em.
+        conditions: ready_liberacorpus
+        actions: complete_liberacorpus
+        pointers: thanks
+      locked:
+        text: 'Hiện chưa có bài mới phù hợp. Hãy kiểm tra &f/hogwarts&7: đúng năm học, đủ Cấp phép và hoàn thành bài trước của môn này.'
+        pointers: return_later
+      all_done:
+        text: Em đã hoàn tất toàn bộ bài mà ta phụ trách ở giai đoạn hiện tại. Hãy tiếp tục môn còn lại hoặc tới gặp Hiệu trưởng khi đã xong cả năm.
+        pointers: return_later
+      practice_exit:
+        text: '&eBài học vẫn đang tiếp tục.&7 Hãy luyện đủ yêu cầu và hệ thống sẽ tự chấm khi hoàn thành. Ta sẽ chỉ công nhận khi em hoàn thành bài.'
+      return_exit:
+        text: '&7Được. Khi đủ điều kiện hoặc sẵn sàng, hãy quay lại gặp ta.'
+      complete_exit:
+        text: '&aTốt lắm.&7 Bài học này đã hoàn thành. Phép vừa học đã được ghi vào Sổ Phép của em.'
+    player_options:
+      mission_accept_dada_y5:
+        text: '&aEm nhận nhiệm vụ.'
+        pointers: mission_start_dada_y5
+      mission_decline:
+        text: '&7Em sẽ quay lại sau.'
+        pointers: mission_return_exit
+      mission_go:
+        text: '&aEm đi làm nhiệm vụ ngay.'
+        pointers: mission_continue_exit
+      mission_thanks:
+        text: '&aEm cảm ơn giáo sư.'
+        pointers: mission_complete_exit
+      accept_protego:
+        text: '&aEm muốn học Protego.'
+        pointers: start_msg_protego
+      accept_levicorpus:
+        text: '&aEm muốn học Levicorpus.'
+        pointers: start_msg_levicorpus
+      accept_liberacorpus:
+        text: '&aEm muốn học Liberacorpus.'
+        pointers: start_msg_liberacorpus
+      decline:
+        text: '&7Em sẽ quay lại sau.'
+        pointers: return_exit
+      leave:
+        text: '&aEm đi luyện tiếp ạ.'
+        pointers: practice_exit
+      thanks:
+        text: '&aEm cảm ơn giáo sư.'
+        pointers: complete_exit
+      return_later:
+        text: '&7Vâng, em sẽ quay lại sau.'
+        pointers: return_exit

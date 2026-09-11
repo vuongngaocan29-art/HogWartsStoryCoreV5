@@ -1,0 +1,29 @@
+============================================================
+HOGWARTS NPC COLOR PALETTE — SAFE FOR BETONQUEST
+============================================================
+
+QUAN TRỌNG:
+- Đây là file .txt, BetonQuest KHÔNG parse file này.
+- Màu thật đã được code trực tiếp vào quester trong conversations/*.yml.
+- Không tạo thêm top-level `npcs:` trong file YAML màu riêng.
+
+BẢNG MÀU:
+ID 3  - Flitwick       : &b&l  Aqua
+ID 4  - Quirrell       : &5&l  Tím đậm
+ID 5  - Lockhart       : &6&l  Vàng kim
+ID 6  - Lupin          : &e&l  Vàng sáng
+ID 7  - Moody          : &4&l  Đỏ đậm
+ID 8  - Umbridge       : &d&l  Hồng tím
+ID 9  - Snape          : &8&l  Xám đậm
+ID 10 - McGonagall     : &2&l  Xanh lục
+ID 11 - Madam Hooch    : &9&l  Xanh lam
+ID 12 - Sprout         : &a&l  Xanh lá
+ID 13 - Dumbledore     : &6&l  Vàng kim
+
+UI:
+&6&l✦ HOGWARTS ✦
+&e&lNHIỆM VỤ
+&b&lBÀI HỌC
+&d&lPHÉP THUẬT
+&a&lHOÀN THÀNH
+&c&lCHƯA ĐỦ ĐIỀU KIỆN

@@ -1,0 +1,28 @@
+MAP-SAFE HOTFIX
+
+Lỗi đã sửa:
+Nhiệm vụ block interaction trước đây dùng tọa độ mẫu:
+loc_charms = 40;70;20;world
+và range:8.
+
+Nếu block thật trên map không nằm gần tọa độ đó, click đúng block vẫn không hoàn thành.
+
+Bản này:
+- Flitwick Y1: click trái/phải TARGET ở bất kỳ đâu.
+- Charms Y2: BELL ở bất kỳ đâu.
+- Charms Y3: LECTERN ở bất kỳ đâu.
+- Charms Y4: CHEST ở bất kỳ đâu.
+- Charms Y5: NOTE_BLOCK ở bất kỳ đâu.
+- Charms Y6: TARGET ở bất kỳ đâu.
+- Herbology Y3: COMPOSTER ở bất kỳ đâu.
+- Flying Y4: chạm GOLD_BLOCK ở vạch đích do admin đặt.
+
+TEST FLITWICK:
+1) Nhận nhiệm vụ.
+2) Click TARGET.
+3) Phải thấy:
+   "Đã hoàn thành mục tiêu Độ chính xác của cổ tay."
+4) Quay lại Flitwick để nộp.
+
+Nếu cần test hệ thống tag/action bằng admin:
+bq action <player> hogwarts_spell_school>ready_mission_charms_y1

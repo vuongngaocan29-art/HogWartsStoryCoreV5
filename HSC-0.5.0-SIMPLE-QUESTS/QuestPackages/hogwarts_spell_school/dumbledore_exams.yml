@@ -1,0 +1,52 @@
+conditions:
+  exam_y1_done: tag exam_year_1_done
+  exam_y2_done: tag exam_year_2_done
+  exam_y3_done: tag exam_year_3_done
+  exam_y4_done: tag exam_year_4_done
+  exam_y5_done: tag exam_year_5_done
+  exam_y6_done: tag exam_year_6_done
+  exam_y7_done: tag exam_year_7_done
+actions:
+  pass_exam_y1: folder tag_exam_y1_done,reward_exam_y1,journal_exam_y1,advance_exam_y1
+  tag_exam_y1_done: tag add exam_year_1_done
+  reward_exam_y1: command hogwarts lessonreward %player% 10 100 exam_year_1
+  journal_exam_y1: journal add exam_year_1_done
+  advance_exam_y1: advance_year_1
+  pass_exam_y2: folder tag_exam_y2_done,reward_exam_y2,journal_exam_y2,advance_exam_y2
+  tag_exam_y2_done: tag add exam_year_2_done
+  reward_exam_y2: command hogwarts lessonreward %player% 10 100 exam_year_2
+  journal_exam_y2: journal add exam_year_2_done
+  advance_exam_y2: advance_year_2
+  pass_exam_y3: folder tag_exam_y3_done,reward_exam_y3,journal_exam_y3,advance_exam_y3
+  tag_exam_y3_done: tag add exam_year_3_done
+  reward_exam_y3: command hogwarts lessonreward %player% 10 100 exam_year_3
+  journal_exam_y3: journal add exam_year_3_done
+  advance_exam_y3: advance_year_3
+  pass_exam_y4: folder tag_exam_y4_done,reward_exam_y4,journal_exam_y4,advance_exam_y4
+  tag_exam_y4_done: tag add exam_year_4_done
+  reward_exam_y4: command hogwarts lessonreward %player% 10 100 exam_year_4
+  journal_exam_y4: journal add exam_year_4_done
+  advance_exam_y4: advance_year_4
+  pass_exam_y5: folder tag_exam_y5_done,reward_exam_y5,journal_exam_y5,advance_exam_y5
+  tag_exam_y5_done: tag add exam_year_5_done
+  reward_exam_y5: command hogwarts lessonreward %player% 10 100 exam_year_5
+  journal_exam_y5: journal add exam_year_5_done
+  advance_exam_y5: advance_year_5
+  pass_exam_y6: folder tag_exam_y6_done,reward_exam_y6,journal_exam_y6,advance_exam_y6
+  tag_exam_y6_done: tag add exam_year_6_done
+  reward_exam_y6: command hogwarts lessonreward %player% 10 100 exam_year_6
+  journal_exam_y6: journal add exam_year_6_done
+  advance_exam_y6: advance_year_6
+  pass_exam_y7: folder tag_exam_y7_done,reward_exam_y7,journal_exam_y7,graduate_exam_y7
+  tag_exam_y7_done: tag add exam_year_7_done
+  reward_exam_y7: command hogwarts lessonreward %player% 25 500 exam_year_7
+  journal_exam_y7: journal add exam_year_7_done
+  graduate_exam_y7: graduate
+journal:
+  exam_year_1_done: '&6&lKỳ kiểm tra Năm 1: Đạt|&7Đã vượt qua phần hỏi đáp với Hiệu trưởng.'
+  exam_year_2_done: '&6&lKỳ kiểm tra Năm 2: Đạt|&7Đã vượt qua phần hỏi đáp với Hiệu trưởng.'
+  exam_year_3_done: '&6&lKỳ kiểm tra Năm 3: Đạt|&7Đã vượt qua phần hỏi đáp với Hiệu trưởng.'
+  exam_year_4_done: '&6&lKỳ kiểm tra Năm 4: Đạt|&7Đã vượt qua phần hỏi đáp với Hiệu trưởng.'
+  exam_year_5_done: '&6&lKỳ kiểm tra Năm 5: Đạt|&7Đã vượt qua phần hỏi đáp với Hiệu trưởng.'
+  exam_year_6_done: '&6&lKỳ kiểm tra Năm 6: Đạt|&7Đã vượt qua phần hỏi đáp với Hiệu trưởng.'
+  exam_year_7_done: '&6&lKỳ kiểm tra Năm 7: Đạt|&7Đã vượt qua phần hỏi đáp với Hiệu trưởng.'

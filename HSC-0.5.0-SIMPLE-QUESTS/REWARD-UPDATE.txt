@@ -1,0 +1,14 @@
+HOGWARTS STORY CORE 0.4.3 - LESSON REWARDS
+
+Mỗi spell lesson hoàn thành:
++3 Điểm Nhà
++25 tiền qua Essentials/Vault economy
++ Magic XP và Mảnh Ma Thuật như cũ
+
+Backend command:
+ /hogwarts lessonreward <player> <housepoints> <money> [lesson]
+
+BetonQuest gọi:
+ command hogwarts lessonreward %player% 3 25 <spell-id>
+
+Điểm Nhà tự đọc từ StudentProfile của người chơi.

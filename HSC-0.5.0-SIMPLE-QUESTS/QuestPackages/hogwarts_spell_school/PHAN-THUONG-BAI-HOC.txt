@@ -1,0 +1,18 @@
+PHẦN THƯỞNG MỖI BÀI HỌC PHÉP
+
+Khi người chơi hoàn thành 1 bài học phép:
+- +3 Điểm Nhà (tự cộng vào Nhà của học sinh)
+- +25 Galleon / tiền Vault
+- + Magic XP theo bài học
+- + Mảnh Ma Thuật theo bài học
+
+Ví dụ học sinh thuộc Gryffindor hoàn thành Lumos:
+Gryffindor +3 Điểm Nhà
+Người chơi +25 tiền
+Người chơi +150 Magic XP
+Người chơi +2 Mảnh Ma Thuật
+
+Lệnh backend:
+hogwarts lessonreward <player> <house-points> <money> <lesson-id>
+
+Lệnh này được BetonQuest gọi bằng console.

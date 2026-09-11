@@ -1,0 +1,4 @@
+objectives:
+  flying_height: "location %constant.loc_flying_high% 5 actions:complete_flying"
+  collect_fern: "block FERN -5 notify actions:complete_herbology"
+  transfiguration_desk: "action right ANVIL loc:%constant.loc_transfiguration% range:4 actions:complete_transfiguration"

@@ -1,0 +1,12 @@
+# ============================================================
+# HOGWARTS YEAR1 - PLACEHOLDER COMPATIBILITY SHIM
+# BetonQuest 3.2
+#
+# KHÔNG phải quest Năm I cũ.
+# Không có NPC, không bind Citizens, không có conversation.
+# Mục đích: giữ package id "hogwarts_year1" tồn tại để các
+# PlaceholderAPI/TAB config cũ không báo "non-existent package".
+# ============================================================
+package:
+  enabled: true
+  version: 3.2.0-QUEST-1

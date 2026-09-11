@@ -1,0 +1,444 @@
+conditions:
+  mission_charms_y1_started: tag mission_charms_y1_started
+  mission_charms_y1_ready: tag mission_charms_y1_ready
+  mission_charms_y1_done: tag mission_charms_y1_done
+  can_start_mission_charms_y1: and year_1_or_higher,!mission_charms_y1_started,!mission_charms_y1_ready,!mission_charms_y1_done
+  in_progress_mission_charms_y1: and mission_charms_y1_started,!mission_charms_y1_ready,!mission_charms_y1_done
+  can_turnin_mission_charms_y1: and mission_charms_y1_ready,!mission_charms_y1_done
+  mission_charms_y2_started: tag mission_charms_y2_started
+  mission_charms_y2_ready: tag mission_charms_y2_ready
+  mission_charms_y2_done: tag mission_charms_y2_done
+  can_start_mission_charms_y2: and year_2_or_higher,!mission_charms_y2_started,!mission_charms_y2_ready,!mission_charms_y2_done,mission_charms_y1_done
+  in_progress_mission_charms_y2: and mission_charms_y2_started,!mission_charms_y2_ready,!mission_charms_y2_done
+  can_turnin_mission_charms_y2: and mission_charms_y2_ready,!mission_charms_y2_done
+  mission_charms_y3_started: tag mission_charms_y3_started
+  mission_charms_y3_ready: tag mission_charms_y3_ready
+  mission_charms_y3_done: tag mission_charms_y3_done
+  can_start_mission_charms_y3: and year_3_or_higher,!mission_charms_y3_started,!mission_charms_y3_ready,!mission_charms_y3_done,mission_charms_y2_done
+  in_progress_mission_charms_y3: and mission_charms_y3_started,!mission_charms_y3_ready,!mission_charms_y3_done
+  can_turnin_mission_charms_y3: and mission_charms_y3_ready,!mission_charms_y3_done
+  mission_charms_y4_started: tag mission_charms_y4_started
+  mission_charms_y4_ready: tag mission_charms_y4_ready
+  mission_charms_y4_done: tag mission_charms_y4_done
+  can_start_mission_charms_y4: and year_4_or_higher,!mission_charms_y4_started,!mission_charms_y4_ready,!mission_charms_y4_done,mission_charms_y3_done
+  in_progress_mission_charms_y4: and mission_charms_y4_started,!mission_charms_y4_ready,!mission_charms_y4_done
+  can_turnin_mission_charms_y4: and mission_charms_y4_ready,!mission_charms_y4_done
+  mission_charms_y5_started: tag mission_charms_y5_started
+  mission_charms_y5_ready: tag mission_charms_y5_ready
+  mission_charms_y5_done: tag mission_charms_y5_done
+  can_start_mission_charms_y5: and year_5_or_higher,!mission_charms_y5_started,!mission_charms_y5_ready,!mission_charms_y5_done,mission_charms_y4_done
+  in_progress_mission_charms_y5: and mission_charms_y5_started,!mission_charms_y5_ready,!mission_charms_y5_done
+  can_turnin_mission_charms_y5: and mission_charms_y5_ready,!mission_charms_y5_done
+  mission_charms_y6_started: tag mission_charms_y6_started
+  mission_charms_y6_ready: tag mission_charms_y6_ready
+  mission_charms_y6_done: tag mission_charms_y6_done
+  can_start_mission_charms_y6: and year_6_or_higher,!mission_charms_y6_started,!mission_charms_y6_ready,!mission_charms_y6_done,mission_charms_y5_done
+  in_progress_mission_charms_y6: and mission_charms_y6_started,!mission_charms_y6_ready,!mission_charms_y6_done
+  can_turnin_mission_charms_y6: and mission_charms_y6_ready,!mission_charms_y6_done
+  mission_dada_y1_started: tag mission_dada_y1_started
+  mission_dada_y1_ready: tag mission_dada_y1_ready
+  mission_dada_y1_done: tag mission_dada_y1_done
+  can_start_mission_dada_y1: and year_1_or_higher,!mission_dada_y1_started,!mission_dada_y1_ready,!mission_dada_y1_done
+  in_progress_mission_dada_y1: and mission_dada_y1_started,!mission_dada_y1_ready,!mission_dada_y1_done
+  can_turnin_mission_dada_y1: and mission_dada_y1_ready,!mission_dada_y1_done
+  mission_dada_y2_started: tag mission_dada_y2_started
+  mission_dada_y2_ready: tag mission_dada_y2_ready
+  mission_dada_y2_done: tag mission_dada_y2_done
+  can_start_mission_dada_y2: and year_2_or_higher,!mission_dada_y2_started,!mission_dada_y2_ready,!mission_dada_y2_done
+  in_progress_mission_dada_y2: and mission_dada_y2_started,!mission_dada_y2_ready,!mission_dada_y2_done
+  can_turnin_mission_dada_y2: and mission_dada_y2_ready,!mission_dada_y2_done
+  mission_dada_y3_started: tag mission_dada_y3_started
+  mission_dada_y3_ready: tag mission_dada_y3_ready
+  mission_dada_y3_done: tag mission_dada_y3_done
+  can_start_mission_dada_y3: and year_3_or_higher,!mission_dada_y3_started,!mission_dada_y3_ready,!mission_dada_y3_done
+  in_progress_mission_dada_y3: and mission_dada_y3_started,!mission_dada_y3_ready,!mission_dada_y3_done
+  can_turnin_mission_dada_y3: and mission_dada_y3_ready,!mission_dada_y3_done
+  mission_dada_y4_started: tag mission_dada_y4_started
+  mission_dada_y4_ready: tag mission_dada_y4_ready
+  mission_dada_y4_done: tag mission_dada_y4_done
+  can_start_mission_dada_y4: and year_4_or_higher,!mission_dada_y4_started,!mission_dada_y4_ready,!mission_dada_y4_done
+  in_progress_mission_dada_y4: and mission_dada_y4_started,!mission_dada_y4_ready,!mission_dada_y4_done
+  can_turnin_mission_dada_y4: and mission_dada_y4_ready,!mission_dada_y4_done
+  mission_dada_y5_started: tag mission_dada_y5_started
+  mission_dada_y5_ready: tag mission_dada_y5_ready
+  mission_dada_y5_done: tag mission_dada_y5_done
+  can_start_mission_dada_y5: and year_5_or_higher,!mission_dada_y5_started,!mission_dada_y5_ready,!mission_dada_y5_done
+  in_progress_mission_dada_y5: and mission_dada_y5_started,!mission_dada_y5_ready,!mission_dada_y5_done
+  can_turnin_mission_dada_y5: and mission_dada_y5_ready,!mission_dada_y5_done
+  mission_potions_y6_started: tag mission_potions_y6_started
+  mission_potions_y6_ready: tag mission_potions_y6_ready
+  mission_potions_y6_done: tag mission_potions_y6_done
+  can_start_mission_potions_y6: and year_6_or_higher,!mission_potions_y6_started,!mission_potions_y6_ready,!mission_potions_y6_done,potions_done
+  in_progress_mission_potions_y6: and mission_potions_y6_started,!mission_potions_y6_ready,!mission_potions_y6_done
+  can_turnin_mission_potions_y6: and mission_potions_y6_ready,!mission_potions_y6_done
+  mission_transfiguration_y7_started: tag mission_transfiguration_y7_started
+  mission_transfiguration_y7_ready: tag mission_transfiguration_y7_ready
+  mission_transfiguration_y7_done: tag mission_transfiguration_y7_done
+  can_start_mission_transfiguration_y7: and year_7_or_higher,!mission_transfiguration_y7_started,!mission_transfiguration_y7_ready,!mission_transfiguration_y7_done,transfiguration_done
+  in_progress_mission_transfiguration_y7: and mission_transfiguration_y7_started,!mission_transfiguration_y7_ready,!mission_transfiguration_y7_done
+  can_turnin_mission_transfiguration_y7: and mission_transfiguration_y7_ready,!mission_transfiguration_y7_done
+  mission_flying_y4_started: tag mission_flying_y4_started
+  mission_flying_y4_ready: tag mission_flying_y4_ready
+  mission_flying_y4_done: tag mission_flying_y4_done
+  can_start_mission_flying_y4: and year_4_or_higher,!mission_flying_y4_started,!mission_flying_y4_ready,!mission_flying_y4_done,flying_done
+  in_progress_mission_flying_y4: and mission_flying_y4_started,!mission_flying_y4_ready,!mission_flying_y4_done
+  can_turnin_mission_flying_y4: and mission_flying_y4_ready,!mission_flying_y4_done
+  mission_herbology_y3_started: tag mission_herbology_y3_started
+  mission_herbology_y3_ready: tag mission_herbology_y3_ready
+  mission_herbology_y3_done: tag mission_herbology_y3_done
+  can_start_mission_herbology_y3: and year_3_or_higher,!mission_herbology_y3_started,!mission_herbology_y3_ready,!mission_herbology_y3_done,herbology_done
+  in_progress_mission_herbology_y3: and mission_herbology_y3_started,!mission_herbology_y3_ready,!mission_herbology_y3_done
+  can_turnin_mission_herbology_y3: and mission_herbology_y3_ready,!mission_herbology_y3_done
+actions:
+  start_mission_charms_y1: folder tag_start_mission_charms_y1,objective_start_mission_charms_y1,questtrack_start_mission_charms_y1,journal_start_mission_charms_y1,notify_start_mission_charms_y1
+  tag_start_mission_charms_y1: tag add mission_charms_y1_started
+  objective_start_mission_charms_y1: objective add npc_mission_charms_y1
+  journal_start_mission_charms_y1: journal add mission_charms_y1
+  notify_start_mission_charms_y1: 'notify &e&lNHIỆM VỤ NPC &8» &fĐộ chính xác của cổ tay&7: Tới khu luyện Bùa chú và chạm vào Bia Phép Thuật (TARGET) để hiệu chỉnh đũa. io:chat'
+  ready_mission_charms_y1: folder finish_mission_charms_y1
+  tag_ready_mission_charms_y1: tag add mission_charms_y1_ready
+  notify_ready_mission_charms_y1: notify &aMục tiêu hoàn tất. &7Hệ thống đã tự chấm bài và trao thưởng. io:chat
+  finish_mission_charms_y1: folder tag_done_mission_charms_y1,tag_clear_start_mission_charms_y1,tag_clear_ready_mission_charms_y1,reward_xp_mission_charms_y1,reward_house_money_mission_charms_y1,journal_done_mission_charms_y1,questtrack_done_mission_charms_y1,notify_done_mission_charms_y1
+  tag_done_mission_charms_y1: tag add mission_charms_y1_done
+  tag_clear_start_mission_charms_y1: tag delete mission_charms_y1_started
+  tag_clear_ready_mission_charms_y1: tag delete mission_charms_y1_ready
+  reward_xp_mission_charms_y1: command hogwarts xp %player% 60
+  reward_house_money_mission_charms_y1: command hogwarts lessonreward %player% 3 25 charms_y1
+  journal_done_mission_charms_y1: journal add mission_charms_y1_done
+  notify_done_mission_charms_y1: notify &a&lHOÀN THÀNH! &fĐộ chính xác của cổ tay &7— &d+60 Magic XP &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat
+  start_mission_charms_y2: folder tag_start_mission_charms_y2,objective_start_mission_charms_y2,questtrack_start_mission_charms_y2,journal_start_mission_charms_y2,notify_start_mission_charms_y2
+  tag_start_mission_charms_y2: tag add mission_charms_y2_started
+  objective_start_mission_charms_y2: objective add npc_mission_charms_y2
+  journal_start_mission_charms_y2: journal add mission_charms_y2
+  notify_start_mission_charms_y2: 'notify &e&lNHIỆM VỤ NPC &8» &fNhịp điệu của bùa chú&7: Tại lớp Bùa chú, tương tác với Chuông Luyện Phép (BELL) để hoàn thành bài nhịp chú. io:chat'
+  ready_mission_charms_y2: folder finish_mission_charms_y2
+  tag_ready_mission_charms_y2: tag add mission_charms_y2_ready
+  notify_ready_mission_charms_y2: notify &aMục tiêu hoàn tất. &7Hệ thống đã tự chấm bài và trao thưởng. io:chat
+  finish_mission_charms_y2: folder tag_done_mission_charms_y2,tag_clear_start_mission_charms_y2,tag_clear_ready_mission_charms_y2,reward_xp_mission_charms_y2,reward_house_money_mission_charms_y2,journal_done_mission_charms_y2,questtrack_done_mission_charms_y2,notify_done_mission_charms_y2
+  tag_done_mission_charms_y2: tag add mission_charms_y2_done
+  tag_clear_start_mission_charms_y2: tag delete mission_charms_y2_started
+  tag_clear_ready_mission_charms_y2: tag delete mission_charms_y2_ready
+  reward_xp_mission_charms_y2: command hogwarts xp %player% 80
+  reward_house_money_mission_charms_y2: command hogwarts lessonreward %player% 3 25 charms_y2
+  journal_done_mission_charms_y2: journal add mission_charms_y2_done
+  notify_done_mission_charms_y2: notify &a&lHOÀN THÀNH! &fNhịp điệu của bùa chú &7— &d+80 Magic XP &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat
+  start_mission_charms_y3: folder tag_start_mission_charms_y3,objective_start_mission_charms_y3,questtrack_start_mission_charms_y3,journal_start_mission_charms_y3,notify_start_mission_charms_y3
+  tag_start_mission_charms_y3: tag add mission_charms_y3_started
+  objective_start_mission_charms_y3: objective add npc_mission_charms_y3
+  journal_start_mission_charms_y3: journal add mission_charms_y3
+  notify_start_mission_charms_y3: 'notify &e&lNHIỆM VỤ NPC &8» &fKiểm soát chú ngữ&7: Đọc giáo trình ở Bục Giảng (LECTERN) trong lớp Bùa chú rồi quay lại báo cáo. io:chat'
+  ready_mission_charms_y3: folder finish_mission_charms_y3
+  tag_ready_mission_charms_y3: tag add mission_charms_y3_ready
+  notify_ready_mission_charms_y3: notify &aMục tiêu hoàn tất. &7Hệ thống đã tự chấm bài và trao thưởng. io:chat
+  finish_mission_charms_y3: folder tag_done_mission_charms_y3,tag_clear_start_mission_charms_y3,tag_clear_ready_mission_charms_y3,reward_xp_mission_charms_y3,reward_house_money_mission_charms_y3,journal_done_mission_charms_y3,questtrack_done_mission_charms_y3,notify_done_mission_charms_y3
+  tag_done_mission_charms_y3: tag add mission_charms_y3_done
+  tag_clear_start_mission_charms_y3: tag delete mission_charms_y3_started
+  tag_clear_ready_mission_charms_y3: tag delete mission_charms_y3_ready
+  reward_xp_mission_charms_y3: command hogwarts xp %player% 100
+  reward_house_money_mission_charms_y3: command hogwarts lessonreward %player% 3 25 charms_y3
+  journal_done_mission_charms_y3: journal add mission_charms_y3_done
+  notify_done_mission_charms_y3: notify &a&lHOÀN THÀNH! &fKiểm soát chú ngữ &7— &d+100 Magic XP &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat
+  start_mission_charms_y4: folder tag_start_mission_charms_y4,objective_start_mission_charms_y4,questtrack_start_mission_charms_y4,journal_start_mission_charms_y4,notify_start_mission_charms_y4
+  tag_start_mission_charms_y4: tag add mission_charms_y4_started
+  objective_start_mission_charms_y4: objective add npc_mission_charms_y4
+  journal_start_mission_charms_y4: journal add mission_charms_y4
+  notify_start_mission_charms_y4: 'notify &e&lNHIỆM VỤ NPC &8» &fTriệu tập có kiểm soát&7: Tới Rương Thực Hành (CHEST) trong lớp Bùa chú và kiểm tra mục tiêu triệu tập. io:chat'
+  ready_mission_charms_y4: folder finish_mission_charms_y4
+  tag_ready_mission_charms_y4: tag add mission_charms_y4_ready
+  notify_ready_mission_charms_y4: notify &aMục tiêu hoàn tất. &7Hệ thống đã tự chấm bài và trao thưởng. io:chat
+  finish_mission_charms_y4: folder tag_done_mission_charms_y4,tag_clear_start_mission_charms_y4,tag_clear_ready_mission_charms_y4,reward_xp_mission_charms_y4,reward_house_money_mission_charms_y4,journal_done_mission_charms_y4,questtrack_done_mission_charms_y4,notify_done_mission_charms_y4
+  tag_done_mission_charms_y4: tag add mission_charms_y4_done
+  tag_clear_start_mission_charms_y4: tag delete mission_charms_y4_started
+  tag_clear_ready_mission_charms_y4: tag delete mission_charms_y4_ready
+  reward_xp_mission_charms_y4: command hogwarts xp %player% 120
+  reward_house_money_mission_charms_y4: command hogwarts lessonreward %player% 3 25 charms_y4
+  journal_done_mission_charms_y4: journal add mission_charms_y4_done
+  notify_done_mission_charms_y4: notify &a&lHOÀN THÀNH! &fTriệu tập có kiểm soát &7— &d+120 Magic XP &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat
+  start_mission_charms_y5: folder tag_start_mission_charms_y5,objective_start_mission_charms_y5,questtrack_start_mission_charms_y5,journal_start_mission_charms_y5,notify_start_mission_charms_y5
+  tag_start_mission_charms_y5: tag add mission_charms_y5_started
+  objective_start_mission_charms_y5: objective add npc_mission_charms_y5
+  journal_start_mission_charms_y5: journal add mission_charms_y5
+  notify_start_mission_charms_y5: 'notify &e&lNHIỆM VỤ NPC &8» &fKiểm soát âm thanh&7: Tương tác với Khối Nốt Nhạc (NOTE_BLOCK) trong phòng luyện để kiểm tra độ chính xác. io:chat'
+  ready_mission_charms_y5: folder finish_mission_charms_y5
+  tag_ready_mission_charms_y5: tag add mission_charms_y5_ready
+  notify_ready_mission_charms_y5: notify &aMục tiêu hoàn tất. &7Hệ thống đã tự chấm bài và trao thưởng. io:chat
+  finish_mission_charms_y5: folder tag_done_mission_charms_y5,tag_clear_start_mission_charms_y5,tag_clear_ready_mission_charms_y5,reward_xp_mission_charms_y5,reward_house_money_mission_charms_y5,journal_done_mission_charms_y5,questtrack_done_mission_charms_y5,notify_done_mission_charms_y5
+  tag_done_mission_charms_y5: tag add mission_charms_y5_done
+  tag_clear_start_mission_charms_y5: tag delete mission_charms_y5_started
+  tag_clear_ready_mission_charms_y5: tag delete mission_charms_y5_ready
+  reward_xp_mission_charms_y5: command hogwarts xp %player% 140
+  reward_house_money_mission_charms_y5: command hogwarts lessonreward %player% 3 25 charms_y5
+  journal_done_mission_charms_y5: journal add mission_charms_y5_done
+  notify_done_mission_charms_y5: notify &a&lHOÀN THÀNH! &fKiểm soát âm thanh &7— &d+140 Magic XP &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat
+  start_mission_charms_y6: folder tag_start_mission_charms_y6,objective_start_mission_charms_y6,questtrack_start_mission_charms_y6,journal_start_mission_charms_y6,notify_start_mission_charms_y6
+  tag_start_mission_charms_y6: tag add mission_charms_y6_started
+  objective_start_mission_charms_y6: objective add npc_mission_charms_y6
+  journal_start_mission_charms_y6: journal add mission_charms_y6
+  notify_start_mission_charms_y6: 'notify &e&lNHIỆM VỤ NPC &8» &fBùa chú nâng cao&7: Hoàn thành bài hiệu chỉnh cuối tại Bia Phép Thuật (TARGET) của lớp Bùa chú. io:chat'
+  ready_mission_charms_y6: folder finish_mission_charms_y6
+  tag_ready_mission_charms_y6: tag add mission_charms_y6_ready
+  notify_ready_mission_charms_y6: notify &aMục tiêu hoàn tất. &7Hệ thống đã tự chấm bài và trao thưởng. io:chat
+  finish_mission_charms_y6: folder tag_done_mission_charms_y6,tag_clear_start_mission_charms_y6,tag_clear_ready_mission_charms_y6,reward_xp_mission_charms_y6,reward_house_money_mission_charms_y6,journal_done_mission_charms_y6,questtrack_done_mission_charms_y6,notify_done_mission_charms_y6
+  tag_done_mission_charms_y6: tag add mission_charms_y6_done
+  tag_clear_start_mission_charms_y6: tag delete mission_charms_y6_started
+  tag_clear_ready_mission_charms_y6: tag delete mission_charms_y6_ready
+  reward_xp_mission_charms_y6: command hogwarts xp %player% 160
+  reward_house_money_mission_charms_y6: command hogwarts lessonreward %player% 3 25 charms_y6
+  journal_done_mission_charms_y6: journal add mission_charms_y6_done
+  notify_done_mission_charms_y6: notify &a&lHOÀN THÀNH! &fBùa chú nâng cao &7— &d+160 Magic XP &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat
+  start_mission_dada_y1: folder tag_start_mission_dada_y1,objective_start_mission_dada_y1,questtrack_start_mission_dada_y1,spawn_training_y1,journal_start_mission_dada_y1,notify_start_mission_dada_y1
+  tag_start_mission_dada_y1: tag add mission_dada_y1_started
+  objective_start_mission_dada_y1: objective add npc_mission_dada_y1
+  journal_start_mission_dada_y1: journal add mission_dada_y1
+  notify_start_mission_dada_y1: 'notify &c&lTHỰC HÀNH NĂM 1 &8» &fVượt qua đấu trường Năm I: Hình Nhân Tập Sự, Mana Slime, Nhện Bị Nguyền và Vệ Binh Xương. &7Tổng cộng: &e7 mục tiêu&7. Quái được triệu hồi riêng cho em tại đấu trường. io:chat'
+  ready_mission_dada_y1: folder finish_mission_dada_y1
+  tag_ready_mission_dada_y1: tag add mission_dada_y1_ready
+  notify_ready_mission_dada_y1: notify &aMục tiêu hoàn tất. &7Hệ thống đã tự chấm bài và trao thưởng. io:chat
+  finish_mission_dada_y1: folder tag_done_mission_dada_y1,tag_clear_start_mission_dada_y1,tag_clear_ready_mission_dada_y1,reward_xp_mission_dada_y1,reward_house_money_mission_dada_y1,journal_done_mission_dada_y1,questtrack_done_mission_dada_y1,notify_done_mission_dada_y1
+  tag_done_mission_dada_y1: tag add mission_dada_y1_done
+  tag_clear_start_mission_dada_y1: tag delete mission_dada_y1_started
+  tag_clear_ready_mission_dada_y1: tag delete mission_dada_y1_ready
+  reward_xp_mission_dada_y1: command hogwarts xp %player% 70
+  reward_house_money_mission_dada_y1: command hogwarts lessonreward %player% 3 25 dada_y1
+  journal_done_mission_dada_y1: journal add mission_dada_y1_done
+  notify_done_mission_dada_y1: notify &a&lHOÀN THÀNH! &fPhản xạ phòng vệ &7— &d+70 Magic XP &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat
+  start_mission_dada_y2: folder tag_start_mission_dada_y2,objective_start_mission_dada_y2,questtrack_start_mission_dada_y2,spawn_training_y2,journal_start_mission_dada_y2,notify_start_mission_dada_y2
+  tag_start_mission_dada_y2: tag add mission_dada_y2_started
+  objective_start_mission_dada_y2: objective add npc_mission_dada_y2
+  journal_start_mission_dada_y2: journal add mission_dada_y2
+  notify_start_mission_dada_y2: 'notify &c&lTHỰC HÀNH NĂM 2 &8» &fVượt qua đấu trường Năm II: Pixie Cornwall, Nhện Độc, Xạ Thủ Bị Nguyền và Đội Trưởng Pixie. &7Tổng cộng: &e8 mục tiêu&7. Quái được triệu hồi riêng cho em tại đấu trường. io:chat'
+  ready_mission_dada_y2: folder finish_mission_dada_y2
+  tag_ready_mission_dada_y2: tag add mission_dada_y2_ready
+  notify_ready_mission_dada_y2: notify &aMục tiêu hoàn tất. &7Hệ thống đã tự chấm bài và trao thưởng. io:chat
+  finish_mission_dada_y2: folder tag_done_mission_dada_y2,tag_clear_start_mission_dada_y2,tag_clear_ready_mission_dada_y2,reward_xp_mission_dada_y2,reward_house_money_mission_dada_y2,journal_done_mission_dada_y2,questtrack_done_mission_dada_y2,notify_done_mission_dada_y2
+  tag_done_mission_dada_y2: tag add mission_dada_y2_done
+  tag_clear_start_mission_dada_y2: tag delete mission_dada_y2_started
+  tag_clear_ready_mission_dada_y2: tag delete mission_dada_y2_ready
+  reward_xp_mission_dada_y2: command hogwarts xp %player% 90
+  reward_house_money_mission_dada_y2: command hogwarts lessonreward %player% 3 25 dada_y2
+  journal_done_mission_dada_y2: journal add mission_dada_y2_done
+  notify_done_mission_dada_y2: notify &a&lHOÀN THÀNH! &fĐấu tay đôi căn bản &7— &d+90 Magic XP &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat
+  start_mission_dada_y3: folder tag_start_mission_dada_y3,objective_start_mission_dada_y3,questtrack_start_mission_dada_y3,spawn_training_y3,journal_start_mission_dada_y3,notify_start_mission_dada_y3
+  tag_start_mission_dada_y3: tag add mission_dada_y3_started
+  objective_start_mission_dada_y3: objective add npc_mission_dada_y3
+  journal_start_mission_dada_y3: journal add mission_dada_y3
+  notify_start_mission_dada_y3: 'notify &c&lTHỰC HÀNH NĂM 3 &8» &fVượt qua đấu trường Năm III: Boggart, Tiếng Vọng Dementor, Người Sói Tập Sự và Sinh Vật Bóng Tối. &7Tổng cộng: &e9 mục tiêu&7. Quái được triệu hồi riêng cho em tại đấu trường. io:chat'
+  ready_mission_dada_y3: folder finish_mission_dada_y3
+  tag_ready_mission_dada_y3: tag add mission_dada_y3_ready
+  notify_ready_mission_dada_y3: notify &aMục tiêu hoàn tất. &7Hệ thống đã tự chấm bài và trao thưởng. io:chat
+  finish_mission_dada_y3: folder tag_done_mission_dada_y3,tag_clear_start_mission_dada_y3,tag_clear_ready_mission_dada_y3,reward_xp_mission_dada_y3,reward_house_money_mission_dada_y3,journal_done_mission_dada_y3,questtrack_done_mission_dada_y3,notify_done_mission_dada_y3
+  tag_done_mission_dada_y3: tag add mission_dada_y3_done
+  tag_clear_start_mission_dada_y3: tag delete mission_dada_y3_started
+  tag_clear_ready_mission_dada_y3: tag delete mission_dada_y3_ready
+  reward_xp_mission_dada_y3: command hogwarts xp %player% 110
+  reward_house_money_mission_dada_y3: command hogwarts lessonreward %player% 3 25 dada_y3
+  journal_done_mission_dada_y3: journal add mission_dada_y3_done
+  notify_done_mission_dada_y3: notify &a&lHOÀN THÀNH! &fGiữ bình tĩnh &7— &d+110 Magic XP &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat
+  start_mission_dada_y4: folder tag_start_mission_dada_y4,objective_start_mission_dada_y4,questtrack_start_mission_dada_y4,spawn_training_y4,journal_start_mission_dada_y4,notify_start_mission_dada_y4
+  tag_start_mission_dada_y4: tag add mission_dada_y4_started
+  objective_start_mission_dada_y4: objective add npc_mission_dada_y4
+  journal_start_mission_dada_y4: journal add mission_dada_y4
+  notify_start_mission_dada_y4: 'notify &c&lTHỰC HÀNH NĂM 4 &8» &fVượt qua đấu trường Năm IV: Cua Lửa, Acromantula, Pháp Sư Hắc Ám Tập Sự và Vệ Binh Tam Pháp Thuật. &7Tổng cộng: &e10 mục tiêu&7. Quái được triệu hồi riêng cho em tại đấu trường. io:chat'
+  ready_mission_dada_y4: folder finish_mission_dada_y4
+  tag_ready_mission_dada_y4: tag add mission_dada_y4_ready
+  notify_ready_mission_dada_y4: notify &aMục tiêu hoàn tất. &7Hệ thống đã tự chấm bài và trao thưởng. io:chat
+  finish_mission_dada_y4: folder tag_done_mission_dada_y4,tag_clear_start_mission_dada_y4,tag_clear_ready_mission_dada_y4,reward_xp_mission_dada_y4,reward_house_money_mission_dada_y4,journal_done_mission_dada_y4,questtrack_done_mission_dada_y4,notify_done_mission_dada_y4
+  tag_done_mission_dada_y4: tag add mission_dada_y4_done
+  tag_clear_start_mission_dada_y4: tag delete mission_dada_y4_started
+  tag_clear_ready_mission_dada_y4: tag delete mission_dada_y4_ready
+  reward_xp_mission_dada_y4: command hogwarts xp %player% 140
+  reward_house_money_mission_dada_y4: command hogwarts lessonreward %player% 3 25 dada_y4
+  journal_done_mission_dada_y4: journal add mission_dada_y4_done
+  notify_done_mission_dada_y4: notify &a&lHOÀN THÀNH! &fCảnh giác liên tục &7— &d+140 Magic XP &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat
+  start_mission_dada_y5: folder tag_start_mission_dada_y5,objective_start_mission_dada_y5,questtrack_start_mission_dada_y5,spawn_training_y5,journal_start_mission_dada_y5,notify_start_mission_dada_y5
+  tag_start_mission_dada_y5: tag add mission_dada_y5_started
+  objective_start_mission_dada_y5: objective add npc_mission_dada_y5
+  journal_start_mission_dada_y5: journal add mission_dada_y5
+  notify_start_mission_dada_y5: 'notify &c&lTHỰC HÀNH NĂM 5 &8» &fVượt qua đấu trường Năm V: Tử Thần Thực Tử Tập Sự, Dementor, Inferi và Thanh Tra Hắc Ám. &7Tổng cộng: &e11 mục tiêu&7. Quái được triệu hồi riêng cho em tại đấu trường. io:chat'
+  ready_mission_dada_y5: folder finish_mission_dada_y5
+  tag_ready_mission_dada_y5: tag add mission_dada_y5_ready
+  notify_ready_mission_dada_y5: notify &aMục tiêu hoàn tất. &7Hệ thống đã tự chấm bài và trao thưởng. io:chat
+  finish_mission_dada_y5: folder tag_done_mission_dada_y5,tag_clear_start_mission_dada_y5,tag_clear_ready_mission_dada_y5,reward_xp_mission_dada_y5,reward_house_money_mission_dada_y5,journal_done_mission_dada_y5,questtrack_done_mission_dada_y5,notify_done_mission_dada_y5
+  tag_done_mission_dada_y5: tag add mission_dada_y5_done
+  tag_clear_start_mission_dada_y5: tag delete mission_dada_y5_started
+  tag_clear_ready_mission_dada_y5: tag delete mission_dada_y5_ready
+  reward_xp_mission_dada_y5: command hogwarts xp %player% 130
+  reward_house_money_mission_dada_y5: command hogwarts lessonreward %player% 3 25 dada_y5
+  journal_done_mission_dada_y5: journal add mission_dada_y5_done
+  notify_done_mission_dada_y5: notify &a&lHOÀN THÀNH! &fKiểm tra lý thuyết phòng vệ &7— &d+130 Magic XP &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat
+  start_mission_potions_y6: folder tag_start_mission_potions_y6,objective_start_mission_potions_y6,questtrack_start_mission_potions_y6,spawn_training_y6,journal_start_mission_potions_y6,notify_start_mission_potions_y6
+  tag_start_mission_potions_y6: tag add mission_potions_y6_started
+  objective_start_mission_potions_y6: objective add npc_mission_potions_y6
+  journal_start_mission_potions_y6: journal add mission_potions_y6
+  notify_start_mission_potions_y6: 'notify &c&lTHỰC HÀNH NĂM 6 &8» &fSnape yêu cầu đánh bại sinh vật Năm VI để thu tinh chất thực hành: Giáp Nguyền, Inferi Tinh Nhuệ, Pháp Sư Hắc Ám và Chỉ Huy Inferi. &7Tổng cộng: &e12 mục tiêu&7. Quái được triệu hồi riêng cho em tại đấu trường. io:chat'
+  ready_mission_potions_y6: folder finish_mission_potions_y6
+  tag_ready_mission_potions_y6: tag add mission_potions_y6_ready
+  notify_ready_mission_potions_y6: notify &aMục tiêu hoàn tất. &7Hệ thống đã tự chấm bài và trao thưởng. io:chat
+  finish_mission_potions_y6: folder tag_done_mission_potions_y6,tag_clear_start_mission_potions_y6,tag_clear_ready_mission_potions_y6,reward_xp_mission_potions_y6,reward_house_money_mission_potions_y6,journal_done_mission_potions_y6,questtrack_done_mission_potions_y6,notify_done_mission_potions_y6
+  tag_done_mission_potions_y6: tag add mission_potions_y6_done
+  tag_clear_start_mission_potions_y6: tag delete mission_potions_y6_started
+  tag_clear_ready_mission_potions_y6: tag delete mission_potions_y6_ready
+  reward_xp_mission_potions_y6: command hogwarts xp %player% 170
+  reward_house_money_mission_potions_y6: command hogwarts lessonreward %player% 3 25 potions_y6
+  journal_done_mission_potions_y6: journal add mission_potions_y6_done
+  notify_done_mission_potions_y6: notify &a&lHOÀN THÀNH! &fĐộc dược nâng cao &7— &d+170 Magic XP &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat
+  start_mission_transfiguration_y7: folder tag_start_mission_transfiguration_y7,objective_start_mission_transfiguration_y7,questtrack_start_mission_transfiguration_y7,spawn_training_y7,journal_start_mission_transfiguration_y7,notify_start_mission_transfiguration_y7
+  tag_start_mission_transfiguration_y7: tag add mission_transfiguration_y7_started
+  objective_start_mission_transfiguration_y7: objective add npc_mission_transfiguration_y7
+  journal_start_mission_transfiguration_y7: journal add mission_transfiguration_y7
+  notify_start_mission_transfiguration_y7: 'notify &c&lTHỰC HÀNH NĂM 7 &8» &fVượt qua đấu trường Năm VII: Chỉ Huy Tử Thần Thực Tử, Inferi Cổ Đại, Tiếng Vọng Hắc Chúa và Vệ Binh Tốt Nghiệp. &7Tổng cộng: &e13 mục tiêu&7. Quái được triệu hồi riêng cho em tại đấu trường. io:chat'
+  ready_mission_transfiguration_y7: folder finish_mission_transfiguration_y7
+  tag_ready_mission_transfiguration_y7: tag add mission_transfiguration_y7_ready
+  notify_ready_mission_transfiguration_y7: notify &aMục tiêu hoàn tất. &7Hệ thống đã tự chấm bài và trao thưởng. io:chat
+  finish_mission_transfiguration_y7: folder tag_done_mission_transfiguration_y7,tag_clear_start_mission_transfiguration_y7,tag_clear_ready_mission_transfiguration_y7,reward_xp_mission_transfiguration_y7,reward_house_money_mission_transfiguration_y7,journal_done_mission_transfiguration_y7,questtrack_done_mission_transfiguration_y7,notify_done_mission_transfiguration_y7
+  tag_done_mission_transfiguration_y7: tag add mission_transfiguration_y7_done
+  tag_clear_start_mission_transfiguration_y7: tag delete mission_transfiguration_y7_started
+  tag_clear_ready_mission_transfiguration_y7: tag delete mission_transfiguration_y7_ready
+  reward_xp_mission_transfiguration_y7: command hogwarts xp %player% 200
+  reward_house_money_mission_transfiguration_y7: command hogwarts lessonreward %player% 3 25 transfiguration_y7
+  journal_done_mission_transfiguration_y7: journal add mission_transfiguration_y7_done
+  notify_done_mission_transfiguration_y7: notify &a&lHOÀN THÀNH! &fBiến hình chính xác &7— &d+200 Magic XP &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat
+  start_mission_flying_y4: folder tag_start_mission_flying_y4,objective_start_mission_flying_y4,questtrack_start_mission_flying_y4,journal_start_mission_flying_y4,notify_start_mission_flying_y4
+  tag_start_mission_flying_y4: tag add mission_flying_y4_started
+  objective_start_mission_flying_y4: objective add npc_mission_flying_y4
+  journal_start_mission_flying_y4: journal add mission_flying_y4
+  notify_start_mission_flying_y4: 'notify &e&lNHIỆM VỤ NPC &8» &fĐường bay nâng cao&7: Bay tới checkpoint nâng cao ở sân bay rồi quay lại gặp Madam Hooch. io:chat'
+  ready_mission_flying_y4: folder finish_mission_flying_y4
+  tag_ready_mission_flying_y4: tag add mission_flying_y4_ready
+  notify_ready_mission_flying_y4: notify &aMục tiêu hoàn tất. &7Hệ thống đã tự chấm bài và trao thưởng. io:chat
+  finish_mission_flying_y4: folder tag_done_mission_flying_y4,tag_clear_start_mission_flying_y4,tag_clear_ready_mission_flying_y4,reward_xp_mission_flying_y4,reward_house_money_mission_flying_y4,journal_done_mission_flying_y4,questtrack_done_mission_flying_y4,notify_done_mission_flying_y4
+  tag_done_mission_flying_y4: tag add mission_flying_y4_done
+  tag_clear_start_mission_flying_y4: tag delete mission_flying_y4_started
+  tag_clear_ready_mission_flying_y4: tag delete mission_flying_y4_ready
+  reward_xp_mission_flying_y4: command hogwarts xp %player% 120
+  reward_house_money_mission_flying_y4: command hogwarts lessonreward %player% 3 25 flying_y4
+  journal_done_mission_flying_y4: journal add mission_flying_y4_done
+  notify_done_mission_flying_y4: notify &a&lHOÀN THÀNH! &fĐường bay nâng cao &7— &d+120 Magic XP &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat
+  start_mission_herbology_y3: folder tag_start_mission_herbology_y3,objective_start_mission_herbology_y3,questtrack_start_mission_herbology_y3,journal_start_mission_herbology_y3,notify_start_mission_herbology_y3
+  tag_start_mission_herbology_y3: tag add mission_herbology_y3_started
+  objective_start_mission_herbology_y3: objective add npc_mission_herbology_y3
+  journal_start_mission_herbology_y3: journal add mission_herbology_y3
+  notify_start_mission_herbology_y3: 'notify &e&lNHIỆM VỤ NPC &8» &fNhà kính nâng cao&7: Tương tác với COMPOSTER tại nhà kính để hoàn thành bài nhận biết môi trường trồng cây. io:chat'
+  ready_mission_herbology_y3: folder finish_mission_herbology_y3
+  tag_ready_mission_herbology_y3: tag add mission_herbology_y3_ready
+  notify_ready_mission_herbology_y3: notify &aMục tiêu hoàn tất. &7Hệ thống đã tự chấm bài và trao thưởng. io:chat
+  finish_mission_herbology_y3: folder tag_done_mission_herbology_y3,tag_clear_start_mission_herbology_y3,tag_clear_ready_mission_herbology_y3,reward_xp_mission_herbology_y3,reward_house_money_mission_herbology_y3,journal_done_mission_herbology_y3,questtrack_done_mission_herbology_y3,notify_done_mission_herbology_y3
+  tag_done_mission_herbology_y3: tag add mission_herbology_y3_done
+  tag_clear_start_mission_herbology_y3: tag delete mission_herbology_y3_started
+  tag_clear_ready_mission_herbology_y3: tag delete mission_herbology_y3_ready
+  reward_xp_mission_herbology_y3: command hogwarts xp %player% 100
+  reward_house_money_mission_herbology_y3: command hogwarts lessonreward %player% 3 25 herbology_y3
+  journal_done_mission_herbology_y3: journal add mission_herbology_y3_done
+  notify_done_mission_herbology_y3: notify &a&lHOÀN THÀNH! &fNhà kính nâng cao &7— &d+100 Magic XP &7+ &e3 Điểm Nhà &7+ &625 Galleon. io:chat
+  spawn_y1_1: mspawnmob %constant.loc_training_a% HOG_Y1_TRAINING_DUMMY:1 2 target private marked:hogwarts_y1_%player%
+  spawn_y1_2: mspawnmob %constant.loc_training_b% HOG_Y1_MANA_SLIME:1 2 target private marked:hogwarts_y1_%player%
+  spawn_y1_3: mspawnmob %constant.loc_training_c% HOG_Y1_CURSED_SPIDER:1 2 target private marked:hogwarts_y1_%player%
+  spawn_y1_4: mspawnmob %constant.loc_training_boss% HOG_Y1_BONE_GUARDIAN:1 1 target private marked:hogwarts_y1_%player%
+  spawn_training_y1: folder spawn_y1_1,spawn_y1_2,spawn_y1_3,spawn_y1_4
+  spawn_y2_1: mspawnmob %constant.loc_training_a% HOG_Y2_CORNISH_PIXIE:1 2 target private marked:hogwarts_y2_%player%
+  spawn_y2_2: mspawnmob %constant.loc_training_b% HOG_Y2_VENOM_SPIDER:1 2 target private marked:hogwarts_y2_%player%
+  spawn_y2_3: mspawnmob %constant.loc_training_c% HOG_Y2_CURSED_ARCHER:1 3 target private marked:hogwarts_y2_%player%
+  spawn_y2_4: mspawnmob %constant.loc_training_boss% HOG_Y2_PIXIE_CAPTAIN:1 1 target private marked:hogwarts_y2_%player%
+  spawn_training_y2: folder spawn_y2_1,spawn_y2_2,spawn_y2_3,spawn_y2_4
+  spawn_y3_1: mspawnmob %constant.loc_training_a% HOG_Y3_BOGGART:1 3 target private marked:hogwarts_y3_%player%
+  spawn_y3_2: mspawnmob %constant.loc_training_b% HOG_Y3_DEMENTOR_ECHO:1 2 target private marked:hogwarts_y3_%player%
+  spawn_y3_3: mspawnmob %constant.loc_training_c% HOG_Y3_WEREWOLF_TRAINEE:1 3 target private marked:hogwarts_y3_%player%
+  spawn_y3_4: mspawnmob %constant.loc_training_boss% HOG_Y3_DARK_CREATURE:1 1 target private marked:hogwarts_y3_%player%
+  spawn_training_y3: folder spawn_y3_1,spawn_y3_2,spawn_y3_3,spawn_y3_4
+  spawn_y4_1: mspawnmob %constant.loc_training_a% HOG_Y4_FIRE_CRAB:1 3 target private marked:hogwarts_y4_%player%
+  spawn_y4_2: mspawnmob %constant.loc_training_b% HOG_Y4_ACROMANTULA:1 3 target private marked:hogwarts_y4_%player%
+  spawn_y4_3: mspawnmob %constant.loc_training_c% HOG_Y4_DARK_WIZARD_APPRENTICE:1 3 target private marked:hogwarts_y4_%player%
+  spawn_y4_4: mspawnmob %constant.loc_training_boss% HOG_Y4_TRIWIZARD_GUARDIAN:1 1 target private marked:hogwarts_y4_%player%
+  spawn_training_y4: folder spawn_y4_1,spawn_y4_2,spawn_y4_3,spawn_y4_4
+  spawn_y5_1: mspawnmob %constant.loc_training_a% HOG_Y5_DEATH_EATER_TRAINEE:1 3 target private marked:hogwarts_y5_%player%
+  spawn_y5_2: mspawnmob %constant.loc_training_b% HOG_Y5_DEMENTOR:1 3 target private marked:hogwarts_y5_%player%
+  spawn_y5_3: mspawnmob %constant.loc_training_c% HOG_Y5_INFERI:1 4 target private marked:hogwarts_y5_%player%
+  spawn_y5_4: mspawnmob %constant.loc_training_boss% HOG_Y5_DARK_INQUISITOR:1 1 target private marked:hogwarts_y5_%player%
+  spawn_training_y5: folder spawn_y5_1,spawn_y5_2,spawn_y5_3,spawn_y5_4
+  spawn_y6_1: mspawnmob %constant.loc_training_a% HOG_Y6_CURSED_ARMOR:1 4 target private marked:hogwarts_y6_%player%
+  spawn_y6_2: mspawnmob %constant.loc_training_b% HOG_Y6_ELITE_INFERI:1 3 target private marked:hogwarts_y6_%player%
+  spawn_y6_3: mspawnmob %constant.loc_training_c% HOG_Y6_DARK_AUROR:1 4 target private marked:hogwarts_y6_%player%
+  spawn_y6_4: mspawnmob %constant.loc_training_boss% HOG_Y6_INFERI_COMMANDER:1 1 target private marked:hogwarts_y6_%player%
+  spawn_training_y6: folder spawn_y6_1,spawn_y6_2,spawn_y6_3,spawn_y6_4
+  spawn_y7_1: mspawnmob %constant.loc_training_a% HOG_Y7_DEATH_EATER_COMMANDER:1 4 target private marked:hogwarts_y7_%player%
+  spawn_y7_2: mspawnmob %constant.loc_training_b% HOG_Y7_ANCIENT_INFERI:1 4 target private marked:hogwarts_y7_%player%
+  spawn_y7_3: mspawnmob %constant.loc_training_c% HOG_Y7_DARK_LORD_ECHO:1 4 target private marked:hogwarts_y7_%player%
+  spawn_y7_4: mspawnmob %constant.loc_training_boss% HOG_Y7_FINAL_GUARDIAN:1 1 target private marked:hogwarts_y7_%player%
+  spawn_training_y7: folder spawn_y7_1,spawn_y7_2,spawn_y7_3,spawn_y7_4
+  questtrack_start_mission_charms_y1: command hogwarts queststart %player% mission_charms_y1 1 binary - Độ_chính_xác_của_cổ_tay
+  questtrack_done_mission_charms_y1: command hogwarts questcomplete %player% mission_charms_y1
+  questtrack_start_mission_charms_y2: command hogwarts queststart %player% mission_charms_y2 1 binary - Nhịp_điệu_của_bùa_chú
+  questtrack_done_mission_charms_y2: command hogwarts questcomplete %player% mission_charms_y2
+  questtrack_start_mission_charms_y3: command hogwarts queststart %player% mission_charms_y3 1 binary - Kiểm_soát_chú_ngữ
+  questtrack_done_mission_charms_y3: command hogwarts questcomplete %player% mission_charms_y3
+  questtrack_start_mission_charms_y4: command hogwarts queststart %player% mission_charms_y4 1 binary - Triệu_tập_có_kiểm_soát
+  questtrack_done_mission_charms_y4: command hogwarts questcomplete %player% mission_charms_y4
+  questtrack_start_mission_charms_y5: command hogwarts queststart %player% mission_charms_y5 1 binary - Kiểm_soát_âm_thanh
+  questtrack_done_mission_charms_y5: command hogwarts questcomplete %player% mission_charms_y5
+  questtrack_start_mission_charms_y6: command hogwarts queststart %player% mission_charms_y6 1 binary - Bùa_chú_nâng_cao
+  questtrack_done_mission_charms_y6: command hogwarts questcomplete %player% mission_charms_y6
+  questtrack_start_mission_dada_y1: command hogwarts queststart %player% mission_dada_y1 7 objective npc_mission_dada_y1 Thực_hành_Năm_1:_Phản_xạ_phòng_vệ
+  questtrack_done_mission_dada_y1: command hogwarts questcomplete %player% mission_dada_y1
+  questtrack_start_mission_dada_y2: command hogwarts queststart %player% mission_dada_y2 8 objective npc_mission_dada_y2 Thực_hành_Năm_2:_Đấu_tay_đôi_căn_bản
+  questtrack_done_mission_dada_y2: command hogwarts questcomplete %player% mission_dada_y2
+  questtrack_start_mission_dada_y3: command hogwarts queststart %player% mission_dada_y3 9 objective npc_mission_dada_y3 Thực_hành_Năm_3:_Giữ_bình_tĩnh
+  questtrack_done_mission_dada_y3: command hogwarts questcomplete %player% mission_dada_y3
+  questtrack_start_mission_dada_y4: command hogwarts queststart %player% mission_dada_y4 10 objective npc_mission_dada_y4 Thực_hành_Năm_4:_Cảnh_giác_liên_tục
+  questtrack_done_mission_dada_y4: command hogwarts questcomplete %player% mission_dada_y4
+  questtrack_start_mission_dada_y5: command hogwarts queststart %player% mission_dada_y5 11 objective npc_mission_dada_y5 Thực_hành_Năm_5:_Bài_kiểm_tra_phòng_vệ
+  questtrack_done_mission_dada_y5: command hogwarts questcomplete %player% mission_dada_y5
+  questtrack_start_mission_flying_y4: command hogwarts queststart %player% mission_flying_y4 1 binary - Nhiệm_vụ_Bay_nâng_cao
+  questtrack_done_mission_flying_y4: command hogwarts questcomplete %player% mission_flying_y4
+  questtrack_start_mission_herbology_y3: command hogwarts queststart %player% mission_herbology_y3 1 binary - Nhà_kính_nâng_cao
+  questtrack_done_mission_herbology_y3: command hogwarts questcomplete %player% mission_herbology_y3
+  questtrack_start_mission_potions_y6: command hogwarts queststart %player% mission_potions_y6 12 objective npc_mission_potions_y6 Thực_hành_Năm_6:_Độc_dược_nâng_cao:_Thu_thập_tinh_chất
+  questtrack_done_mission_potions_y6: command hogwarts questcomplete %player% mission_potions_y6
+  questtrack_start_mission_transfiguration_y7: command hogwarts queststart %player% mission_transfiguration_y7 13 objective npc_mission_transfiguration_y7 Thực_hành_Năm_7:_Thử_thách_tốt_nghiệp_thực_hành
+  questtrack_done_mission_transfiguration_y7: command hogwarts questcomplete %player% mission_transfiguration_y7
+objectives:
+  npc_mission_charms_y1: action any TARGET actions:finish_mission_charms_y1
+  npc_mission_charms_y2: action any BELL actions:finish_mission_charms_y2
+  npc_mission_charms_y3: action any LECTERN actions:finish_mission_charms_y3
+  npc_mission_charms_y4: action any CHEST actions:finish_mission_charms_y4
+  npc_mission_charms_y5: action any NOTE_BLOCK actions:finish_mission_charms_y5
+  npc_mission_charms_y6: action any TARGET actions:finish_mission_charms_y6
+  npc_mission_dada_y1: mmobkill HOG_Y1_TRAINING_DUMMY,HOG_Y1_MANA_SLIME,HOG_Y1_CURSED_SPIDER,HOG_Y1_BONE_GUARDIAN amount:7 notify marked:hogwarts_y1_%player% actions:finish_mission_dada_y1
+  npc_mission_dada_y2: mmobkill HOG_Y2_CORNISH_PIXIE,HOG_Y2_VENOM_SPIDER,HOG_Y2_CURSED_ARCHER,HOG_Y2_PIXIE_CAPTAIN amount:8 notify marked:hogwarts_y2_%player% actions:finish_mission_dada_y2
+  npc_mission_dada_y3: mmobkill HOG_Y3_BOGGART,HOG_Y3_DEMENTOR_ECHO,HOG_Y3_WEREWOLF_TRAINEE,HOG_Y3_DARK_CREATURE amount:9 notify marked:hogwarts_y3_%player% actions:finish_mission_dada_y3
+  npc_mission_dada_y4: mmobkill HOG_Y4_FIRE_CRAB,HOG_Y4_ACROMANTULA,HOG_Y4_DARK_WIZARD_APPRENTICE,HOG_Y4_TRIWIZARD_GUARDIAN amount:10 notify marked:hogwarts_y4_%player% actions:finish_mission_dada_y4
+  npc_mission_dada_y5: mmobkill HOG_Y5_DEATH_EATER_TRAINEE,HOG_Y5_DEMENTOR,HOG_Y5_INFERI,HOG_Y5_DARK_INQUISITOR amount:11 notify marked:hogwarts_y5_%player% actions:finish_mission_dada_y5
+  npc_mission_potions_y6: mmobkill HOG_Y6_CURSED_ARMOR,HOG_Y6_ELITE_INFERI,HOG_Y6_DARK_AUROR,HOG_Y6_INFERI_COMMANDER amount:12 notify marked:hogwarts_y6_%player% actions:finish_mission_potions_y6
+  npc_mission_transfiguration_y7: mmobkill HOG_Y7_DEATH_EATER_COMMANDER,HOG_Y7_ANCIENT_INFERI,HOG_Y7_DARK_LORD_ECHO,HOG_Y7_FINAL_GUARDIAN amount:13 notify marked:hogwarts_y7_%player% actions:finish_mission_transfiguration_y7
+  npc_mission_flying_y4: action any GOLD_BLOCK actions:finish_mission_flying_y4
+  npc_mission_herbology_y3: action any COMPOSTER actions:finish_mission_herbology_y3
+journal:
+  mission_charms_y1: '&e&lNhiệm vụ NPC: &fĐộ chính xác của cổ tay|&7Tìm một Bia Phép Thuật (TARGET) ở khu luyện và click trái hoặc phải vào nó.|&7Không còn yêu cầu tọa độ cố định.|&8Quay lại Flitwick sau khi chat báo mục tiêu đã hoàn thành.'
+  mission_charms_y1_done: '&a&lĐã hoàn thành: &fĐộ chính xác của cổ tay|&7Phần thưởng: +60 Magic XP, +3 Điểm Nhà, +25 Galleon.'
+  mission_charms_y2: '&e&lNhiệm vụ NPC: &fNhịp điệu của bùa chú|&7Tại lớp Bùa chú, tương tác với Chuông Luyện Phép (BELL) để hoàn thành bài nhịp chú.|&8Quay lại NPC sau khi mục tiêu hoàn thành.'
+  mission_charms_y2_done: '&a&lĐã hoàn thành: &fNhịp điệu của bùa chú|&7Phần thưởng: +80 Magic XP, +3 Điểm Nhà, +25 Galleon.'
+  mission_charms_y3: '&e&lNhiệm vụ NPC: &fKiểm soát chú ngữ|&7Đọc giáo trình ở Bục Giảng (LECTERN) trong lớp Bùa chú rồi quay lại báo cáo.|&8Quay lại NPC sau khi mục tiêu hoàn thành.'
+  mission_charms_y3_done: '&a&lĐã hoàn thành: &fKiểm soát chú ngữ|&7Phần thưởng: +100 Magic XP, +3 Điểm Nhà, +25 Galleon.'
+  mission_charms_y4: '&e&lNhiệm vụ NPC: &fTriệu tập có kiểm soát|&7Tới Rương Thực Hành (CHEST) trong lớp Bùa chú và kiểm tra mục tiêu triệu tập.|&8Quay lại NPC sau khi mục tiêu hoàn thành.'
+  mission_charms_y4_done: '&a&lĐã hoàn thành: &fTriệu tập có kiểm soát|&7Phần thưởng: +120 Magic XP, +3 Điểm Nhà, +25 Galleon.'
+  mission_charms_y5: '&e&lNhiệm vụ NPC: &fKiểm soát âm thanh|&7Tương tác với Khối Nốt Nhạc (NOTE_BLOCK) trong phòng luyện để kiểm tra độ chính xác.|&8Quay lại NPC sau khi mục tiêu hoàn thành.'
+  mission_charms_y5_done: '&a&lĐã hoàn thành: &fKiểm soát âm thanh|&7Phần thưởng: +140 Magic XP, +3 Điểm Nhà, +25 Galleon.'
+  mission_charms_y6: '&e&lNhiệm vụ NPC: &fBùa chú nâng cao|&7Hoàn thành bài hiệu chỉnh cuối tại Bia Phép Thuật (TARGET) của lớp Bùa chú.|&8Quay lại NPC sau khi mục tiêu hoàn thành.'
+  mission_charms_y6_done: '&a&lĐã hoàn thành: &fBùa chú nâng cao|&7Phần thưởng: +160 Magic XP, +3 Điểm Nhà, +25 Galleon.'
+  mission_dada_y1: '&c&lThực hành Năm 1: &fPhản xạ phòng vệ|&7Vượt qua đấu trường Năm I: Hình Nhân Tập Sự, Mana Slime, Nhện Bị Nguyền và Vệ Binh Xương.|&7Mục tiêu: đánh bại đủ &e7&7 quái MythicMobs được triệu hồi riêng.|&8Quay lại Quirrell sau khi objective hoàn thành.'
+  mission_dada_y1_done: '&a&lĐã hoàn thành: &fPhản xạ phòng vệ|&7Phần thưởng: +70 Magic XP, +3 Điểm Nhà, +25 Galleon.'
+  mission_dada_y2: '&c&lThực hành Năm 2: &fĐấu tay đôi căn bản|&7Vượt qua đấu trường Năm II: Pixie Cornwall, Nhện Độc, Xạ Thủ Bị Nguyền và Đội Trưởng Pixie.|&7Mục tiêu: đánh bại đủ &e8&7 quái MythicMobs được triệu hồi riêng.|&8Quay lại Lockhart sau khi objective hoàn thành.'
+  mission_dada_y2_done: '&a&lĐã hoàn thành: &fĐấu tay đôi căn bản|&7Phần thưởng: +90 Magic XP, +3 Điểm Nhà, +25 Galleon.'
+  mission_dada_y3: '&c&lThực hành Năm 3: &fGiữ bình tĩnh|&7Vượt qua đấu trường Năm III: Boggart, Tiếng Vọng Dementor, Người Sói Tập Sự và Sinh Vật Bóng Tối.|&7Mục tiêu: đánh bại đủ &e9&7 quái MythicMobs được triệu hồi riêng.|&8Quay lại Lupin sau khi objective hoàn thành.'
+  mission_dada_y3_done: '&a&lĐã hoàn thành: &fGiữ bình tĩnh|&7Phần thưởng: +110 Magic XP, +3 Điểm Nhà, +25 Galleon.'
+  mission_dada_y4: '&c&lThực hành Năm 4: &fCảnh giác liên tục|&7Vượt qua đấu trường Năm IV: Cua Lửa, Acromantula, Pháp Sư Hắc Ám Tập Sự và Vệ Binh Tam Pháp Thuật.|&7Mục tiêu: đánh bại đủ &e10&7 quái MythicMobs được triệu hồi riêng.|&8Quay lại Moody sau khi objective hoàn thành.'
+  mission_dada_y4_done: '&a&lĐã hoàn thành: &fCảnh giác liên tục|&7Phần thưởng: +140 Magic XP, +3 Điểm Nhà, +25 Galleon.'
+  mission_dada_y5: '&c&lThực hành Năm 5: &fBài kiểm tra phòng vệ|&7Vượt qua đấu trường Năm V: Tử Thần Thực Tử Tập Sự, Dementor, Inferi và Thanh Tra Hắc Ám.|&7Mục tiêu: đánh bại đủ &e11&7 quái MythicMobs được triệu hồi riêng.|&8Quay lại Umbridge sau khi objective hoàn thành.'
+  mission_dada_y5_done: '&a&lĐã hoàn thành: &fKiểm tra lý thuyết phòng vệ|&7Phần thưởng: +130 Magic XP, +3 Điểm Nhà, +25 Galleon.'
+  mission_potions_y6: '&c&lThực hành Năm 6: &fĐộc dược nâng cao: Thu thập tinh chất|&7Snape yêu cầu đánh bại sinh vật Năm VI để thu tinh chất thực hành: Giáp Nguyền, Inferi Tinh Nhuệ, Pháp Sư Hắc Ám và Chỉ Huy Inferi.|&7Mục tiêu: đánh bại đủ &e12&7 quái MythicMobs được triệu hồi riêng.|&8Quay lại Snape sau khi objective hoàn thành.'
+  mission_potions_y6_done: '&a&lĐã hoàn thành: &fĐộc dược nâng cao|&7Phần thưởng: +170 Magic XP, +3 Điểm Nhà, +25 Galleon.'
+  mission_transfiguration_y7: '&c&lThực hành Năm 7: &fThử thách tốt nghiệp thực hành|&7Vượt qua đấu trường Năm VII: Chỉ Huy Tử Thần Thực Tử, Inferi Cổ Đại, Tiếng Vọng Hắc Chúa và Vệ Binh Tốt Nghiệp.|&7Mục tiêu: đánh bại đủ &e13&7 quái MythicMobs được triệu hồi riêng.|&8Quay lại McGonagall sau khi objective hoàn thành.'
+  mission_transfiguration_y7_done: '&a&lĐã hoàn thành: &fBiến hình chính xác|&7Phần thưởng: +200 Magic XP, +3 Điểm Nhà, +25 Galleon.'
+  mission_flying_y4: '&e&lNhiệm vụ Bay nâng cao|&7Chạm vào GOLD_BLOCK tại vạch đích của sân bay.|&7Admin có thể đặt GOLD_BLOCK ở vị trí đích mong muốn.|&8Quay lại Hooch sau khi hoàn thành.'
+  mission_flying_y4_done: '&a&lĐã hoàn thành: &fĐường bay nâng cao|&7Phần thưởng: +120 Magic XP, +3 Điểm Nhà, +25 Galleon.'
+  mission_herbology_y3: '&e&lNhiệm vụ NPC: &fNhà kính nâng cao|&7Tương tác với COMPOSTER tại nhà kính để hoàn thành bài nhận biết môi trường trồng cây.|&8Quay lại NPC sau khi mục tiêu hoàn thành.'
+  mission_herbology_y3_done: '&a&lĐã hoàn thành: &fNhà kính nâng cao|&7Phần thưởng: +100 Magic XP, +3 Điểm Nhà, +25 Galleon.'
